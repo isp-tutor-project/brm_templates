@@ -3,7 +3,7 @@
 This is the BRM website, converted to use the 11ty(eleventy.js) Static Site Generator, using Nunjucks (.njk) templates
 
 ## Installation
-* clone this respository as a *sister* directory to your `isptutor_brmstudent` git repo.
+* clone this respository to a sibling directory to your `isptutor_brmstudent` git repo (side-by-side folders).
 
 * open up the folder in VS code.
 
@@ -34,3 +34,15 @@ this is a work in progress.  currently what is required is
 3. do a pull on hypatia
 
 eventually, this will be simplified to running an `npm deploy` script, but I want to make sure everything is working properly before we hang ourselves with this nice bit of rope someone gave us...
+
+## scripts
+the scripts are only necessary for regenerating templates from the main website, and are not required
+
+they require python3 and pipenv. whose installation is beyond the scope of this readme, primarily as instructions for those vary with operating system
+
+if you have those installed you can install the python dependencies via
+pipenv install
+
+in order to run scripts, you will need to first type `pipenv shell`, afterwards, your terminal prompt with be preceeded by `(brm_templates)`
+
+typing `python scripts/create_templates.py`  will scrape all of the index.html files in your isptutor_brmstudent directory and clobber all of the various templates/brm/**/*.njk files.  Unless changes have been made to the brm website or the scripts themselves, the newly generated templates should be identical (won't show up as having changed in git.)
