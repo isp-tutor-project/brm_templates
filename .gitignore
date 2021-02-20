@@ -1,7 +1,6 @@
 .vscode
 node_modules
 dist
-# templates/brm
-reformated
+reformatted
 KRUFT
 **/__pycache__
