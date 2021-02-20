@@ -1,6 +1,4 @@
-# brm_templates
-
-Background Research Module
+# Background Research Module
 
 This is the BRM website, converted to use the 11ty(eleventy.js) Static Site Generator, using Nunjucks (.njk) templates
 
