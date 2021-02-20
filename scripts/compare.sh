@@ -1,11 +1,11 @@
 #!/bin/bash
 
 ORIG_PROJ="${HOME}/projects/isptutor_brmstudent"
-GEN_PROJ="${HOME}/projects/convert_brm_templates"
+GEN_PROJ="${HOME}/projects/brm_templates"
 ORIG_PATH=$ORIG_PROJ
 GEN_PATH="${GEN_PROJ}/dist/brm"
-ORIG_REFORMAT="${GEN_PROJ}/reformated/orig"
-GEN_REFORMAT="${GEN_PROJ}/reformated/gen"
+ORIG_REFORMAT="${GEN_PROJ}/reformatted/orig"
+GEN_REFORMAT="${GEN_PROJ}/reformatted/gen"
 
 # make sure I'm still not comparing files which no longer exist
 rm -rf ${ORIG_REFORMAT}
