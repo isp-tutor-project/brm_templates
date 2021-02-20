@@ -4,9 +4,9 @@ This is the BRM website, converted to use the 11ty(eleventy.js) Static Site Gene
 
 ## Installation
 * clone this respository to a sibling directory to your `isptutor_brmstudent`
-  git repo (side-by-side folders) [^1].
+  git repo (side-by-side folders)
 
-[^1]: (The importance of the two folders living side by side is that scripts for generating templates from the original need to know where to look, as do the scripts which compare the original html filess to the generated html files)
+  * *The importance of the two folders living side by side is that scripts for generating templates from the original need to know where to look, as do the scripts which compare the original html files to the generated html files*
 
 * open up the folder in VS code.
 
@@ -38,33 +38,46 @@ this is a work in progress.  currently what is required is
 
 eventually, this will be simplified to running an `npm deploy` script, but I want to make sure everything is working properly before we hang ourselves with this nice bit of rope someone gave us...
 
-## templage generation scripts
-the scripts are only necessary for regenerating templates from the original website, and are not required once changes aren't being made to the original website.
+## Scripts
 
-I should be able to make slight change to the scripts (perhaps as simple as changing of the path to the original site from being ../isptutor_brmstudent to simply dist/brm), although I may want to come up with some sort of backing up the previous build so the prev/current can be compared...
+there are 2 scripts, you don't *necessarily* need to install/use these as I can run them, and I haven't yet figured out what complications may arise from trying to install/run them on Windows may be *yet*:
 
-anyway, these scripts require python3 and pipenv (as well as bash) whose installation is beyond the scope of this readme, primarily as instructions for those vary with operating system
+### 1. template (re)generation script **(scripts/create_templates.py)**
 
-if you have those installed you can install the python dependencies via
-pipenv install
+This script scapes the content of the `../isptutor_brmstudent` index.html files, extracts the necessary html snippets, and generates parallel template files in `templates/brm/`, named `index.njk` rather then `index.html`.
 
-in order to run scripts, you will need to first type `pipenv shell`, afterwards, your terminal prompt with be preceeded by `(brm_templates)`
+    I *should* be able to make slight change to the scripts (perhaps as simple as changing of the path to the original site from being `../isptutor_brmstudent` to simply `dist/brm`).  I may want to come up with some sort of backing up the previous build for the purpose of supporting the comparison script (#2 below)
 
-typing `python scripts/create_templates.py`  will scrape all of the index.html files in your isptutor_brmstudent directory and clobber all of the various templates/brm/**/*.njk files.  Unless changes have been made to the brm website or the scripts themselves, the newly generated templates should be identical (won't show up as having changed in git.)
+  ### Installation
+  `python3` and `pipenv` are required, whose installation is beyond the scope of this readme, primarily as instructions for those vary with operating system. I can look into this, if you actually care and want to run these.
 
-## comparing the original html to the newly generated html
-this turned out to be a little more complicated that I had hoped, because the python software I use to extract the various html snippets from the original pages and insert into the templates automatically re-orders the html elements attributes (whether this is alphabetical, or if the developer(s) have other opionionated order, I don't know) meaning that even though it's not that difficult to compare files while ignoring differences in whitespace, those tools don't know anything about html, and will report every occuracance of:
+1. once those are installed, you can them install the required python software via `pipenv install`
 
- `<div id="page1" class="page">`
- being changed to:
 
- `<div class="page" id="page1">`
+  ### Usage
+  1. first type `pipenv shell`, afterwards, your terminal prompt with be preceeded by `(brm_templates)`.
+  2. you will then be able to type `python scripts/create_templates.py`, which then scrape all of the index.html files in your `isptutor_brmstudent` directory and clobber all of the various `templates/brm/**/*.njk` files.  Unless changes have been made to  `isptutor_brmstudent` website (or the scripts themselves), the content of generated templates should remain identical (won't show up as having changed in git, *despite being entirely regenerated files*)
 
- as a difference, resulting in **every** page being reported as different.
+### 2. original html <-> generated html comparison script **(scripts/compare.sh)**
+   1. this turned out to be a lot more complicated that I had hoped, because the python package (BeautifulSoup4) used by the template generation script automatically re-orders the html elements attributes, meaning that: `<div id="page1" class="page">` becomes: `<div class="page" id="page1">`
+      1. this results in **every** page being different, even if there are no real differences in actual content or page structure (which is what we're **actually** interested in).
+   2. I found some *html-specific* tools which could handle variance of element attribute order, but to my surprise, **couldn't** handle differences in white-space. again, reporting **every** file as different.
+   3. my solution involves a **post-processing** step. it:
+      1. iterates over both all the generated html files (in `dist/brm`) and the originals (in the sibling `../isptutor_brmstudent`)
+      2. passing each of these files through a tool which understood html syntax (`html-minifier-terser`), and instructed it how to reformat the files
+         1. It leaves the original files alone and saves the *reformatted* output to parallel **reformatted/orig** and **reformatted/gen** folders) within this repo (which I involved git to ignore)
+   4. good ole unix `diff`) can them be used to compare these reformated trees of files.
 
-Other, html-specific tools which I found *(and believe I searched all over the place as this was a long and arduous process and I did everything I could think of to make my life easier)*  could handle variance of element attribute order, but to my surprise, **couldn't** handle differences in white-space.  To be fair, this *might* be by design where the intent of the tools was to preseve the whitespace the author specified.
+  ### Installation
+    NOTE: I don't recommend you install (or use this script), at this time, as I have no idea if it will work on windows, whether portions of it are still necessary, etc.  If you feel like trying though, it will be harmless
 
-anyway, I came up with a way to compare the files via a post-processing step.
-It iterates over both all the generated html files (in `dist/brm`) and the originals (in the sibling `../isptutor_brmstudent`)  passing them through a tool which understood html syntax (`html-minifier-terser`), and instructed it how to reformat the files (leaving original files alone - saving the output to a "reformatted" folder) in a way which another tool which doesn't understand html (good ole unix `diff`)could compare them.
+  `npm install -g  html-minifier-terser`
 
-typing (and I usually do this in a separate bash terminal outside of vscode, as there is a lot of output)
+  ### Usage
+I usually type this command this in a separate bash terminal outside of vscode (although getting that working in windows might be an ordeal), as there is a lot of output:
+
+`bash scripts/compare.sh`
+
+This wil list all of the files which are different without actually listing their actual differences. Most of the differences are minor things which actually don't have any effect on what the pages look like, but need to be checked just to make sure.  Eventually getting this down so I can have a simple listing of differences we actually care about is a goal.
+
+Actually looking at those differences is something I will write up at a later time (if you're actually interested)
