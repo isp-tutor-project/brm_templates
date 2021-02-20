@@ -1,0 +1,128 @@
+---
+title: "Plants"
+permalink: /brm/plants/index.html
+---
+            
+{% extends "brm_unit.njk" %}
+            
+{% block page_content %}
+            <h1>Plants</h1>
+
+<div class="page" id="page1">
+      <p>
+        <b>What are Plants?</b> Plants are living organisms composed of one or more cells. A cell is the
+        smallest unit that can be said to be alive. Some plants —such as some types of algae— are a single
+        cell. (Similarly, some animals, like amoebas, are a single cell.)
+      </p>
+      <p>Like animal cells,
+        each plant cell has a nucleus (see the picture of a plant cell below). Having a cell nucleus is a key
+        characteristic of all living things.
+      </p>
+      <p>
+        One difference between plant and animal cells is that the cells of plants have "walls", which are rigid
+        and firm. Animal cells do not have cell walls but thinner cell membranes. This makes sense because plants
+        do not have skeletons that support them. If plant cells did not have firm cell walls, plants would be more
+        or less shapeless blobs.
+      </p>
+      <p>
+        In the cell shown below, you can put the cursor on the red triangles to see a description of the tiny organs
+        ("organelles") and
+        other substances inside the cell.
+      </p>
+
+      <br/>
+
+      <div class="text-centered">
+        <iframe height="525" src="https://isp-tutor-project.github.io/demo/games/plantcell" width="600">
+        </iframe>
+      </div>
+      <br/>
+      One important function of the DNA in the cell's
+
+      <select class="fib_select" id="FIB1" onchange="fibUpdate('FIB1')">
+        <option value="#ffffff">(Select one)</option>
+        <option value="#11bf7a">nucleus</option>
+        <option value="#ed8587">endoplasmic reticuli</option>
+        <option value="#ed8587">mitochondria</option>
+        <option value="#ed8587">chloroplasts</option>
+      </select>
+
+
+      is to make very important molecules called proteins. Proteins are made in cell organelles called ribosomes (not
+      shown above).
+      Proteins do most of the work in cells and are required for the structure,
+      function, and regulation of the plant (or animal).
+
+      <br/><br/>
+
+      Photosynthesis, another important process in which sugars are made, happens in the
+
+      <select class="fib_select" id="FIB2" onchange="fibUpdate('FIB2')">
+        <option value="#ffffff">(Select one)</option>
+        <option value="#ed8587">nucleus</option>
+        <option value="#ed8587">endoplasmic reticuli</option>
+        <option value="#ed8587">mitochondria</option>
+        <option value="#11bf7a">chloroplasts</option>
+      </select>
+
+
+      in plant cells.
+
+    </div>
+
+<div class="page" id="page2">
+      <p>
+        Plants usually grow in one location (rather than move around, like
+        most animals do). Because of this, plants must depend on their local environment —and themselves—
+        for nourishment.
+        Plants get some nutrients they need through the absorption of water and minerals through their roots.
+      </p>
+
+      <p>
+        Plants make their own food (sugars) through the process of
+        <a class="brm-link" href="../photosynthesis/" target="_blank">photosynthesis</a>. 
+        In this process, sunlight provides the energy to convert carbon dioxide and water into sugars. This process
+        happens in the chloroplasts in the cells of plant leaves.
+      </p>
+
+    </div>
+
+<div class="page" id="page3">
+      <p>
+        <b>Plants</b> can be divided into two main groups: Vascular and Non-vascular. (See the diagram below.)
+      </p>
+
+      <ul class="list-no-bullets">
+        <li>
+          <a class="brm-link" href="../vascular-plants/" target="_blank">Vascular plants</a>
+          have cells that form tubes for carrying water and nutrients throughout the plant.
+          <a class="brm-link" href="../non-vascular-plants/" target="_blank">Non-vascular plants</a>
+          do not have tubes to carry water and nutrients. Instead, water and nutrients move from cells to their
+          neighboring cells. In case you were wondering, this is why (as shown in the picture of the plant cell two
+          pages ago) the cell walls have little holes in them. This is so water and other nutrients can move from
+          cell to cell.
+        </li>
+      </ul>
+
+      <p class="text-centered text-xxl">
+        <b>Plant Hierarchy</b>
+      </p>
+
+      <img alt="Vascular and Nonvascular Plants Chart" class="img-centered" src="RevisedPlantCategoriesNoHighlight.jpg"/>
+
+      <form class="quiz_open quiz">
+        <b>
+          Q1: Do you think that humans are more like vascular or nonvascular plants? Why?</b>
+        <textarea></textarea><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          Humans are more like vascular plants because both humans and vasular plants have tubes that carry water
+          and nutrients throughout
+          their bodies. In humans, we call these arteries and veins.
+        </div>
+      </form>
+
+    </div>
+
+{% endblock %}
+            

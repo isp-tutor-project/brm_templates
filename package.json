@@ -1,0 +1,17 @@
+{
+  "name": "convert_brm_templates",
+  "version": "0.1.0",
+  "description": "converting brm to templates",
+  "main": "index.js",
+  "license": "Proprietary",
+  "private": true,
+  "scripts": {
+    "start": "rimraf dist && eleventy --serve",
+    "watch": "rimraf dist && eleventy --watch",
+    "build": "rimraf dist && eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "rimraf": "^3.0.2"
+  }
+}

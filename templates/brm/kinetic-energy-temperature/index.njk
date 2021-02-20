@@ -1,0 +1,387 @@
+---
+title: "Kinetic energy and Temperature"
+permalink: /brm/kinetic-energy-temperature/index.html
+---
+            
+{% extends "brm_unit.njk" %}
+            
+{% block page_content %}
+            <h1>Kinetic Energy and Temperature</h1>
+
+<div class="page" id="page1">
+      <p>
+        <b>What is Kinetic Energy?</b> All moving objects (including atoms and molecules) have a form of energy called
+        kinetic energy. This is the energy that objects have that is due to their movement. Because there are different
+        types of motion, there are different kinds of kinetic energy.
+      </p>
+      Types of kinetic energy include:<br/>
+      <ul>
+        <li>(a) translational kinetic energy </li><br/>
+        <li>(b) rotational kinetic energy </li><br/>
+        <li>(c) vibrational kinetic energy </li><br/>
+      </ul>
+
+      <p>
+        In this section, we will talk about the <i><u>translational</u></i> kinetic energy of an object. This is
+        the kinetic energy of objects due to their movement across a distance (shown below). 
+      </p>
+     <br/>
+      <img class="img-centered" src="car_speeding.png"/><br/>
+      <p>
+        Translational kinetic energy is typically the type of kinetic energy people mean when they talk about
+        "kinetic energy." The translational kinetic energy of an object's atoms/molecules is also the type of kinetic
+        energy that defines the object's <b>temperature</b>. In this section, we will be talking about translational
+        kinetic energy, but we will just call it "kinetic energy" here.
+      </p>
+
+
+    </div>
+
+<div class="page" id="page2">
+
+      <p>
+        The relationship between the kinetic energy of an object and its mass (<b>m</b>) and speed (or
+        velocity, <b>v</b>) is shown below:
+      </p>
+
+      <a href="../kinetic-energy-temperature/KE_.5mv2.GIF?attredirects=0/index.html">
+        <img alt="The relationship between the kinetic energy of an object and its mass (m) and speed (or velocity)" class="img-centered" src="KE_.5mv2.GIF"/>
+      </a>
+      <br/>
+
+      <ul>
+        <li>
+          For objects moving at the same speed, more massive objects have greater kinetic energy than less
+          massive objects. 
+        </li>
+      </ul>
+      <ul>
+        <li>
+          For objects of the same mass, faster-moving objects have greater kinetic energy than slower-moving objects.
+        </li>
+      </ul>
+
+      <br/>
+
+      <img class="img-centered" src="KE_mass_T_graph_Q.PNG" width="400"/>
+
+     <br/><br/>
+
+      In the graph above, the relationship between mass and kinetic energy is best represented by
+
+      <select class="fib_select" id="FIB1" onchange="fibUpdate('FIB1')">
+        <option value="#ffffff">(Select one)</option>
+        <option value="#ed8587">line A.</option>
+        <option value="#11bf7a">Line B.</option>
+        <option value="#ed8587">Line C.</option>
+      </select>
+
+     <br/><br/>
+
+      In the graph above, the relationship between velocity and kinetic energy is best represented by
+
+      <select class="fib_select" id="FIB2" onchange="fibUpdate('FIB2')">
+        <option value="#ffffff">(Select one)</option>
+        <option value="#11bf7a">line A.</option>
+        <option value="#ed8587">Line B.</option>
+        <option value="#ed8587">Line C.</option>
+      </select>
+
+    </div>
+
+<div class="page" id="page3">
+
+      Check your basic understanding:
+
+      <form class="quiz_choice quiz">
+        <b>Q1: What is the kinetic energy (KE) of an object that is not moving?</b>
+
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) It's impossible to tell.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) It's equal to the mass of the object.</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">c) Zero.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) None of the above.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          Right!<br/>
+          KE = 1/2*mass*velocity^2. So, if the object is not moving (and its velocity is zero) the kinetic energy is
+          also zero.
+        </div>
+        <div class="feedback-incorrect feedback">
+          Well, actually.....<br/>
+          KE = 1/2*mass*velocity^2. So if the object is not moving (and its velocity is zero) the kinetic energy is also
+          zero.
+        </div>
+      </form>
+
+     <br/>
+      <form class="quiz_choice quiz">
+        <b>
+          Q2: Based on the formula for kinetic energy, does an object's mass or speed/velocity have a greater effect on
+          an object's kinetic energy?</b>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) Its mass.</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">b) Its speed/velocity.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) Mass and speed/velocity have the same influence on kinetic energy.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) None of the above.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          Right!<br/>
+          Because KE = 1/2mv<sup>2</sup>, changes in speed/velocity would have a greater effect on the object's KE than
+          the object's mass.
+        </div>
+        <div class="feedback-incorrect feedback">
+          Well, actually.....<br/>
+          Because KE = 1/2mv<sup>2</sup>, changes in speed/velocity would have a greater effect on the object's KE than
+          the object's mass.
+        </div>
+      </form>
+
+     <br/><br/>
+
+      <form class="quiz_choice quiz">
+        <b>
+          Q3.1: A 60 kg (132 pound) middle school athlete can sprint at 10 m/s (about 20 mph). What is the kinetic
+          energy of the kid?</b>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) 300 kg × m/s</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) 600 kg × m/s</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">c) 3,000 kg × m<sup>2</sup>/s<sup>2</sup></div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) 6,000 kg x m<sup>2</sup>/s<sup>2</sup> </div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          Right!<br/>
+          KE = 1/2*mass*velocity^2 = 1/2*(60 kg)(10 m/s)^2 = 3,000 kg*m^2/s^2
+        </div>
+        <div class="feedback-incorrect feedback">
+          Well, actually.....<br/>
+          KE = 1/2*mass*velocity^2 = 1/2*(60 kg)(10 m/s)^2 = 3,000 kg*m^2/s^2
+        </div>
+      </form>
+
+     <br/>
+
+      <form class="quiz_choice quiz">
+        <b>
+          Q3.2: A Hydrogen molecule (H<sub>2</sub>) has a mass of 2 amu. ("amu" stands for "atomic mass units", which is
+          equal to the mass of one proton or neutron, which is 0.00000000000000000000000334 grams.)
+          This molecule is moving around in the Earth's atmosphere at a speed of 500 m/s. What is its kinetic
+          energy?</b>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) 500 amu × m/s</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) 1,000 amu × m/s</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">c) 250,000 amu × m<sup>2</sup>/s<sup>2</sup></div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) None of the above.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          Right!<br/>
+          KE = 1/2*mass*velocity^2 = 1/2*(2 amu)(500 m/s)^2 = 250,000 amu*m^2/s^2
+        </div>
+        <div class="feedback-incorrect feedback">
+          Well, actually.....<br/>
+          KE = 1/2*mass*velocity^2 = 1/2*(2 amu)(500 m/s)^2 = 250,000 amu*m^2/s^2
+        </div>
+      </form>
+
+      <br/>
+    </div>
+
+<div class="page" id="page4">
+
+      <p>
+        <b>Definition of temperature.</b> The <b>temperature </b>of an object is the average kinetic energy of the
+        particles (atoms and/or molecules) that make up the object. The kinetic energy of individual particles is
+        determined by both their <b><i>speed</i></b> and <b><i>mass</i></b>. So, the temperature of an object increases
+        as the speed or mass of its atoms/molecules increases.
+      </p>
+      <p>
+        Let's say there are two containers of the same gas (e.g., helium atoms). As shown in the picture below (a
+        microscopic view showing just a few of the millions of atoms in the containers), the helium atoms in Container
+        1 (below, left) are moving at about twice the average speed of the helium atoms in Container 2 (below, right).
+        The length of the arrows represents the speed of the atoms: longer arrows mean higher speed. The direction of
+        the arrows shows the direction of motion at that time point.
+      </p>
+
+     <br/>
+
+      <img alt="Two boxes showing helium atoms" class="img-centered" src="Container1Revised.jpg" width="700"/>
+      <br/>
+
+      <ul>
+        <li>
+          Because its atoms are moving faster, we know that the temperature of the helium in Container 1 is higher
+          than the temperature of the helium in Container 2.
+        </li>
+      </ul>
+
+     <br/>
+    </div>
+
+<div class="page" id="page5">
+
+      <p>
+        <b>Temperature increases as the mass of atoms/molecules increases.</b> The temperature of an object also
+        depends on the mass of the atoms and/or molecules that make up that object. 
+      </p>
+      <p>
+        Now let's say we have a container with helium atoms and a second container with argon atoms. (Again, a
+        microscopic view of only a few of the millions of atoms in each container are shown below.) The helium atoms
+        in Container 1 and the argon atoms in Container 3 have the same average speed.
+      </p>
+
+     <br/>
+
+      <img alt="Helium and Argon atoms" class="img-centered" src="RevisedTemp2.jpg" width="600"/>
+      <br/>
+      <ul>
+        <li>
+          An argon atom has more mass than a helium atom (see the
+          <a href="../periodic-table/index.html" target="_blank"><b>Periodic table</b></a>,
+          which includes the "atomic mass" for each element). So, the average kinetic energy of the argon atoms in
+          Container 3 is greater than the average kinetic energy of the helium atoms in Container 1. In other words,
+          the gas in Container 3 has a higher temperature than the gas in Container 1.
+        </li>
+      </ul>
+
+
+      <p class="text-centered">
+        <b>Temperature of Object = Average Kinetic Energy (1/2mv<sup>2</sup>) of all of its molecules </b>
+      </p>
+
+    </div>
+
+<div class="page" id="page6">
+
+      Check your (more advanced) understanding:
+     <br/>
+      <form class="quiz_choice quiz">
+        <b>
+          Q4: There are two glasses of water (H<sub>2</sub>O). You measure the temperature of the water in Glass 1 as
+          15 degrees C. You measure the temperature of the water in Glass 2 as 30 degrees C. Which of the following
+          is true:
+        </b>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) On average, the H<sub>2</sub>O molecules in Glass 1 are moving around faster than
+          H<sub>2</sub>O molecules in Glass 2.</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">b) On average, the H<sub>2</sub>O molecules in Glass 2 are moving around faster than
+          H<sub>2</sub>O molecules in Glass 1.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) On average, the H<sub>2</sub>O in Glass 1 are moving around at the same speed as
+          H<sub>2</sub>O in Glass 2.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) More information is needed to answer.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          You're right! The temperature of the water in Glass 2 is higher than in Glass 1.
+          We know that the temperature of a substance is calculated as the average kinetic energy (1/2mv<sup>2</sup>) of
+          the atoms/molecules of the substance (in this case, water).
+          All water molecules (H<sub>2</sub>O) have the same mass. So, the molecules of water in Glass 2 must have a
+          higher speed/velocity than water molecules in Glass 1.
+        </div>
+        <div class="feedback-incorrect feedback">
+          Well, let's think about this... The temperature of the water in Glass 2 is higher than in Glass 1.<br/>
+          We know that the temperature of a substance is calculated as the average kinetic energy (1/2mv<sup>2</sup>) of
+          the atoms/molecules of the substance (in this case, water).
+         <br/>
+          All water molecules (H<sub>2</sub>O) have the same mass. So, the molecules of water in Glass 2 must have a
+          higher speed/velocity than water molecules in Glass 1.
+        </div>
+      </form>
+
+      <br/>
+
+      <form class="quiz_choice quiz">
+        <b>
+          Q5: A gold ring and a glass of water that are sitting on a desk are at the same temperature (room
+          temperature). What do you think is true of the average speed of the ring's gold atoms vs. the water
+          molecules? (Hint: look at the periodic table)
+        </b>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) They are the same</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) The gold atoms move faster on average</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">c) The water molecules move faster on average</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) I don't know.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          The temperature of a substance (e.g., glass of water) is its AVERAGE kinetic energy.
+          So, the average KE of the water is the same as the average KE of the gold.
+          Because water molecules have less mass than gold atoms, the water molecules will have a higher speed/velocity
+          in
+          general.
+        </div>
+        <div class="feedback-incorrect feedback">
+          The temperature of a substance (e.g., glass of water) is its AVERAGE kinetic energy.
+          So, the average KE of the water is the same as the average KE of the gold.
+          Because water molecules have less mass than gold atoms, the water molecules will have a higher speed/velocity
+          in
+          general.
+        </div>
+      </form>
+    </div>
+
+<div class="page" id="page7">
+
+      <p>
+        This simulation below shows the motion of molecules as the temperature changes. The molecules are represented
+        as bright blue circles below. They are magnified by a <u>lot</u> so we can see them in this simulation.
+      </p>
+
+     <br/>
+
+      <div data-scrollable="false" style="display:block;text-align:center;margin-right:auto;margin-left:auto;width:480px;height:320px;">
+        <div style="position: relative; width: 300px; height: 200px;">
+          <a href="https://phet.colorado.edu/sims/html/states-of-matter-basics/latest/states-of-matter-basics_en.html" style="text-decoration: none;">
+            <img alt="States of Matter: Basics" height="300" src="https://phet.colorado.edu/sims/html/states-of-matter-basics/latest/states-of-matter-basics-600.png" style="border: none;" width="400"/>
+
+            <div style="position:absolute;width:200px;height:80px;left:50px;top:60px;background-color:#FFF;opacity:0.6;filter:alpha(opacity=60)">
+            </div>
+            <table style="position:absolute;width:200px;height:80px;left:50px;top:60px;">
+              <tbody>
+                <tr>
+                  <td style="text-align:center;color:#000;font-size:24px;font-family:Arial,sans-serif;">
+                    Click to Run
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </a>
+        </div>
+      </div>
+
+      <p style="text-align:center">Phet States of Matter Simulation (click above to view) </p>
+    </div>
+
+{% endblock %}
+            
+{% block toc %}
+<div class="nav-toc-container">
+      <h3>Table of Contents: Kinetic Energy &amp; Temperature unit</h3>
+      <ul>
+        <li><a href="#top" onclick="tocPageJump(1)">What is Kinetic Energy?</a></li>
+        <li><a href="#top" onclick="tocPageJump(2)">Mathematical definition of KE</a></li>
+        <li><a href="#top" onclick="tocPageJump(3)">Check you Basic Understanding (Questions)</a></li>
+        <li><a href="#top" onclick="tocPageJump(4)">What is Temperature?</a></li>
+        <li><a href="#top" onclick="tocPageJump(5)">Temperature &amp; Mass of Atoms/Molecules</a></li>
+        <li><a href="#top" onclick="tocPageJump(6)">Check Your (More Advanced) Understanding </a></li>
+        <li><a href="#top" onclick="tocPageJump(7)">Simulation of Temperature &amp; Molecular/Atomic Motion</a></li>
+
+      </ul>
+    </div>
+{% endblock %}
+                

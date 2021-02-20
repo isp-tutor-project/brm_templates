@@ -1,0 +1,7 @@
+{
+    "spec-char-escape": "off",
+    "head-script-disabled": "off",
+    "inline-style-disabled": "off",
+    "alt-require": "off",
+    "src-not-empty": "off"
+}

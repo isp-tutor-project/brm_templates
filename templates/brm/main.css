@@ -1,0 +1,390 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  margin-bottom: -10px;
+}
+
+h1 {
+  font-family: 'Boogaloo', cursive;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Header */
+#brm-header-img {
+  width: 100%;
+  height: 250px;
+}
+#research-question {
+  position: absolute;
+  left: 25%;
+  top: 90px;
+  width: 50%;
+  text-align: center;
+  font-family: 'Verdana', cursive;
+  font-weight: normal;
+  font-size: 1.2em;
+  /*font-size: 1.5vw;*/
+  white-space: pre-line;
+}
+#header-bg-extension {
+  width: 100%;
+  height: 30px;
+  background-color: #DDF0FE;
+}
+.search-container {
+  position: relative;
+  left: 30%;
+  bottom: 100px;
+  width: 40%;
+  margin-bottom: -100px;
+}
+.header-btn-container {
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 10px;
+  margin-bottom: -10px;
+}
+.header-btn {
+  background-color: #2555AB;
+  border-color: #2555AB;
+  color: white;
+  padding: 5px 5px;
+  margin: 0px 1px;
+  font-size: 20px;
+  font-family: 'Boogaloo', cursive;
+  -webkit-appearance: none;
+}
+.header-btn:hover {
+  background-color: #244785;
+  border-color: #244785;
+}
+
+/* Nav buttons */
+.nav-btn-container {
+  position: relative;
+  width: 100%;
+  height: 140px;
+}
+.nav-btn {
+  position: absolute;
+  display: block;
+  top: 0px;
+  margin-bottom: 20px;
+}
+#back-btn-inactive {
+  left: 20px;
+  display: none;
+}
+#next-btn-inactive {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  right: 20px;
+}
+#back-btn-active {
+  left: 20px;
+  display: none;
+}
+#next-btn-active {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  right: 20px;
+  display: none;
+}
+
+/* Pages */
+.page-container {
+  margin: 20px;
+ /* background-color: rgb(250, 249, 248) */
+}
+.page {
+  min-width: 400px;
+  max-width: 1600px;
+  display: none;
+  margin: 20px 400px;
+  min-height: calc(100vh - 660px);
+  font-size: 16px;
+  font-family: Verdana, sans-serif; 
+  line-height: 1.5 ;
+  
+}
+.listlineheight {
+  line-height: 3 ;
+}
+
+#page1 {
+  display: block;
+}
+
+/* Align images horizontally */
+.imgContainer{
+  float:left;
+  display: block;
+  display: inline;
+}
+
+
+/* Footer */
+#footer {
+  font-size: 10px;
+  background-color: #DDF0FE;
+  padding: 10px;
+}
+
+/* Area pages */
+.area-column {
+  display: inline-block;
+  width: 49%;
+  text-align: center;
+  vertical-align: top;
+  margin-bottom: 50px;
+}
+.area-column a {
+  display: block;
+  margin-top: 24px;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Verdana, sans-serif;
+}
+
+/* Quiz */
+.quiz {
+  border-style: solid;
+  border-width: 1px;
+  padding: 15px 20px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.quiz b {
+  display: block;
+  margin-bottom: 10px;
+}
+.quiz input {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.quiz textarea {
+  font-size: 16px;
+  width: 100%;
+  height: 80px;
+}
+.quiz .label {
+  display: inline-block;
+  width: 90%;
+  vertical-align: middle;
+  margin: 7px 0px 8px 0px;
+}
+.quiz .submit-btn {
+  width: 100px;
+  padding: 10px 15px;
+  margin-top: 10px;
+  background-color: rgb(0, 117, 250);
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.quiz .feedback {
+  display: none;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-weight: normal;
+}
+.quiz .feedback-correct {
+  background-color: #66FF66;
+}
+.quiz .feedback-incorrect {
+  background-color: #FF6666;
+}
+.quiz table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+.quiz table input {
+  display: block;
+  margin: 0 auto;
+}
+.quiz table tr:nth-child(even) {
+  background-color: #eee;
+}
+.quiz table tr:nth-child(odd) {
+  background-color: #fff;
+}
+.quiz table th {
+  font-weight: normal;
+  background-color: white;
+}
+.quiz table td {
+  padding: 10px 20px;
+}
+
+/* BRM reminder */
+#brm-reminder-overlay {
+  display: none;
+  position: fixed;
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+#brm-reminder-box {
+  display: none;
+  position: fixed;
+  border: 3px solid #f1f1f1;
+  background-color: white;
+  width: 606px;
+  height: 476px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 2;
+}
+#brm-reminder-img {
+  width: 600px;
+  height: 470px;
+}
+#brm-reminder-btn {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100px;
+  padding: 10px 15px;
+  background-color: rgb(0, 117, 250);
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+/*Content pages*/
+p.content-item {
+  line-height: 1.5em;
+}
+
+
+.text1 {
+  position:relative;
+  left:100px;
+  top:400px: 
+}
+
+
+/* brm links */
+a.brm-link {
+  font-weight: bold;
+}
+
+/* images */
+.img-centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imgClear {
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img3Col {
+  display: flex;
+}
+
+.imgCol {
+  /*flex: 33.33%;*/
+  margin: auto;
+  padding: 5px;
+  text-align: center;
+}
+
+
+/* lists */
+ul.list-no-bullets {
+  list-style: none;
+}
+
+ul.brm-list,
+ol.brm-list {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+ul.brm-list.nested-list,
+ol.brm-list.nested-list {
+  margin-bottom: 0.1em;
+}
+
+ul.brm-list > li,
+ol.brm-list > li {
+  padding-bottom: 0.75em;
+}
+ul.brm-list.nested-list > li:last-of-type,
+ol.brm-list.nested-list > li:last-of-type {
+  padding-bottom: 0.25em;
+}
+
+/* text */
+.text-centered {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify
+}
+.text-xxl {
+  font-size: xx-large;
+}
+.text-xl {
+  font-size: x-large;
+}
+.text-lg {
+  font-size: large;
+}
+.text-md {
+  font-size: medium;
+}
+.text-sm {
+  font-size: small;
+}
+.text-xs {
+  font-size: x-small;
+}
+.text-xxs {
+  font-size: xx-small
+}
+.font-calibri {
+  font-family: Calibri, 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif
+}
+.font-pt-sans {
+  font-family: 'PT Sans', sans-serif;
+}
+.font-roboto {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+.font-times {
+  font-family: 'Times New Roman', Times, serif;
+}
+.font-trebuchet {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.font-veranda {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+

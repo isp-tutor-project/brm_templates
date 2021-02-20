@@ -1,0 +1,84 @@
+---
+title: "Electric Force"
+permalink: /brm/states-of-matter/index.html
+---
+            
+{% extends "brm_unit.njk" %}
+            
+{% block page_content %}
+            <h1>States of Matter</h1>
+
+<div class="page" id="page1">
+      <p>
+        <b>States of Matter.</b> Depending on the amount of energy of movement of its molecules (or atoms), matter is
+        usually in one of three states here on Earth. These states are <b>solids</b> (lowest energy/slowest speeds),
+        <b>liquids</b> (middle energy/higher speed), and <b>gases</b> (higher energy/fastest speed). In the picture
+        below, the speed of the molecules (or atoms) is represented by the length of the arrows. You can see that
+        atoms in a gas state move
+
+
+          <select class="fib_select" id="FIB1" onchange="fibUpdate('FIB1')">
+            <option disabled="" selected="" value="#ffffff">(Select one)</option>
+            <option value="#11bf7a">faster than</option>
+            <option value="#ed8587">slower than</option>
+            <option value="#ed8587">the same speeds as</option>
+          </select>
+
+
+
+        atoms in a liquid state. And atoms in a liquid state move faster than
+        atoms in a solid state.
+     </p>
+
+
+      <img alt="states of matter" class="img-centered" src="statesgraphic.jpg" width="800"/>
+     <br/>
+
+      <p>
+        In its solid state, the molecules (or atoms) that make up matter are in fixed positions. Particles in a solid move back
+        and forth — or vibrate — within their fixed positions. In its liquid state, the molecules (or atoms) are not in fixed
+        locations but kind of "slither around" each other, kind of like how marbles in a jar move around each other
+        when you reach your hand into it.
+      </p>
+      <p>
+        In a gas state, molecules (or atoms) have even more energy and can escape the downward pull of gravity to move
+        around more freely.
+      </p>
+      <p>
+        For most types of molecules (or atoms), as shown in the picture above, molecules (or atoms) are
+
+         <select class="fib_select" id="FIB2" onchange="fibUpdate('FIB2')">
+            <option disabled="" selected="" value="#ffffff">(Select one)</option>
+            <option value="#11bf7a">most densely</option>
+            <option value="#ed8587">least densely</option>
+
+          </select>
+
+
+
+        packed when they are in a solid state. They are least densely packed when they are in a
+
+         <select class="fib_select" id="FIB3" onchange="fibUpdate('FIB3')">
+            <option disabled="" selected="" value="#ffffff">(Select one)</option>
+            <option value="#ed8587">solid state.</option>
+            <option value="#ed8587">liquid state.</option>
+            <option value="#11bf7a">gas state.</option>
+          </select>
+
+      </p>
+      <p>
+        <b>Notable exception: Water!</b>
+      </p>
+      <p>
+        Water, or H<sub>2</sub>O, is an exception: at some temperatures, ice is less dense than liquid water. This
+        idea is shown below:
+      </p>
+
+     <br/>
+      <img alt="states of matter_gas, liquid, solid" class="img-centered" src="H2Omolecules_states.png" width="800"/>
+     <br/>
+
+    </div>
+
+{% endblock %}
+            

@@ -1,0 +1,303 @@
+---
+title: "Surface Area"
+permalink: /brm/surface-area/index.html
+---
+            
+{% extends "brm_unit.njk" %}
+            
+{% block page_content %}
+            <h1>Surface Area</h1>
+
+<div class="page" id="page1">
+
+      <p class="text-md">
+        <b>What is Surface Area?</b> The surface area of an object is defined as the total area of the <i>surface</i> of the
+        3-dimensional object. The surface is the outermost region of an object.
+      </p>
+      <p class="text-md">
+        In this unit, we will calculate surface area of various shapes with <i>smooth surfaces</i>.
+      </p>
+
+<br/>
+
+</div>
+
+<div class="page" id="page2">
+
+      <p class="text-md">
+        <b>Surface Area of Cubes</b>
+      </p>
+
+
+          <b>Example of calculating surface area of sphere:</b> As shown below, the diameter of a cube is 3 cm.
+         <br/><br/>So, each of the faces (sides) of the cube has an area of 3 x 3, or 9
+          cm<sup>2</sup>. 
+
+          A cube has
+
+          <select class="fib_select" id="FIB1" onchange="fibUpdate('FIB1')">
+            <option disabled="" selected="" value="#ffffff">(Select one)</option>
+            <option value="#ed8587">2 sides.</option>
+            <option value="#ed8587">4 sides.</option>
+            <option value="#11bf7a">6 sides.</option>
+            <option value="#ed8587">8 sides.</option>
+          </select>
+
+         <br/><br/>So, the total surface area of the cube would be 6 x 9 cm<sup>2</sup>,
+          <span class="text-md"> or 54 cm<sup>2</sup>.</span>
+
+
+
+      <img alt="Cubewith3cmside" class="img-centered" src="Cube_surfaceAreaUnitrevised.jpg"/>
+
+      <p>
+        <span class="text-md">In general, the <b>surface area of a cube</b> of diameter, d, is equal to:
+          d<sup>2</sup> (area per side)</span> × 6 (sides) = <b class="text-md">6d<sup>2</sup></b>
+      </p>
+
+      <ul class="brm-list">
+        <li>
+          <b>Surface area of Cube</b> = <b class="text-md">6d<sup>2</sup></b>
+        </li>
+      </ul>
+
+  </div>
+
+<div class="page" id="page3">
+    <p>
+      <b>Surface Area of Spheres</b>
+    </p>
+    <p>
+      In general, the <b>surface area of a sphere</b> of radius, r, is equal to <b>4</b>
+      <span class="text-xl font-times">π</span>
+      <b class="text-md">r<sup>2</sup></b>. 
+
+     <br/><br/>
+
+       In this equation, 
+      <span class="text-xl font-times">π</span>
+      <span class="text-md">is "pi", which is 3.1415..., or about 3.</span>
+    </p>
+
+    <p>
+        The radius of a circle is equal to half of its diameter: r = d/2.
+
+       <br/><br/>
+
+        We can substitute "d/2" for "r" in the
+        formula above:
+
+        </p><ul><li>
+        4
+        <span class="font-times text-xl">π</span>
+        <span class="text-md">(d/2)</span><sup>2</sup> = 4
+        <span class="font-times text-xl">π</span>
+        <span class="text-md">d<sup>2</sup>/4 = </span>
+        <span class="font-times text-xl">π</span>
+        <span class="text-md">d</span><sup>2</sup>
+        </li></ul>
+      <p></p>
+
+      <p>
+        So...
+
+      </p>
+
+      <ul>
+        <li>
+          <b>Surface area of Sphere</b> = <b>
+            <span class="text-xl font-times">π</span><span class="text-md">d</span><sup>2</sup>
+          </b>
+        </li>
+      </ul>
+
+  </div>
+
+<div class="page" id="page4">
+
+        <b>Example of calculating surface area of sphere:</b> A sphere has a diameter of 4 cm. We can calculate the
+        surface area of the sphere,
+        <span class="text-md">
+          which is the area of the outer part of the sphere (that we can touch/feel) by using this formula:
+        </span>
+        <ul class="brm-list nested-list">
+          <li>
+            Surface area (of a sphere) =
+            <span class="text-xl font-times">π</span>
+            <span class="text-md">d</span><sup>2</sup>
+          </li>
+          <li>
+            <span class="text-md">Surface area (sphere) = 3.14 × 4</span><sup>2</sup>
+            <span class="text-md"> = 3.14 × 16 = 50.27 cm</span><sup>2</sup>
+          </li>
+        </ul>
+
+     <br/>
+
+
+     <br/>
+
+</div>
+
+<div class="page" id="page5">
+
+
+      <form class="quiz_choice quiz">
+        <b>Q1: Which would have a bigger surface area: a sphere with a diameter of 10 cm or a cube with a diameter of 10
+          cm?</b>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) the sphere</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">b) the cube</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) they would have the same surface areas</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) I have no idea.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          Right! In general, if a cube and sphere have the same diameter, the cube has greater surface area.
+          This is because the surface area of a sphere is pi (about 3) times the diameter squared. And the surface area of a cube is 6 times
+          the cube's diameter squared.
+          So, for any cube and sphere of the same diameter, the surface area of the cube will be almost *twice* that of the
+          sphere!
+        </div>
+        <div class="feedback-incorrect feedback">
+          Actually, in general, if a cube and sphere have the same diameter, the cube has greater surface area.
+          This is because the surface area of a sphere is pi (about 3) times the diameter squared.
+          And the surface area of a cube is 6 times the cube's diameter squared. So, for any cube and sphere of the same diameter,
+          the surface area of the cube will be almost *twice* that of the sphere!
+        </div>
+      </form>
+
+      <br/>
+
+      <form class="quiz_choice quiz">
+        <b>Q2: Sphere A has a diameter of D. Sphere B has a diameter of 2D (Sphere B's diameter is twice Sphere A's
+          diameter).
+          Which is true of the surface areas of the spheres?</b>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) Sphere A and B have the same surface areas.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) Sphere B has twice the surface area of Sphere A.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) Sphere B has three times the surface area of Sphere A.</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">d) Sphere B has four times the surface area of Sphere A.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          That's right! Sphere B's surface area would be four times that of Sphere A. This is because the surface area
+          of a sphere is given by: 𝜋d<sup>2</sup>.
+          So, for Sphere A, the surface area is 𝜋D<sup>2</sup>
+          For Sphere B, the surface area is 𝜋(2D)<sup>2</sup> = 4𝜋D<sup>2</sup>
+        </div>
+        <div class="feedback-incorrect feedback">
+          Actually, Sphere B's surface area would be four times that of Sphere A. This is because the surface area of a
+          sphere is given by: 𝜋d<sup>2</sup>.
+          So, for Sphere A, the surface area is 𝜋D<sup>2</sup>
+          For Sphere B, the surface area is 𝜋(2D)<sup>2</sup> = 4𝜋D<sup>2</sup>
+        </div>
+      </form>
+
+     <br/><br/><br/>
+
+</div>
+
+<div class="page" id="page6">
+
+      <p>
+        <b>Surface area (for non-smooth surfaces)</b>
+      </p>
+      <p>
+        When we calculated the surface area of the objects above, we assumed that the surfaces were completely smooth.
+        But if the surfaces were bumpy instead of smooth, their surface areas would be larger. For example, a golf
+        ball, which has dimples on its surface, has more surface area than a smooth ball of the same (average) radius.
+      </p>
+
+     <br/>
+      <img alt="Smooth ball and golf ball with dimples" class="img-centered" height="300" src="https://sites.google.com/site/isptutorbrmstudent/_/rsrc/1560954664759/surface-area/SurfaceArea_Ball_BRM.jpg" width="400"/>
+     <br/>
+
+      <form class="quiz_choice quiz">
+        <b>Q3: Two spherical balls (A &amp; B) are made of the same bumpy material. Ball A has a diameter twice that of
+          Ball B.
+          Which is true of the number of bumps on each ball?</b>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) There are the same number of bumps on A and B.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) Ball A has twice the number of bumps as Ball B.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) Ball A has three times the number of bumps as Ball B.</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">d) Ball A has four times the number of bumps as Ball B.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          You're right! Because Ball A's diameter is twice that of Ball B, it will have FOUR times the surface area as
+          Ball B.
+          So, it will also have about 4 times the number of bumps on its surface as Ball B.
+        </div>
+        <div class="feedback-incorrect feedback">
+          Actually, because Ball A's diameter is twice that of Ball B, it will have FOUR times the surface area as
+          Ball B.
+          So, it will also have about 4 times the number of bumps on its surface as Ball B.
+        </div>
+      </form>
+
+      <br/>
+
+</div>
+
+<div class="page" id="page7">
+
+
+      <p>
+        <b>Surface area to volume ratio for sphere</b>
+      </p>
+      <p>
+        In general, as the diameter of a sphere increases, the ratio of its surface area to its volume decreases.
+        That is, as the diameter of a sphere increases, the sphere will have LESS surface area per given volume of
+        space. <b>Or</b>, as the diameter of a sphere increases, the sphere will have MORE volume per surface area.
+      </p>
+
+      <ul class="brm-list">
+        <li>Surface area of sphere: 
+          <b style="color:rgb(103,78,167)">
+            <span class="text-xl font-times">π</span>
+            <span class="text-md">d</span><sup>2</sup>
+          </b>
+        </li>
+        <li>
+          Volume of sphere: 
+          <b style="color:rgb(103,78,167)">
+            <span class="text-xl font-times">π</span>
+            <span class="text-md">d</span><sup>3</sup>/6
+          </b>
+        </li>
+      </ul>
+
+
+      <p>
+        So, Surface Area/Volume of sphere: <b>6/d &lt;&lt;OR&gt;&gt;</b> Volume/Surface Area of sphere: <b>d/6</b>
+      </p>
+
+
+ <br/><br/>
+
+  </div>
+
+{% endblock %}
+            
+{% block toc %}
+<div class="nav-toc-container">
+    <h3>Table of Contents: Surface Area unit</h3>
+    <ul>
+    <li><a href="#top" onclick="tocPageJump(1)">What is Surface Area?</a></li>
+      <li><a href="#top" onclick="tocPageJump(2)">Surface Area of Cubes</a></li>
+      <li><a href="#top" onclick="tocPageJump(3)">Surface Area of Spheres</a></li>
+      <li><a href="#top" onclick="tocPageJump(4)">Example: Calculating SA of Sphere</a></li>
+      <li><a href="#top" onclick="tocPageJump(5)">Check Your Understanding</a></li>
+      <li><a href="#top" onclick="tocPageJump(6)">Surface Area of Bumpy Surfaces</a></li>
+      <li><a href="#top" onclick="tocPageJump(7)">Surface Area/Volume Ratio for Spheres</a></li>
+    </ul>
+  </div>
+{% endblock %}
+                
