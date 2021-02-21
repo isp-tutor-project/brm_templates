@@ -10,6 +10,6 @@ module.exports = function(eleventyConfig) {
             data: "_data",
             includes: "_includes"
         },
-        templateFormats: ["njk", "jpg", "jpeg", "jfif", "png", "gif", "mp3", "mp4", "docx", "xml"]
+        templateFormats: ["njk", "jpg", "jpeg", "jfif", "png", "gif", "mp3", "mp4", "docx", "xml", "ogg"]
     }
 }
