@@ -9,8 +9,9 @@ body {
 }
 
 h1 {
+  margin-top: 1.5em;
   font-family: 'Boogaloo', cursive;
-  margin-left: 20%;
+  text-align: center;
   font-size: 28px;
 }
 
@@ -119,8 +120,18 @@ button {
   font-size: 14px;
   font-family: Verdana, sans-serif; 
   line-height: 1.5 ;
-  
 }
+.page_game {
+  min-width: 400px;
+  max-width: 1600px;
+  display: none;
+  margin: 20px 200px;
+  min-height: calc(100vh - 660px);
+  font-size: 14px;
+  font-family: Verdana, sans-serif; 
+  line-height: 1.5 ;
+}
+
 .listlineheight {
   line-height: 3 ;
 }
@@ -305,6 +316,22 @@ a.brm-link {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.img-size {
+  width: 600px;
+}
+
+.img-size_smaller {
+  width: 300px;
+}
+
+.img-size_med {
+  width: 450px;
+}
+
+.img-size_700 {
+  width: 700px;
 }
 
 .imgClear {
