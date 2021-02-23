@@ -334,6 +334,10 @@ a.brm-link {
   width: 700px;
 }
 
+.img-size_150 {
+  width: 150px;
+}
+
 .imgClear {
   clear: both;
   margin-left: auto;
