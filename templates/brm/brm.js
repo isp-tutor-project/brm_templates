@@ -18,7 +18,10 @@ let rq = "Does the water temperature affect the weight of crystal growth on a st
 if (localStorage.getItem("isptutor_rq") != undefined) {
     rq = localStorage.getItem("isptutor_rq");
 }
-document.getElementById("research-question").innerHTML = rq;
+const rqDiv = document.getElementById("research-question");
+if (rqDiv) {
+    rqDiv.innerHTML = rq;
+}
 
 function dumpBrmHistory() {
     // now a no-op if collectionID and/or userID are unknown
