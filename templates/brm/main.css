@@ -111,6 +111,7 @@ button {
   margin: 20px;
  /* background-color: rgb(250, 249, 248) */
 }
+/*
 .page {
   min-width: 400px;
   max-width: 1600px;
@@ -120,7 +121,19 @@ button {
   font-size: 14px;
   font-family: Verdana, sans-serif; 
   line-height: 1.5 ;
+}  */
+
+.page {
+  width:50%;
+  margin:auto;
+  display: none;
+  font-size: 14px;
+  font-family: Verdana, sans-serif; 
+  line-height: 1.5 ;
 }
+
+
+
 .page_game {
   min-width: 400px;
   max-width: 1600px;
