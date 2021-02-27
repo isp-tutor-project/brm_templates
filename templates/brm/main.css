@@ -64,11 +64,26 @@ button {
   font-size: 20px;
   font-family: 'Boogaloo', cursive;
   -webkit-appearance: none;
+  border-radius: 10px;
 }
 .header-btn.htmlhelp {
   background-color: #f1b900;
   border-color: #f1b900;
+  border-radius: 10px;
 }
+
+.glossary-btn {
+  background-color: #099aee;
+  border-color: #171718;
+  color: white;
+  padding: 5px 5px;
+  margin: 2px 2px;
+  font-size: 20px;
+  font-family: 'Boogaloo', cursive;
+  -webkit-appearance: none;
+  border-radius: 10px;
+}
+
 .header-btn:hover {
   background-color: #244785;
   border-color: #244785;
@@ -129,7 +144,7 @@ button {
   display: none;
   font-size: 14px;
   font-family: Verdana, sans-serif; 
-  line-height: 1.5 ;
+  line-height: 1.5;
 }
 
 
@@ -163,7 +178,7 @@ button {
 
 /* Footer */
 #footer {
-  font-size: 10px;
+  font-size: 12px;
   background-color: #DDF0FE;
   padding: 10px;
 }
