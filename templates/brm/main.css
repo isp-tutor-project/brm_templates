@@ -19,6 +19,16 @@ button {
   cursor: pointer;
 }
 
+.nav-toc-container {
+  text-align: left;
+  position: relative;
+  left: 30%;
+  bottom: 100px;
+  width: 40%;
+  margin-left: 150px;
+  margin-bottom: -100px;
+}
+
 /* Header */
 #brm-header-img {
   width: 100%;
@@ -95,12 +105,23 @@ button {
   width: 100%;
   height: 140px;
 }
+
 .nav-btn {
   position: absolute;
   display: block;
   top: 0px;
   margin-bottom: 20px;
 }
+
+/*
+.nav-btn-top {
+  position: absolute;
+  display: block;
+  bottom:400px;
+  margin-top: 400px;
+}
+*/
+
 #back-btn-inactive {
   left: 20px;
   display: none;
@@ -193,6 +214,7 @@ button {
   margin-bottom: 50px;
   margin-left: 0px;
 }
+
 .area-column a {
   display: block;
   margin-top: 24px;
@@ -350,12 +372,24 @@ a.brm-link {
   width: 600px;
 }
 
+.img-size_200 {
+  width: 200px;
+}
+
+.img-size_250 {
+  width: 250px;
+}
+
 .img-size_smaller {
   width: 300px;
 }
 
 .img-size_med {
   width: 450px;
+}
+
+.img-size_500 {
+  width: 500px;
 }
 
 .img-size_700 {
