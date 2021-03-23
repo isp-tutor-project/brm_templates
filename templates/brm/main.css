@@ -419,6 +419,16 @@ a.brm-link {
   text-align: center;
 }
 
+hr.half-width{
+  width:50%;
+  margin: 0 auto;
+}
+
+hr.threequarters-width{
+  width:75%;
+  margin: 0 auto;
+}
+
 
 /* lists */
 ul.list-no-bullets {
