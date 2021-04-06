@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Thermal Energy</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <!-- <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg"> -->
+         <div style="text-align:center" id="research-question"> </div>
+         
+
+<div style="float:left;margin-left:20px">
+<br><br>
+        <img alt="ISP logo" src="../ISPtutor_logo.jpg" width="80"/>
+      </div>
+
+
+
+      <div style="float:right;margin-right:20px">
+
+      <br><br><br>
+
+      <script type="text/javascript">
+
+      function newPopup(url) {
+            popupWindow = window.open(
+              url,'popUpWindow','height=400,width=800,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+          }
+
+          </script>
+        
+        <a href="JavaScript:newPopup('../glossary');">
+        
+        <button id="home-btn" class="glossary-btn">Glossary</button>
+        
+        </a>
+
+      </div>
+
+
+
+
+
+
+
+        <div id="header-bg-extension" style="text-align:center;font-size:18px"><br><b>You can search below or click on a science 
+        area to find information for your research question:</b></div>
+                <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn htmlhelp">Home &amp; HELP</button></a>
+           <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            
+        </div>
+
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Thermal Energy</h1>
+
+<div class="page" id="page1">
+      <p>
+        <b>Why is thermal energy important to understand? </b>Knowing how the temperatures of objects are affected
+        by factors like the temperature of the surrounding air or other objects that are touching allows us to make
+        good decisions. For example, this will let us know whether it's better to open a window or turn on the
+        air conditioner to cool a room. 
+      </p>
+      <p>
+        Or how we can thaw food quickly to make dinner for our families. Does frozen food thaw faster in water or
+        in the air?
+      </p>
+
+
+
+      <div class="img3Col imgClear">
+        <div class="imgCol">
+          <img class="img-size_smaller" src="FrozenMeat.jpg"/>
+        </div>
+        <div class="imgCol">
+          <img class="img-size_smaller" src="coffee_mug.jpg"/>
+        </div>
+
+      </div>
+
+
+      <p>
+        Or which type of coffee mug (ceramic, glass, or plastic) should you buy for you mom to keep her coffee hot for longer?
+      </p>
+
+    </div>
+
+<div class="page" id="page2">
+
+      <p>
+        <b>But what is thermal energy?</b> An object's <b>thermal energy</b> is defined as the amount of energy
+        of the object due to the energy of motion — or kinetic energy — of all the atoms and/or molecules that make up
+        the object.
+      </p>
+      <p>So....</p>
+
+      <ul class="brm-list">
+        <li>
+          When the atoms and/or molecules that make up an object move around faster, the object has more thermal
+          energy. 
+        </li>
+        <li>
+          When the atoms and/or molecules that make up an object move around slower, the object has less thermal energy.
+        </li>
+      </ul>
+
+      <p>
+        The simulation below represents a microscopic view of a substance; the dots are its atoms. This substance is
+        shown at two different times and with two different amounts of thermal energy. At Time 1, the substance is at room
+        temperature. At Time 2, the substance has been cooled to a very low temperature. This is why the atoms are moving
+        slower at Time 2 than Time 1.
+      </p>
+      <p>
+        The thermal energy of the substance is greater at Time 1 than Time 2. 
+      </p>
+      <br>
+
+      <img class="img-centered img-size_med" src="ThermalEnergyGif1031.gif"/>
+
+ <p>
+        But the temperature at Time 1 is also greater than at Time 2. So, what the heck is the difference between temperature and thermal energy?? 
+      </p>
+
+    </div>
+
+<div class="page" id="page3">
+      <p>
+        <b>Thermal energy vs. Temperature.</b> Thermal energy and temperature are closely related concepts. Both
+        have to do with the kinetic energy of the atoms and/or molecules that make up objects or substances. But
+        thermal energy and temperature are not the same thing.
+      </p>
+      <p>
+        Here's the difference:
+      </p>
+
+      <ul class="brm-list">
+        <li>
+          The temperature of an object (or non-solid substance, like water in a glass) is defined as the
+          <i><b>average</b></i> kinetic energy of all the particles (atoms and/or molecules) that make up the
+          object (or substance).
+        </li>
+        <li>
+          The thermal energy of an object is the <b><i>total</i></b> amount of kinetic energy
+          of the particles (atoms and/or molecules) that make up the object (or substance).
+          <ul class="brm-list nested-list">
+            <li>So, because thermal energy is the SUM of the kinetic energy of all the particles that make up the
+              object, the thermal energy of an object depends on the SIZE of the object.
+            </li>
+            <li>BUT, because the temperature of an object is the AVERAGE kinetic energy of all the particles that
+              make up
+              the object, the temperature
+              of an object does NOT depend on the size of the object.
+            </li>
+          </ul>
+        </li>
+
+        <img class="img-centered img-size" src="MassObjects_Temp_ThermalEnergy.PNG"/> 
+
+        <li>
+          <b>Example</b>. Let's say that there are
+          two objects (A and B) made of the same material and at the same temperature. This means that the particles 
+          of Object A (above, left) are moving around with the same average speed as particles of Object B (above,
+          right).
+          But Object A has more mass, so there are more particles that make up Object A than Object B. 
+          </li>
+          <b>Fill-in-the-blank:</b> So, the thermal energy of Object A (or total amount of kinetic energy of its particles) is
+          
+       
+
+
+<select class="fib_select" id="FIB1" onchange="fibUpdate('FIB1')">
+            <option disabled="" selected="" value="#ffffff">(Select one)</option>
+            <option value="#11bf7a">greater than</option>
+            <option value="#ed8587">less than</option>
+            <option value="#ed8587">the same as</option>
+           
+          </select>
+
+the thermal energy of Object B.
+
+ </li>
+      </ul>
+
+      <div class="text-centered">
+
+      </div>
+
+     <br/>
+    </div>
+
+<div class="page" id="page4">
+      <p>
+        <b>Thermal Energy goes from hotter to cooler objects.</b> Thermal energy is
+        transferred between two objects at different temperatures that are touching each other. When two objects
+        that are at different temperatures touch each other, the cooler object will become warmer and the warmer
+        object will cool.  
+      </p>
+      <p>
+        This is represented in the picture below, where the higher-temperature object (red) is on the left and the
+        lower-temperature object (blue) is on the right. Thermal energy will be transferred from the hotter to cooler
+        object. "Heat" is the amount of thermal energy that is transferred in this process. 
+      </p>
+
+      <img alt="direction of thermal energy transfer" class="img-centered img-size_med" src="DirThermalEtransfer.PNG"/>
+      <br/>
+
+    </div>
+
+<div class="page" id="page5">
+      <p>
+        <b>Why does thermal energy transfer from warmer to cooler objects?</b> This happens because the particles (atoms and/or molecules)
+        that make up the warmer object are moving around faster (on average) than the particles that make up the
+        cooler object. When the faster-moving particles bump into the slower-moving particles, the faster-moving
+        particles tend to slow down and the slower-moving particles tend to speed up.
+      </p>
+      <p>
+        This idea is represented below, with two particles (P1 and P2): 
+      </p>
+
+      
+        <img alt="Particles Transferring KE" class="img-centered img-size_500" src="ParticlesTransferringKE_final.png"/>
+     
+      <br/>
+
+      <p>
+        Because of this transfer of motion between the particles of objects, the warmer object will cool down and the cooler
+        object will warm up. Eventually, the two objects will become the same temperature. This final temperature
+        will be somewhere between the starting temperatures of the objects. 
+      </p>
+
+
+      <img class="img-centered img-size_med" src="SameTempObjects.PNG"/>
+      <br/>
+
+    </div>
+
+<div class="page" id="page6">
+
+
+      <b>Simulation of thermal energy transfer.</b> In the simulation below, two objects that are touching each other
+      are initially at different temperatures
+      (represented by different colors*). The object on the left is initially at a higher temperature than the
+      object on the right. Thermal energy is transferred from the higher- to the lower-temperature object until
+      they reach the same final temperature (represented by purple) and will remain at that final temperature.
+      (This simulation repeats.) 
+
+
+
+      <img class="img-centered img-size" src="thermalenergyNewgifreversed.gif"/>
+      <br/>
+
+      <p>
+        *In the simulation above, the color red just represents higher temperature, where particles (atoms and/or molecules) are moving around
+        with more speed and kinetic energy. The color blue just represents a lower temperature, where particles are
+        moving around with less speed/kinetic energy. So just think of red as faster-moving particles and blue as
+        slower-moving particles (and purple as particles moving in between these two speeds).
+      </p>
+
+      <!-- Quiz: Choice -->
+      <form class="quiz_choice quiz">
+        <b>Q1: In the simulation above, if the initial temperature of the object on the left was even higher than
+          shown above, which would be true of the final temperature of the object on the right?</b>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">a) It would also be higher than it was above. </div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) It would be lower than it was above.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) It would be the same as it was above.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) It's impossible to know. </div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          That's right! If the object on the left had a higher initial temperature, its particles would be moving around
+          faster. When the
+          faster-moving particles of the object on the left collide with slower-moving particles of the object on
+          the right, the particles of the object on the right will gain more speed. As a result, the object on the
+          right will reach a higher temperature.
+        </div>
+        <div class="feedback-incorrect feedback">
+          Actually, if the object on the left had a higher initial temperature, its particles would be moving around
+          faster. When the
+          faster-moving particles of the object on the left collide with slower-moving particles of the object on
+          the right, the particles of the object on the right will gain more speed. As a result, the object on the
+          right will reach a higher temperature. (a) is the correct answer.
+        </div>
+      </form>
+
+     <br/>
+
+      <!-- Quiz: Choice -->
+      <form class="quiz_choice quiz">
+        <b>Q2: The object on the right side of the simulation starts at a higher temperature than it is above (but
+          it is still at a lower starting temperature than the object on the left). Which of the following would
+          be true?</b>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) It would take longer for the objects to reach the same temperature than it did above.
+        </div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">b) It would take less time for the objects to reach the same temperature than it did above.
+        </div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) It would not affect how long it takes for the objects to reach the same temperature.</div>
+       <br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) I don't know. </div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          That's right! If the object on the right started at a higher temperature, then it would take less time for the
+          objects to
+          reach the same temperature. (b) is the correct answer.
+        </div>
+        <div class="feedback-incorrect feedback">
+          Well, actually, if the object on the right started at a higher temperature, then it would take less time for
+          the objects
+          to reach the same temperature. (b) is the correct answer.
+        </div>
+      </form>
+
+    </div>
+
+<div class="page" id="page7">
+      <p>
+        <b>Speed of Thermal Energy Transfer.</b> How quickly thermal energy is transferred from the hotter to colder
+        object depends on the temperature difference between the objects.
+      </p>
+
+      <ul class="brm-list">
+        <li>
+          The greater the temperature difference is between the objects, the faster thermal energy is transferred to
+          the colder object.
+        </li>
+        <li>
+          As the difference in temperatures between the two objects gets smaller, the amount of thermal energy
+          transferred in a given time decreases.
+        </li>
+      </ul>
+
+      <p>
+        This relationship is shown in the graph below (for two objects of the same material and mass). The height
+        of each line (the red and blue line) shows the total amount of thermal energy transferred to the colder
+        object at that time. The red line shows this for two objects that initially had a temperature difference of
+        40°C. The blue line shows this for two objects that initially had a temperature difference of 80°C. 
+      </p>
+      <p>
+        As you can see, the amount of thermal energy transferred to the colder object is always higher when the two
+        objects had a greater initial temperature difference (the blue line). Also, the speed of thermal energy
+        transfer, which is the steepness (or "slope") of each line at any point in time, is always higher for the
+        blue line.
+      </p>
+
+
+        <img class="img-centered img-size_med" src="TotalQGraph1.GIF"/>
+
+      <br/>
+
+      <p>
+        Let's say that the cooler object needed to gain a certain amount of thermal energy (for example, to reach a
+        certain temperature or to start melting). This is shown in the graph below, where the dotted line represents
+        this amount of energy. The cooler object would gain this amount of thermal energy faster when there was a
+        bigger initial temperature difference between the objects. You can see that the time to gain this
+        energy is less for the 80°C initial difference (blue line) than for the 40°C initial difference
+        (red line).
+      </p>
+
+      <br/>
+
+        <img class="img-centered" width="550px" src="TotalQGraph2.GIF"/>
+
+      <br/>
+
+      <p>
+        In general, how fast thermal energy is transferred from the hotter to colder object depends on the temperature
+        difference between these objects.
+      </p>
+      <p>
+        It also depends on other things like the mass of the objects and how much thermal energy it takes for the
+        object's temperature to change (called the "heat capacity"). The heat capacity of an object depends on
+        what the object is made of. Some materials (like metals) need less thermal energy to increase in temperature
+        compared to other materials (like water). This is because the thermal energy transferred to the cooler
+        object may be converted to other types of kinetic energy (such as
+        <a class="brm-link" href="../kinetic-energy-temperature/index.html" target="_blank">
+          rotational and vibrational</a> energies of molecules) that are not related to temperature.
+      </p>
+
+    </div>
+
+<div class="page" id="page8">
+      <p>
+        <b>Thermal energy transfer between solids and gases.</b> Thermal energy will be transferred between
+        two solid objects at different temperatures. But thermal energy will also transfer between a solid and a gas
+        (from whichever is warmer to whichever is cooler). For example:  
+      </p>
+
+      <ul class="brm-list">
+        <li>
+          In the picture below, a balloon is sitting in the sun. The picture shows the cross-section of the balloon
+          and the air inside the balloon. The outside surface of the balloon is warmed by the air and by the sunlight
+          hitting the surface of the balloon. Some of the sunlight will be
+          <a class="brm-link" href="../energy-general/index.html" target="_blank">converted into thermal energy</a>
+          in the balloon. Thermal energy will transfer from the (warmer) outside surface of the balloon to the (cooler)
+          inside surface of the balloon. Thermal energy will continue to be transferred from the (now warmer) inside
+          material of the balloon to the (cooler) air inside the balloon. The arrows in the picture show the direction
+          of transfer of thermal energy. 
+        </li>
+      </ul>
+
+      <img class="img-centered img-size_smaller" src="EnergyBalloonA1-T1_final.jpg"/>
+     <br/>
+
+      <ul class="brm-list">
+        <li>
+          How exactly is thermal energy transferred from the balloon material to the air inside the balloon? The
+          particles that make up the material of the balloon will transfer their kinetic energy (through millions or
+          billions of collisions) to gas molecules that make up the air inside the balloon. The molecules of air in
+          the balloon will move around faster as a result; that is, they will gain kinetic energy.
+        </li>
+      </ul>
+
+      <p>
+        You can watch a fun video demonstration of gas in a balloon cooling
+        <a href="https://www.youtube.com/watch?v=9vRMZSEF_a4">here</a>.
+      </p>
+     <br/>
+
+    </div>
+
+<div class="page" id="page9">
+      <p>
+        Thermal energy can also be transferred between a solid and a liquid. For example: 
+      </p>
+
+      <ul class="brm-list">
+        <li>
+          Thermal energy due to the motion of the water molecules will transfer from the (warmer) water to the (colder)
+          ice cube in the water. The arrows in the picture show the direction of thermal energy transfer: from the water
+          to the ice. The water molecules surrounding the ice cube will collide with the molecules that make up the ice
+          cube and transfer their energy of motion to the molecules of the ice cube. Of course, as you know, this leads
+          to the ice cube melting in the water. It also causes the water to cool, since the liquid water molecules lose
+          kinetic energy to the molecules of the ice cube.
+        </li>
+      </ul>
+
+      <img alt="Cup of  hot water with ice cube and energy arrows pointing to the ice cube. " class="img-centered img-size" src="EnergyIceCubeA1-T1.jpg"/>
+      <br/>
+
+      <!-- Quiz: Checkbox -->
+      <form class="quiz_checkbox quiz">
+        <b>Q3: Thermal energy and heat are:</b>
+        <input name="question" type="checkbox" value="incorrect"/>
+        <div class="label">a) Different kinds of (fluid-like) substances.
+        </div><br/>
+        <input name="question" type="checkbox" value="correct"/>
+        <div class="label">b) Related to the motion of atoms/molecules.
+        </div><br/>
+        <input name="question" type="checkbox" value="incorrect"/>
+        <div class="label">c) a &amp; b
+        </div><br/>
+        <input name="question" type="checkbox" value="incorrect"/>
+        <div class="label">d) other
+        </div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          Right! Heat and thermal energy are not different types of substances. They are really just related to the
+          amount of motion
+          of atoms/molecules.
+        </div>
+        <div class="feedback-incorrect feedback">
+          Actually, heat and thermal energy are not different types of substances. They are really just related to the
+          amount of motion
+          of atoms/molecules.
+        </div>
+      </form>
+
+      <!-- Quiz: Choice -->
+      <form class="quiz_choice quiz">
+        <b>Q4: You are learning how to cook and offered to make dinner for your family. But you forgot to thaw the two
+          identical jars of spaghetti sauce you left in the freezer! So, you fill Pot A with 1 liter of water at 50°C
+          and an identical pot, Pot B, with 1 liter of water at 90°C. You put a jar of the sauce into each
+          pot. Which jar will thaw first?</b>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) The jar in the 50°C water (Pot A).</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">b) The jar in the 90°C water (Pot B).</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) Neither. They would thaw at about the same time.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) It's impossible to know.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          That's correct! The spaghetti sauce in the hotter water (Pot B) will thaw first. This is because thermal
+          energy is transferred
+          to the spaghetti sauce faster when the water is warmer. So, the sauce will gain the thermal energy needed to
+          thaw it faster.
+        </div>
+        <div class="feedback-incorrect feedback">
+          Well, the spaghetti sauce in the hotter water (Pot B) will thaw first. This is because thermal energy is
+          transferred to the
+          spaghetti sauce faster when the water is warmer. So, the sauce will gain the thermal energy needed to thaw
+          it faster.
+        </div>
+      </form>
+
+    </div>
+
+
+
+            
+    <!-- Nav Buttons -->
+    <div class="nav-btn-container">
+  <img id="back-btn-inactive" class="nav-btn" src="../_assets/WhiteGrayBlue_smaller.jpg"> 
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/WhiteGrayBlue_smaller.jpg"> 
+    <img id="back-btn-active" class="nav-btn" src="../_assets/ButtonBlackWhite.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/ButtonBlackWhite.png">
+</div>
+
+    <br>
+
+
+            
+<div class="nav-toc-container">
+      <h3>Table of Contents: Thermal Energy</h3>
+      <ul>
+        <li><a href="#top" onclick="tocPageJump(1)">Introduction</a></li>
+        <li><a href="#top" onclick="tocPageJump(2)">What is Thermal Energy?</a></li>
+        <li><a href="#top" onclick="tocPageJump(3)">Thermal Energy vs. Temperature</a></li>
+        <li><a href="#top" onclick="tocPageJump(4)">Movement of Thermal Energy</a></li>
+        <li><a href="#top" onclick="tocPageJump(5)">Reason for Thermal Energy Transfer</a></li>
+        <li><a href="#top" onclick="tocPageJump(6)">Simulation of thermal energy transfer</a></li>
+        <li><a href="#top" onclick="tocPageJump(7)">Temperature difference &amp; "speed" of thermal energy transfer</a></li>
+        <li><a href="#top" onclick="tocPageJump(8)">Thermal energy transfer between solid &amp; gas</a></li>
+        <li><a href="#top" onclick="tocPageJump(9)">Thermal energy transfer between solid &amp; liquid</a></li>
+      </ul>
+    </div>
+
+        </div>
+
+        
+
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png">
+            <br>
+            <p>
+                ***Note for Teachers: You can access more information about this website and find other resources for science inquiry on the
+                <a href="https://www.isptutor.org/background-research"> ISP Tutor website.</a>
+            </p>
+            <p>©2021 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>
+                Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in part by the National Science Foundation, Grant SBE035442. The ISP Tutor project is funded by IES,
+                Grant R305A170176.
+            </p>
+            <p>
+                The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education, through Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of
+                the authors and do not represent views of the Institute or the U.S. Department of Education.
+            </p>
+        </div>
+
+
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
+</html>

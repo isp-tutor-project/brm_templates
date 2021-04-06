@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Atoms: The Basics</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <!-- <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg"> -->
+         <div style="text-align:center" id="research-question"> </div>
+         
+
+<div style="float:left;margin-left:20px">
+<br><br>
+        <img alt="ISP logo" src="../ISPtutor_logo.jpg" width="80"/>
+      </div>
+
+
+
+      <div style="float:right;margin-right:20px">
+
+      <br><br><br>
+
+      <script type="text/javascript">
+
+      function newPopup(url) {
+            popupWindow = window.open(
+              url,'popUpWindow','height=400,width=800,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+          }
+
+          </script>
+        
+        <a href="JavaScript:newPopup('../glossary');">
+        
+        <button id="home-btn" class="glossary-btn">Glossary</button>
+        
+        </a>
+
+      </div>
+
+
+
+
+
+
+
+        <div id="header-bg-extension" style="text-align:center;font-size:18px"><br><b>You can search below or click on a science 
+        area to find information for your research question:</b></div>
+                <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn htmlhelp">Home &amp; HELP</button></a>
+           <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            
+        </div>
+
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Atoms: The Basics</h1>
+
+<div class="page" id="page1">
+      <h4>Introduction</h4>
+
+      <p>
+        All matter—desks, books, clothes, and even your body, as well as all other animals and plants—is made up of
+        atoms. Atoms are very tiny. For example, if you had a very powerful microscope, you could “zoom” in on one cell
+        of your body. In the picture below, one cell in the arm of the boy is magnified (the second picture below).
+        If you keep zooming in more and more, then you would be able to see DNA molecules that are in the cells.
+        (This is shown in the third picture below.) The individual atoms that make DNA molecules are represented as the
+        lighter and darker blue and black spheres. One of the atoms (hydrogen) that makes up a DNA molecule is
+        represented on the far right.
+      </p>
+
+      <img class="img-centered img-size_700" src="FinalMoleculeImageCombined126_rev.jpg"/>
+     <br/>
+
+      <p>
+        Atoms are the smallest units of matter that can exist by themselves or in combination with other atoms. Smaller
+        units of matter—such as electrons, protons, and neutrons—generally do not exist (for a very long time) on their
+        own; they quickly combine with other particles that are nearby to form atoms! (By the end of this unit, you
+        should have some idea why.)
+      </p>
+      <p>
+        Because of this, atoms are often called the “building blocks” of all matter. Atoms combine with other atoms
+        to make molecules (including DNA), and more complex structures like chromosomes, cells, your body, and
+        everything else in the universe!
+      </p>
+      <p>
+        <b>Why should I care about atoms?</b> Because atoms make up just about everything, it is very important to have
+        a basic understanding of atoms. It's important to understand what atoms are made of and the forces
+        that keep atoms together and let them bond with other atoms to make larger objects (including DNA molecules,
+        different types of crystals such as salt and sugar, etc.).
+      </p>
+
+    </div>
+
+<div class="page" id="page2">
+
+      <form class="quiz_choice quiz">
+        <b>Q1 (check your basic understanding): Which of the following is given in order from smallest (first) to
+          largest (last)?
+        </b>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) DNA molecules; Cell; Atom.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) Atom; Cell; DNA molecules.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) DNA molecules; Atom; Cell.</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">d) Atom; DNA molecules; Cell.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">e) Cell; Atom; DNA molecules.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          That's correct! Atoms are the smallest, then DNA molecules, and cells are the largest. So (d) is the correct
+          answer.
+        </div>
+        <div class="feedback-incorrect feedback">
+          Well, actually, atoms are the smallest, then DNA molecules, and cells are the largest. So, (d) is the correct
+          answer.
+        </div>
+      </form>
+
+
+     <br/>
+
+    </div>
+
+<div class="page" id="page3">
+      <a name="PartsAtoms"></a>
+
+      <p>
+        <b>Parts of atoms: protons, neutrons, and electrons.</b> All atoms have a nucleus, which is the center of the
+        atom. The nucleus of atoms is made of protons and neutrons. Atoms also have electrons, which are much smaller
+        than protons or neutrons.
+      </p>
+      <p>
+        Electrons orbit—or move around—the nucleus at very high speeds. Two different kinds of atoms (or elements) are
+        shown below. The atom on the left (hydrogen) has one proton and one electron. Hydrogen is the only type of
+        atom/element that does not have any neutrons in its nucleus. The atom on the right (an oxygen atom) has 8
+        protons, 8 electrons, and 8 neutrons.
+      </p>
+
+      <img class="img-centered img-size_500" src="Hydrogen_Oxygen_caption.PNG"/>
+
+
+      <p>
+        Important note: In the figure above, the circles around the atoms don't actually exist. The circles are called
+        "Energy circles." These Energy circles represent about how much energy the electrons on that circle have
+        (due to their motion and their potential for even more motion). The actual paths or orbitals of electrons in
+        atoms can be very complex.
+      </p>
+      <p>(For more information about Energy circles, you can
+        <a class="brm-link" href="../atoms-electron-organization/" target="_blank">click here</a>.)
+      </p>
+
+    </div>
+
+<div class="page" id="page4">
+      <p>
+        <b>Charges of protons, neutrons, and electrons.</b> A very important fact to remember is that these three
+        different parts of atoms also have three different electric charges:
+      </p>
+
+      <ul class="brm-list">
+        <li>
+          Protons are positively charged (represented as a positive sign, "+"). You can think of "pro" as "positive."
+          If you are "pro" something, that means you like (or are positive about) it.
+        </li>
+      </ul>
+
+      <ul class="brm-list">
+        <li>
+          Neutrons have no charge. You can remember that <u>neutr</u>ons are "<u>neutr</u>al."
+        </li>
+        <li>
+          Electrons are negatively charged (represented as a negative sign, "<span class="text-xl">-</span>"). Some
+          people
+          find it hard to remember that electrons have a negative charge. One way to remember is that if you're shocked
+          by electricity, which is the movement of electrons, you're going to be pretty angry or negative!
+        </li>
+      </ul>
+
+      <img class="img-centered img-size_med" src="Hydrogen_Oxygen_caption.PNG"/>
+      <br/>
+    </div>
+
+<div class="page" id="page5">
+
+      Before moving on, check your basic understanding of eletric charges. Fill in the blanks:
+     <br/><br/>
+      <li>
+        The electric charge of neutrons is:
+        <select class="fib_select" id="FIB1" onchange="fibUpdate('FIB1')">
+          <option disabled="" selected="" value="#ffffff">(Select one)</option>
+          <option value="#ed8587">positive (+)</option>
+          <option value="#ed8587">negative (-)</option>
+          <option value="#11bf7a">neutral (no charge)</option>
+          <option value="#ed8587">strong</option>
+        </select>
+      </li>
+     <br/>
+      <li>
+        The electric charge of electrons is:
+        <select class="fib_select" id="FIB2" onchange="fibUpdate('FIB2')">
+          <option disabled="" selected="" value="#ffffff">(Select one)</option>
+          <option value="#ed8587">positive (+)</option>
+          <option value="#11bf7a">negative (-)</option>
+          <option value="#ed8587">neutral (no charge)</option>
+          <option value="#ed8587">strong</option>
+        </select>
+      </li>
+     <br/>
+      <li>
+        The electric charge of protons is:
+        <select class="fib_select" id="FIB3" onchange="fibUpdate('FIB3')">
+          <option disabled="" selected="" value="#ffffff">(Select one)</option>
+          <option value="#11bf7a">positive (+)</option>
+          <option value="#ed8587">negative (-)</option>
+          <option value="#ed8587">neutral (no charge)</option>
+          <option value="#ed8587">strong</option>
+        </select>
+      </li>
+    </div>
+
+<div class="page" id="page6">
+
+
+      <p>
+        <b>Electric force.</b> Particles that have opposite charges (e- and p+) attract each other. Particles that
+        have the same charge repel (or push each other away). This means that protons (p+), which are positively
+        charged, repel each other. Also, electrons (e-), which are negatively charged, repel each other.
+      </p>
+      <p>
+        We call the force between charged particles the "electric force." The electric force is named after electrons.  
+      </p>
+
+      <img alt="electric_force_digram img-size_smaller" class="img-centered" src="ElectricforceUnit.png"/>
+      <br/>
+
+      <p>
+        Because of the electric force, electrons and protons attract each other.
+      </p>
+
+      <ul class="brm-list">
+        <li>
+          Electrons orbit around the nucleus because of the attractive electric force between electrons and protons.
+          In other words, the protons pull the electrons toward them, keeping the electrons orbiting around the
+          nucleus. (But electrons and protons don't collide with each other for complex reasons not discussed here.)
+        </li>
+        <li>
+          This is kind of like our solar system, where the sun is the nucleus in the center and the planets are like
+          the electrons. Just like the pull from gravity causes the planets to orbit around the sun, the electric
+          force's pull between oppositely-charged particles causes the electrons to orbit around the nucleus.
+        </li>
+      </ul>
+
+      <p>
+        Because of the electric force, electrons repel (or push away) other electrons.
+      </p>
+
+      <ul class="brm-list">
+        <li>This is why electrons are pretty spread out in atoms.</li>
+      </ul>
+
+      <p>
+        Finally, protons repel other protons because of the electric force. 
+      </p>
+
+      <ul class="brm-list">
+        <li>
+          You may wonder why protons stay together in the nucleus then. Neutrons actually hold protons together in
+          the nucleus by another type of force, called the "strong" force. This type of force is more advanced, though.
+          (You may learn more about the strong force in high school or college; or, you can do some research on your
+          own to learn about it if you want.) 
+        </li>
+      </ul>
+    </div>
+
+<div class="page" id="page7">
+
+      <p>
+        <b>Why the electric force is important.</b> The electric force is very important to understand because it
+        is responsible for atoms to even exist!! Our bodies (which are made of lots of carbon, oxygen, and hydrogen
+        atoms) would not exist if it were not for the electric force! Trees and other plants would not exist! Animals
+        would not exist! Planets would not exist! (You get the idea.)
+      </p>
+      <p>
+        The electric force is also responsible for a lot of things you may not have realized. 
+      </p>
+
+      <ul class="brm-list">
+        <li>
+          For example, the "stickiness" you feel on your fingers after you eat a piece of sugary candy is caused
+          by electric forces. 
+        </li>
+        <li>
+          The little shock you get when you touch a door knob (especially if the air is dry) is caused by electric
+          forces.
+        </li>
+
+      </ul>
+
+      <img class="img-centered img-size" src="StaticElectricity_revisedimage.jpg"/>
+
+      <ul class="brm-list">
+        <li>
+          Shown above, if you rub a balloon on your hair, your hair will "stick" to the balloon. This is because when
+          the balloon
+          material rubbed your hair, electrons (e-) from your hair moved to the balloon. Now the balloon is negatively
+          charged, which is shown by the minus (-) signs on the balloon. Your hair is positively charged, since it lost
+          electrons.
+          Your hair will be attracted to the balloon because of the
+          <select class="fib_select" id="FIB4" onchange="fibUpdate('FIB4')">
+            <option value="#ffffff">(Select one)</option>
+            <option value="#ed8587">gravitational</option>
+            <option value="#11bf7a">electric</option>
+            <option value="#ed8587">magnetic</option>
+            <option value="#ed8587">strong</option>
+          </select>
+
+          force.
+        </li>
+      </ul>
+
+
+    </div>
+
+<div class="page" id="page8">
+
+      <!-- Quiz: Choice -->
+      <form class="quiz_choice quiz">
+        <b>Q2: What will happen to a positively-charged Sodium atom (Na+) and negatively-charged Chlorine atom (Cl-)
+          that are close to each other?
+        </b>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) They will repel each other and move away from each other.</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">b) They will attract each other and move closer to each other.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) They will just keep moving around randomly, as if the other atom were not there.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) How should I know?</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          That's correct! The Na+ and Cl- atoms have opposite electric charges. As a result, they will be attracted to
+          each other and
+          move toward each other.
+        </div>
+        <div class="feedback-incorrect feedback">
+          Well, actually, the Na+ and Cl- atoms have opposite electric charges. As a result, they will be attracted to
+          each other and
+          move toward each other. So, (b) is the correct answer.
+        </div>
+      </form>
+
+    </div>
+
+<div class="page" id="page9">
+
+      <p>
+        <i><b>Strength of the Electric force.</b></i> Let's say you have two electrons, which both
+        have a negative charge. As the two electrons move farther from each other, the electric force pushing them away
+        from each other gets smaller. This is shown below, where the length of the arrows represents the strength of
+        the electric forces (F<sub>e</sub>).
+      </p>
+
+     <br/>
+      <img alt="electron_distance_diagram" class="img-centered img-size" src="electron_distance_Fe.PNG"/>
+     <br/>
+
+      <p>
+        If you have two oppositely-charged particles (shown below), the electric force (F<sub>e</sub>) pulling
+        them toward each other increases as they get closer to each other.
+      </p>
+
+     <br/>
+      <img alt="electric_diagram" class="img-centered img-size" src="ProElec_Dist_Fe.PNG"/>
+     <br/>
+
+      <p>
+        <b>In general,</b> the strength of the electric force increases the closer the two charged particles are. And
+        the strength of the electric force decreases as the charged particles move away from each other.
+      </p>
+
+      <!-- Quiz: Choice -->
+      <form class="quiz_choice quiz">
+        <b>Q3: A negatively-charged Chlorine atom (Cl-) is near two positively-charged Sodium atoms (Na+).
+          Based on distance from the Cl- atom, which Na+ atom is more likely to bond with the Cl- atom to form a
+          molecule of NaCl?</b>
+
+        <img alt="Na_Cl" class="img-centered img-size" src="Q3_imagNaClNa.PNG"/>
+       <br/>
+
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">a) Na+ #1.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) Na+ #2.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) Both Na+ atoms will be equally likely to bond with the Cl- atom.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) How should I know?</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          That's correct! The Na+ #1 atom is more likely to bond with the Cl- atom. This is because it is closer to the
+          Cl- atom and will be pulled more strongly. So, (a) is the correct answer.
+        </div>
+        <div class="feedback-incorrect feedback">
+          Well, actually, The Na+ #1 atom is more likely to bond with the Cl- atom. This is because it is closer to the
+          Cl- atom and will be pulled more strongly. So, (a) is the correct answer.
+        </div>
+      </form>
+
+      <p>
+        For more information about the strength of the electric force (Coulomb's Law), you can
+        <a class="brm-link" href="../coulombs-law/" target="_blank">click here</a>.
+        (This is a bit more advanced: high school level.)
+      </p>
+    </div>
+
+<div class="page" id="page10">
+      <p>
+        <b>Masses of protons, neutrons, and electrons.</b> Many people do not understand that all atoms—even the
+        smallest ones that make up air—have some mass and weight! These masses are very small, and people might not be
+        able to detect their mass, but they are made of matter. And all matter has mass! When you feel the wind (moving
+        air) hitting your face, you can feel this because the atoms (and groups of atoms, called molecules) that make
+        up the air have some mass.
+      </p>
+      <p>
+        The parts of atoms have masses (even though they are very very very small, from a human's point of view!).
+      </p>
+
+      <ul>
+        <li>
+          Protons and neutrons have about the same mass (and weight). The mass of one proton or neutron is what
+          scientists call one "atomic mass unit" or "amu" (pronounced "AY-EM-YOU"). One amu is equal to
+          0.00000000000000000000000166 grams. This is so small, we can't feel the mass (or weight) of one proton or
+          neutron. But, they do have SOME mass (and weight).
+        </li>
+      </ul>
+      <ul>
+        <li>
+          An electron has even <b>less</b> mass than a proton or neutron, or about 1/1837 the mass (and weight) of a
+          proton or neutron. This means it takes 1,837 electrons to equal the mass of just one proton or neutron.
+        </li>
+      </ul>
+
+     <br/>
+
+      <p>
+        The relative masses of protons, neutrons, and electrons are represented below (as a proportion of their volume):
+      </p>
+
+     <br/>
+      <img alt="electron_masses" class="img-centered img-size_med" src="ProNeuElmasses.PNG"/>
+     <br/>
+
+      <p>
+        The mass of an atom is the sum of the masses of its three parts: protons, neutrons, and electrons. So, if you
+        know how many protons, neutrons, and electrons an atom has, you can figure out the mass of the atom.
+        Or, you can just look up the mass of different types of atoms (called elements) in the Periodic table of elements.
+      </p>
+    </div>
+
+<div class="page" id="page11">
+     <div class="text-centered"> <strong>Use this game to check and reinforce your knowledge about protons, neutrons, and electrons!</strong>
+     <br/><br/><br/>
+
+        <iframe height="605" src="https://isp-tutor-project.github.io/demo/games/subatomicparticle/" width="890">
+        </iframe>
+      </div>
+
+      <p>
+        <b>When you're done with this game, Click the "Chemical &amp; Physical Reactions" button above to see the list of
+          units related to your research question. </b>
+      </p>
+    </div>
+
+<div class="page" id="page12">
+      <strong>An important thing to remember about atoms here on earth is that they are always moving! </strong>
+      Whether atoms make up a solid, liquid, or gaseous substance, they are always moving. They only stop moving if it
+      is EXTREMELY cold (absolute zero).
+      But here on Earth, it is MUCH warmer than that (thankfully for us!).
+     <br/><br/><br/>
+
+    </div>
+
+
+
+            
+    <!-- Nav Buttons -->
+    <div class="nav-btn-container">
+  <img id="back-btn-inactive" class="nav-btn" src="../_assets/WhiteGrayBlue_smaller.jpg"> 
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/WhiteGrayBlue_smaller.jpg"> 
+    <img id="back-btn-active" class="nav-btn" src="../_assets/ButtonBlackWhite.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/ButtonBlackWhite.png">
+</div>
+
+    <br>
+
+
+            
+<div class="nav-toc-container"> 
+
+      <h3>Table of Contents: Atoms unit</h3>
+      
+        <li><a href="#top" onclick="tocPageJump(1)">What's an atom?</a></li>
+        <li><a href="#top" onclick="tocPageJump(2)">Question 1</a></li>
+        <li><a href="#top" onclick="tocPageJump(3)">Parts of Atoms</a></li>
+        <li><a href="#top" onclick="tocPageJump(4)">Electric charges of p, n, e</a></li>
+        <li><a href="#top" onclick="tocPageJump(5)">Understanding check</a></li>
+        <li><a href="#top" onclick="tocPageJump(6)">Electric force</a></li>
+        <li><a href="#top" onclick="tocPageJump(7)">What Electric Charges Do</a></li>
+        <li><a href="#top" onclick="tocPageJump(8)">Question 2</a></li>
+        <li><a href="#top" onclick="tocPageJump(9)">Electric force strength decreases with distance</a></li>
+        <li><a href="#top" onclick="tocPageJump(10)">Masses of atom parts</a></li>
+        <li><a href="#top" onclick="tocPageJump(11)">Atoms Game</a></li>
+        <li><a href="#top" onclick="tocPageJump(12)">At temps on Earth, atoms are always moving!</a></li>
+      
+      
+ </div>   
+
+        </div>
+
+        
+
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png">
+            <br>
+            <p>
+                ***Note for Teachers: You can access more information about this website and find other resources for science inquiry on the
+                <a href="https://www.isptutor.org/background-research"> ISP Tutor website.</a>
+            </p>
+            <p>©2021 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>
+                Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in part by the National Science Foundation, Grant SBE035442. The ISP Tutor project is funded by IES,
+                Grant R305A170176.
+            </p>
+            <p>
+                The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education, through Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of
+                the authors and do not represent views of the Institute or the U.S. Department of Education.
+            </p>
+        </div>
+
+
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
+</html>

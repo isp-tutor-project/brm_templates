@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Force, Duration and Speed</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <!-- <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg"> -->
+         <div style="text-align:center" id="research-question"> </div>
+         
+
+<div style="float:left;margin-left:20px">
+<br><br>
+        <img alt="ISP logo" src="../ISPtutor_logo.jpg" width="80"/>
+      </div>
+
+
+
+      <div style="float:right;margin-right:20px">
+
+      <br><br><br>
+
+      <script type="text/javascript">
+
+      function newPopup(url) {
+            popupWindow = window.open(
+              url,'popUpWindow','height=400,width=800,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+          }
+
+          </script>
+        
+        <a href="JavaScript:newPopup('../glossary');">
+        
+        <button id="home-btn" class="glossary-btn">Glossary</button>
+        
+        </a>
+
+      </div>
+
+
+
+
+
+
+
+        <div id="header-bg-extension" style="text-align:center;font-size:18px"><br><b>You can search below or click on a science 
+        area to find information for your research question:</b></div>
+                <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn htmlhelp">Home &amp; HELP</button></a>
+           <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            
+        </div>
+
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Force, Duration and Speed</h1>
+
+<div class="page" id="page1">
+      <p>
+        <b>Relationship between force, mass, and acceleration.</b> The acceleration of an object (in a given direction)
+        is caused by (a) the net force acting on the object in that direction and (b) the mass of the object. This is
+        Newton's second law. If the net force acting on an object in a direction is zero, then the object's
+        acceleration in that direction would also be zero. You can easily check for yourself by plugging zero in for
+        the net force into
+        <a class="brm-link" href="../forces-and-motion-newton-s-second-law/" target="_blank">Newton's Second Law</a>
+        equation (below) to find the acceleration:
+      </p>
+
+      <br/>
+      <img class="img-centered img-size_med" src="NSL_AccDef.png"/>
+
+     <br/>
+
+    </div>
+
+<div class="page" id="page2">
+
+      <b>Check your understanding...</b>
+
+    <form class="quiz_choice quiz">
+      <b>Q1: An object is moving horizontally at a speed of 10 m/s. The only forces acting on the object are gravity and the force of the ground pushing upward. The object's speed will:</b>
+      <input name="question" type="radio" value="incorrect"/>
+      <div class="label">a) Increase</div><br/>
+      <input name="question" type="radio" value="incorrect"/>
+      <div class="label">b) Decrease</div><br/>
+      <input name="question" type="radio" value="correct"/>
+      <div class="label">c) Stay the same</div><br/>
+      <input name="question" type="radio" value="incorrect"/>
+      <div class="label">d) More information is needed to answer.</div><br/>
+      <button class="submit-btn" type="submit">Submit</button>
+      <div class="feedback-correct feedback">
+          Right! The object is moving in the horizontal direction.
+          The only forces acting on the object are in the vertical direction.
+          So, there are no forces acting on the body in the horizontal direction. Because of this, the body's acceleration in the horizontal direction will be zero.
+          This means that the object's velocity (or speed in this direction) will not change.
+      </div>
+      <div class="feedback-incorrect feedback">
+          Actually, the object is moving in the horizontal direction. The only forces acting on the object are in the vertical direction.
+          So, there are no forces acting on the body in the horizontal direction. Because of this, the body's acceleration in the horizontal direction will be zero.
+          This means that the object's velocity (or speed in this direction) will not change.
+      </div>
+    </form>
+
+   <br/>
+  </div>
+
+<div class="page" id="page3">
+      <p>
+        If the net force acting on the object in a given direction is not equal to zero, the object's speed will
+        change, or it will accelerate, in that direction <i>for as long as the force acts on the object</i>. 
+      </p>
+      <p>
+        <i><b>Example 1.</b></i> Force A (10 Newtons) acts on an object-that is initially at rest-in the horizontal
+        direction. Because the object is on an ice surface, there is no friction acting on the object. So, the only
+        force acting on the object in the horizontal direction is Force A. The force is constant (meaning it does not
+        change; it is always 10 N) and keeps acting on the object all the way across the ice (to after Point D, shown
+        below). So, the speed of the object will keep increasing all the way across the ice. It will be slowest
+        at Point A, faster at Point B, still faster at Point C and fastest at Point D.
+      </p>
+
+
+      <img alt="image showing speed of object over time" class="img-centered img-size_700" src="ForceAtPoints.png"/>
+
+      <p>
+        Because the object was pushed by a constant force (10 N) all the way across the ice, the acceleration of the
+        object will also be constant (or will not change). A constant acceleration means that every second, the
+        object's speed will increase by the same amount. If the object had a mass of 2 kg, then its acceleration would
+        be 5 m/s<sup>2</sup> (because, applying Newton's Second Law, 10 N divided by 2 kg is 5 m/s<sup>2</sup>). 
+        This means that every second the force acts on the object, its speed would increase by 5 m/s. This constant
+        acceleration of 5 m/s<sup>2</sup> is shown in the graph below. 
+      </p>
+     <br/>
+
+      
+        <img alt="graph showing constant acceleration" class="img-centered img-size_med" src="SpeedTimeGraph2.png"/>
+    
+
+    </div>
+
+<div class="page" id="page4">
+      <p>
+        <b>No "net" force means there is no acceleration!</b>
+      </p>
+      <p>
+        Reminder: If the net force acting on the object in a given direction is not equal to zero, the object's speed
+        will change, or it will accelerate, in that direction <i>for as long as the force acts on the object</i>.
+      </p>
+      <p>
+        But, the moment that any pushing (or pulling) on the object stops and there is no longer a force acting on the
+        object in a given direction, <i>the object will no longer accelerate in that direction</i>. So, in Example 1,
+        if Force A stops acting on the object at Point C, the object would also stop accelerating at Point C. 
+      </p>
+
+      <br/>
+
+      <form class="quiz_choice quiz">
+        <b>Q2: True or false: After you throw a ball (and you are no longer touching it), there will still be some "leftover" force from your throw acting on the ball.</b>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) True</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">b) False</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) I have no idea.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+            Right! While you are touching the ball, your hand is exerting a force on the ball (pushing the ball).
+            But once you let the ball go, you are no longer pushing on the ball.
+            So, there is no force from your hand acting on the ball after you throw it.
+        </div>
+        <div class="feedback-incorrect feedback">
+            Actually, while you are touching the ball, your hand is exerting a force on the ball (pushing the ball).
+            But once you let the ball go, you are no longer pushing on the ball.
+            So, there is no force from your hand acting on the ball after you throw it.
+        </div>
+      </form>
+
+      <br/>
+
+      <img alt="image showing speed of object over time" class="img-centered img-size_700" src="ForceAtPoints.png"/>
+
+      <form class="quiz_choice quiz">
+        <b>
+            Q3: In the scenario of Example 1, shown above, in Case A, the force acts on the object from the starting point to point A.
+            In Case B, the same force acts on the object from the starting point to point B.
+            In which case would the speed of the object be greater at point D?</b>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) Case A</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">b) Case B</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) The speeds would be the same in both Cases.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) I don't know.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+            You're right! The object would accelerate (only) while the force is acting on the object.
+            So, the force acts on the object for a longer period of time in Case B than Case A.
+            As a result, the object's speed at point D would be greater in Case B.
+        </div>
+        <div class="feedback-incorrect feedback">
+            Well actually, the object would accelerate (only) while the force is acting on the object.
+            So, the force acts on the object for a longer period of time in Case B than Case A.
+            As a result, the object's speed at point D would be greater in Case B.
+        </div>
+      </form>
+
+      <br/>
+
+
+        <img class="img-centered img-size_med" src="SpeedVsPosition.GIF"/>
+
+
+     <br/><br/>
+
+      <form class="quiz_choice quiz">
+        <b>Q4: In the scenario of Example 1 above, a constant force pushes on the object to the right from its starting position to point B.
+          After point B, there is no horizontal force acting on the body.
+          Which of the lines on the graph to the left best shows the speed of the object from its starting point to point D?</b>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) L1</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">b) L2</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) L3</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) L4</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+            That's right! The object would accelerate (or increase in speed) while the force is acting on the object.
+            So, the object's speed would increase from its starting point to point B. At point B, there are no forces acting on the object in the horizontal direction.
+            So, the speed would remain constant after point B (constant speed is shown as a horizontal line on the graph).
+        </div>
+        <div class="feedback-incorrect feedback">
+            Well actually, the object would accelerate (or increase in speed) while the force is acting on the object.
+            So, the object's speed would increase from its starting point to point B. At point B, there are no forces acting on the object in the horizontal direction.
+            So, the speed would remain constant after point B (constant speed is shown as a horizontal line on the graph).
+        </div>
+      </form>
+
+    </div>
+
+
+
+            
+    <!-- Nav Buttons -->
+    <div class="nav-btn-container">
+  <img id="back-btn-inactive" class="nav-btn" src="../_assets/WhiteGrayBlue_smaller.jpg"> 
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/WhiteGrayBlue_smaller.jpg"> 
+    <img id="back-btn-active" class="nav-btn" src="../_assets/ButtonBlackWhite.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/ButtonBlackWhite.png">
+</div>
+
+    <br>
+
+
+            
+        </div>
+
+        
+
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png">
+            <br>
+            <p>
+                ***Note for Teachers: You can access more information about this website and find other resources for science inquiry on the
+                <a href="https://www.isptutor.org/background-research"> ISP Tutor website.</a>
+            </p>
+            <p>©2021 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>
+                Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in part by the National Science Foundation, Grant SBE035442. The ISP Tutor project is funded by IES,
+                Grant R305A170176.
+            </p>
+            <p>
+                The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education, through Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of
+                the authors and do not represent views of the Institute or the U.S. Department of Education.
+            </p>
+        </div>
+
+
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Earth&#39;s Gravitational Force</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <!-- <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg"> -->
+         <div style="text-align:center" id="research-question"> </div>
+         
+
+<div style="float:left;margin-left:20px">
+<br><br>
+        <img alt="ISP logo" src="../ISPtutor_logo.jpg" width="80"/>
+      </div>
+
+
+
+      <div style="float:right;margin-right:20px">
+
+      <br><br><br>
+
+      <script type="text/javascript">
+
+      function newPopup(url) {
+            popupWindow = window.open(
+              url,'popUpWindow','height=400,width=800,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+          }
+
+          </script>
+        
+        <a href="JavaScript:newPopup('../glossary');">
+        
+        <button id="home-btn" class="glossary-btn">Glossary</button>
+        
+        </a>
+
+      </div>
+
+
+
+
+
+
+
+        <div id="header-bg-extension" style="text-align:center;font-size:18px"><br><b>You can search below or click on a science 
+        area to find information for your research question:</b></div>
+                <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn htmlhelp">Home &amp; HELP</button></a>
+           <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            
+        </div>
+
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Weight on Earth and Other Planets</h1>
+
+<div class="page" id="page1">
+      <p>
+        <b>What is Weight?</b> Simply put, an object's <b>weight</b> on Earth is the force of gravity pulling on the object. 
+
+        The force of gravity pulling on the object &mdash; or the object's weight &mdash; is proportional to the masses of both the 
+        Earth and the object. So, if the object has more mass, its weight will be greater. Also, if the mass of the Earth somehow 
+        increased, the object's weight would 
+
+        <select class="fib_select" id="FIB1" onchange="fibUpdate('FIB1')">
+            <option disabled="" selected="" value="#ffffff">(Select one)</option>
+            <option value="#11bf7a">increase.</option>
+            <option value="#ed8587">decrease.</option>
+            <option value="#ed8587">stay the same.</option>
+           
+          </select>
+        </p>
+
+      <div class="img3Col imgClear">
+        <div class="imgCol">
+          <img width="300" src="EarthWeight_smallerperson.png"/>
+        </div>
+        <div class="imgCol">
+          <img width="300" src="WeightEarth.png"/>
+        </div>
+        
+        
+      </div>
+
+
+        <br>
+        <p>As discussed in the <a class="brm-link" href="../mass-gravitationalforce/index.html" target="_blank">unit on gravitational forces</a>, 
+        like all forces, gravity is a mutual force. This means that the force of gravity on an object on Earth is equal to (but opposite directions
+        from) the force of the object on the Earth. (This idea is shown above, where the forces are equal but in opposite directions.)
+      <p>
+        <b>Calculating object weight.</b> The weight of an object here on Earth is equal to the mass
+        of the object times the acceleration due to gravity on Earth, or <b>g</b>, which is about 10 m/s<sup>2</sup>:
+      </p>
+      <p class="text-centered">
+        <b>Weight of object (on Earth) = mass of object * 10 m/s<sup>2</sup></b>
+      </p>
+      <p>
+        The direction of the force of weight is straight down (toward the center of the earth).
+      </p>
+      <br>
+      <p>
+        <b>Weight on other planets.</b> In general, the weight of an object on any planet (or moon), etc., is 
+      proportional to the masses of both the object and planet (or moon). 
+      So, if the object has more mass, its weight will be greater. Also, if the mass of the planet (or moon) is greater,
+      the weight of the object will be greater.
+      </p>
+
+      <p>
+        So, your weight on the biggest planet (Jupiter) would
+        be 
+        
+        <select class="fib_select" id="FIB2" onchange="fibUpdate('FIB2')">
+            <option disabled="" selected="" value="#ffffff">(Select one)</option>
+            <option value="#11bf7a">more than</option>
+            <option value="#ed8587">less than</option>
+            <option value="#ed8587">the same as</option>
+           
+          </select>
+        
+        
+         your weight here on Earth. But you would weigh less on Mercury or Mars than on Earth because these
+        planets are less massive than the Earth.
+      </p>
+
+      <p>
+        The weight of an object on another planet (or moon) is equal to the mass
+        of the object times the acceleration due to gravity on the planet (or moon):
+      </p>
+      <p class="text-centered">
+        <b>Weight of object (on planet/moon) = mass of object * acceleration due to gravity on planet/moon </b>
+      </p>
+      <p>
+        The acceleration is greater for more massive planets (or moons). 
+      </p>
+
+<br>
+      <p><b>Mass is constant. </b>But, of course, your <b>mass</b> would not change. You would still look the same here on Earth and on the other planets, 
+      because the amount of "stuff" you are made of would not change.
+      </p>
+    </div>
+
+
+
+            
+    <!-- Nav Buttons -->
+    <div class="nav-btn-container">
+  <img id="back-btn-inactive" class="nav-btn" src="../_assets/WhiteGrayBlue_smaller.jpg"> 
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/WhiteGrayBlue_smaller.jpg"> 
+    <img id="back-btn-active" class="nav-btn" src="../_assets/ButtonBlackWhite.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/ButtonBlackWhite.png">
+</div>
+
+    <br>
+
+
+            
+        </div>
+
+        
+
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png">
+            <br>
+            <p>
+                ***Note for Teachers: You can access more information about this website and find other resources for science inquiry on the
+                <a href="https://www.isptutor.org/background-research"> ISP Tutor website.</a>
+            </p>
+            <p>©2021 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>
+                Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in part by the National Science Foundation, Grant SBE035442. The ISP Tutor project is funded by IES,
+                Grant R305A170176.
+            </p>
+            <p>
+                The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education, through Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of
+                the authors and do not represent views of the Institute or the U.S. Department of Education.
+            </p>
+        </div>
+
+
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
+</html>

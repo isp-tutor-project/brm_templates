@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>State Change:Evaporation and Melting</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <!-- <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg"> -->
+         <div style="text-align:center" id="research-question"> </div>
+         
+
+<div style="float:left;margin-left:20px">
+<br><br>
+        <img alt="ISP logo" src="../ISPtutor_logo.jpg" width="80"/>
+      </div>
+
+
+
+      <div style="float:right;margin-right:20px">
+
+      <br><br><br>
+
+      <script type="text/javascript">
+
+      function newPopup(url) {
+            popupWindow = window.open(
+              url,'popUpWindow','height=400,width=800,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+          }
+
+          </script>
+        
+        <a href="JavaScript:newPopup('../glossary');">
+        
+        <button id="home-btn" class="glossary-btn">Glossary</button>
+        
+        </a>
+
+      </div>
+
+
+
+
+
+
+
+        <div id="header-bg-extension" style="text-align:center;font-size:18px"><br><b>You can search below or click on a science 
+        area to find information for your research question:</b></div>
+                <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn htmlhelp">Home &amp; HELP</button></a>
+           <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            
+        </div>
+
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>State Change: Evaporation and Melting</h1>
+
+<div class="page" id="page1">
+
+      <p>
+        <b>What is Evaporation?</b> Say you are heating a pot of water on the stove (shown below).
+
+        Thermal energy is produced in the chemical reaction of burning natural gas (which is mostly methane). This
+        reaction produces high-energy (or very fast-moving!) CO<sub>2</sub> and H<sub>2</sub>O molecules.
+
+        These molecules hit the metal molecules that make up the pot. As a result, the molecules of the pot start
+        vibrating faster. Thermal energy is then transferred between the pot's molecules and from the pot's molecules 
+        to nearby water molecules. This causes the water molecules to move around faster and faster. The water's
+        temperature is increasing.
+      </p>
+
+      <img alt="pot of water" class="img-centered img-size_med" src="pot-883036_1920.jpg"/>
+      <br/>
+
+      <p>
+        Soon, some water molecules move fast enough to overcome the pull from
+        <a class="brm-link" href="../electric-force/" target="_blank">electric forces</a>
+        of other water molecules around them. They also have to overcome the electric forces of the water molecules
+        at the surface. When they are moving fast enough, the H<sub>2</sub>O molecules leave the pot and move into the
+        air.
+        These H<sub>2</sub>O molecules are now
+
+
+
+        <select class="fib_select" id="FIB1" onchange="fibUpdate('FIB1')">
+          <option disabled="" selected="" value="#ffffff">(Select one)</option>
+          <option value="#ed8587">in a solid state</option>
+          <option value="#ed8587">in a liquid state</option>
+          <option value="#11bf7a">in a gas state</option>
+        </select>
+
+        called water vapor. This process of going from a liquid to gas state is what we know as <b>evaporation.</b>
+      </p>
+      <p>
+        When a liquid like water evaporates, the molecules themselves do not change when they move from the pot into
+        the air. They are still H<sub>2</sub>O molecules (two hydrogen atoms and one oxygen atom). Because the
+        molecules don't change, this is a
+        <a class="brm-link" href="../chemicalvs-physicalreactions/" target="_blank">physical reaction</a>.
+      </p>
+
+    </div>
+
+<div class="page" id="page2">
+
+      Check your understanding...
+
+      <br/>
+      <form class="quiz_choice quiz">
+        <b>Q1: Which of the following statements do you think is true?</b>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">a) Water evaporates faster when it is at a higher temperature.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) Water evaporates faster when it is at a lower temperature.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) Water evaporates equally fast at higher and lower temperatures.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) There is no way to predict this relationship.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          Right! If water is at a higher temperature, it will evaporate faster.
+        </div>
+        <div class="feedback-incorrect feedback">
+          Actually, if water is at a higher temperature, it will evaporate faster.
+        </div>
+      </form>
+
+      <br/>
+
+      <form class="quiz_choice quiz">
+        <b>Q1.5: Why does water evaporate faster when it is at a higher temperature?</b>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) It has more heat to make it lighter and move up into the atmosphere.</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">b) Its molecules move around faster and can escape the pull of other water molecules.</div>
+        <br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) The water molecules move so fast that they turn into pure energy.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          Right! If water is at a higher temperature, the molecules that make up the water are moving around faster. So,
+          they have more energy
+          to break their bonds with other H<sub>2</sub>O molecules and escape into the air (or evaporate). This is why
+          water evaporates
+          faster at a higher temperature.
+        </div>
+        <div class="feedback-incorrect feedback">
+          Actually, if water is at a higher temperature, the molecules that make up the water are moving around faster.
+          So, they have more energy
+          to break their bonds with other H<sub>2</sub>O molecules and escape into the air (or evaporate). This is why
+          water evaporates
+          faster at a higher temperature.
+        </div>
+
+      </form>
+
+
+    </div>
+
+<div class="page" id="page3">
+
+      <p>
+        <b>Analogies for Evaporation.</b> Evaporation is similar to a rocket blasting off and escaping from the
+        Earth's gravitational field. Rockets need to have enough speed to overcome the pull of gravity and escape
+        from the Earth's atmosphere. To escape into the air (or evaporate), water molecules need to have enough
+        speed to overcome the electric forces of other H<sub>2</sub>O molecules within the liquid water and
+        especially at the surface of the water (where H<sub>2</sub>O molecules are even more strongly bonded
+        together).
+      </p>
+
+      <img alt="space shuttle taking off" class="img-centered img-size_med" src="spaceshuttletakingoff.jpg"/>
+      <br/>
+
+      <p>
+        Another analogy for evaporation is rolling a magnetic steel ball on a table past a magnet. If you roll the
+        ball slowly, the ball will get "caught" in the magnetic field and "stick" to the magnet. But if you roll the
+        ball faster, it will have enough speed to overcome the magnetic attraction and move past the magnet. This is
+        why faster-moving H<sub>2</sub>O molecules are more likely to evaporate. They can "escape"
+        from the electric forces of the other H<sub>2</sub>O molecules.
+      </p>
+
+
+    </div>
+
+<div class="page" id="page4">
+
+      <p>
+        <b>Evaporation of salt water.</b> In the
+        <a class="brm-link" href="../dissolving/" target="_blank">unit on dissolving</a>,
+        we talked about how salt (and also sugar) dissolve in water. But what happens when salt water evaporates?
+        Let's say we have a glass of salt water sitting on a window sill. We forget about it and discover it several
+        weeks later. What will we find?
+      </p>
+      <p>
+        Most likely, most (if not all) of the water will have evaporated. This happens because eventually,
+        individual water molecules will gain enough kinetic energy (from the sun or surrounding air) to evaporate.
+        But the originally dissolved salt (NaCl) will <u>not</u> evaporate with the water molecules.
+      </p>
+      <p>
+        Below is a photo of the inside of a glass that had water with salt dissolved in it. This photo was taken after
+        all the water evaporated (about three weeks later). The salt had formed hard crystals along the inside of the
+        glass as the water evaporated.
+      </p>
+
+      
+        <img alt="glass showing remaining salt" class="img-centered img-size_med" src="RemainingSaltInGlass.jpg"/>
+      
+      <br/>
+
+      <p>
+        <b>Why does the salt stay behind?</b> One reason that the NaCl molecules will not evaporate even though
+        H<sub>2</sub>O molecules do is because they are much heavier than H<sub>2</sub>O molecules. If we look at the
+        <a class="brm-link" href="../periodic-table/" target="_blank">Periodic Table of Elements</a>, we see that the
+        atomic mass of Na is 23 "atomic mass units" or amu. And Cl is about 35 amu. 
+      </p>
+      <p>
+        </p><li>So, one molecules of NaCl is 23 amu + 35 amu = 58 amu.</li>
+      <p></p>
+      <p>
+        In H<sub>2</sub>O, there are two H atoms. Each H atom is only 1 amu. There is one O atom, which is 16 amu.
+      </p>
+      <p>
+        </p><li>So, one H<sub>2</sub>O molecule is only 18 amu.</li>
+      <p></p>
+      <p>
+        Because NaCl molecules are heavier, they are pulled downward by the Earth's gravity more strongly than
+        H<sub>2</sub>O molecules. So, they do not escape from the glass and evaporate into the air.
+      </p>
+    </div>
+
+<div class="page" id="page5">
+      <p>
+        <b>What is Melting?</b> When thermal energy is transferred to ice, the H<sub>2</sub>O molecules
+        begin to vibrate faster and faster. Some of the molecules have enough energy to overcome their bonds with
+        nearby H<sub>2</sub>O molecules. These molecules are no longer fixed in place in the ice crystal (see
+        Crystals unit) and can freely move about. These molecules are now in liquid form. If enough thermal energy
+        is transferred to the ice, the ice will melt completely and become liquid water. In its liquid state, the
+        H<sub>2</sub>O molecules
+        are now moving around independently, kind of "slithering" past each other. But there are still attractions
+        between H<sub>2</sub>O molecules because of electric forces (see the
+        <a class="brm-link" href="../atoms-molecules/" target="_blank">Atoms Unit</a>
+        for more information).
+      </p>
+
+      <br/>
+      <img alt="states of matter-solid, liquid, gas" class="img-centered img-size_700" src="FinalWaterMoleculesGraphic.jpg"/>
+      <br/>
+
+      <p>
+        This simulation below shows the motion of molecules and the distance between the molecules when they go from
+        a solid to liquid to gas state. The molecules are represented as bright blue circles below. They are magnified
+        by a <u>lot</u> so we can see them in this simulation.
+      </p>
+
+      <br/>
+
+      <div data-scrollable="false" style="display:block;text-align:center;margin-right:auto;margin-left:auto;width:480px;height:320px">
+        <div style="position: relative; width: 600px; height: 400px">
+          <a href="https://phet.colorado.edu/sims/html/states-of-matter-basics/latest/states-of-matter-basics_en.html" style="text-decoration: none">
+            <img alt="States of Matter: Basics" height="300" src="https://phet.colorado.edu/sims/html/states-of-matter-basics/latest/states-of-matter-basics-600.png" style="border: none;" width="400"/>
+            <div style="position: absolute; width: 200px; height: 80px; left: 50px; top: 60px; background-color: #FFF; opacity: 0.6; filter: alpha(opacity = 60);">
+            </div>
+            <table style="position: absolute; width: 200px; height: 80px; left: 50px; top: 60px;">
+              <tbody>
+                <tr>
+                  <td style="text-align: center; color: #000; font-size: 24px; font-family: Arial,sans-serif;">
+                    Click to Run
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </a>
+        </div>
+      </div>
+
+      <p class="text-centered">Phet States of Matter Simulation (click above to view)</p>
+
+    </div>
+
+<div class="page" id="page6">
+
+      <a href="../statechange-evaporation-melting/RemainingSaltInGlass.jpg?attredirects=0/index.html">
+        <img class="img-centered" src="HeadsUpCone.png" width="200"/>
+      </a>
+
+      <p>
+        <b>Here are some important things to understand (that many people don't):</b>
+      </p>
+
+      <ul class="brm-list">
+        <li>
+          When H<sub>2</sub>O changes from solid to liquid to gas is that the individual H<sub>2</sub>O molecules stay
+          together. They do NOT break up into individual atoms. This idea is true for <b>any</b> type of molecule
+          that changes state: the molecule stays the same!
+        </li>
+        <li>
+          Another important point is that <b>each individual molecule stays the same size during state change</b>.
+          The molecules themselves do not get bigger or smaller; they just move around more or less.
+          (<span style="color:#ff0000">Some people mistakenly think that molecules themselves get bigger or smaller
+            as an object gets warmer or cooler.</span>
+          <span style="color:#2DCA20"><b>But they don't! The molecules stay the same size! Molecules just move around
+              more —and take
+              up more space when they are moving around more/faster. And molecules move around less—and take up less
+              space—when
+              they are moving around more slowly.</b></span> It's kind of like when people are dancing: they take up
+          more space when they
+          are moving around more (and bumping into other people!). But of course, people stay the same size.
+        </li>
+      </ul>
+
+      <br/>
+    </div>
+
+<div class="page" id="page7">
+      <p><b>Check your final understanding...</b></p>
+
+      <form class="quiz_open quiz">
+        <b>Q2: Briefly explain why an ice cube in a 26 degree C room will melt faster than the same ice cube in a 20
+          degree
+          C room. (Hint: Think about what happens when molecules of air collide with H<sub>2</sub>O molecules of the ice
+          cube.)</b>
+        <textarea></textarea><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          The ice will melt faster in the warmer room because the air molecules are moving around faster, on average, in
+          the warmer
+          room. So, when the air molecules collide with the H<sub>2</sub>O molecules in the ice cube, there is a greater
+          chance that
+          the H<sub>2</sub>O molecules will gain enough speed to escape from the electric forces holding the
+          H<sub>2</sub>O molecules in the
+          crystal ice.
+        </div>
+      </form>
+      <br/>
+
+      <form class="quiz_choice quiz">
+        <b>Q3: Which is true about melting and evaporation?</b>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) They are both chemical processes.</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">b) They are both physical processes.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) Melting is chemical and evaporation is physical.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) Melting is physical and evaporation is chemical.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          Right! Since the molecules stay the same when they evaporate or melt, both processes are physical.
+        </div>
+        <div class="feedback-incorrect feedback">
+          Actually, since the molecules stay the same when they evaporate or melt, both processes are physical.
+        </div>
+      </form>
+
+      <br/>
+
+      <form class="quiz_choice quiz">
+        <b>Q4: What happens to H<sub>2</sub>O molecules of ice as the temperature of the ice increases from -20 degrees
+          C to 0 degrees
+          C.</b>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) Nothing. The H<sub>2</sub>O molecules are in a solid state (ice) in this temperature
+          range. They don't
+          move.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) Nothing. The H<sub>2</sub>O molecules move a little (and the same amount) in this
+          temperature
+          range.</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">c) The H<sub>2</sub>O molecules will move faster as the temperature increases from -20 to 0
+          degrees
+          C.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) The H<sub>2</sub>O molecules will move slower as the temperature increases from -20 to 0
+          degrees
+          C.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          Right! The H<sub>2</sub>O molecules will slow as the temperature increases from -20 to 0 degrees C. (c) is the
+          correct answer.
+        </div>
+        <div class="feedback-incorrect feedback">
+          Actually, the H<sub>2</sub>O molecules will slow as the temperature increases from -20 to 0 degrees C. (c) is
+          the correct answer.
+        </div>
+      </form>
+
+      <br/>
+
+      <form class="quiz_open quiz">
+        <b>
+          Q5: Briefly explain why an ice cube that is -2 degree C would take less time to melt in the same room (at 20
+          degree C) than
+          an ice cube that is -10 degree C. Hint: Think about the collisions between air molecules and H<sub>2</sub>O
+          molecules.</b>
+        <textarea></textarea><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          The H<sub>2</sub>O molecules in the higher-temperature ice cube will be vibrating faster in the crystal ice
+          structure. So, they do not
+          need as much extra "push" from surrounding air molecules that collide with them to allow them to escape from
+          the electric forces due to other H<sub>2</sub>O molecules in the ice crystal.
+        </div>
+      </form>
+
+      <br/>
+
+    </div>
+
+
+
+            
+    <!-- Nav Buttons -->
+    <div class="nav-btn-container">
+  <img id="back-btn-inactive" class="nav-btn" src="../_assets/WhiteGrayBlue_smaller.jpg"> 
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/WhiteGrayBlue_smaller.jpg"> 
+    <img id="back-btn-active" class="nav-btn" src="../_assets/ButtonBlackWhite.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/ButtonBlackWhite.png">
+</div>
+
+    <br>
+
+
+            
+<div class="nav-toc-container">
+      <h3>Table of Contents: State Change: Evaporation &amp; Melting unit</h3>
+      <ul>
+        <li><a href="#top" onclick="tocPageJump(1)">What is Evaporation?</a></li>
+        <li><a href="#top" onclick="tocPageJump(2)">Basic Questions</a></li>
+        <li><a href="#top" onclick="tocPageJump(3)">Analogies for Evaporation</a></li>
+        <li><a href="#top" onclick="tocPageJump(4)">Evaporation of Salt Water</a></li>
+        <li><a href="#top" onclick="tocPageJump(5)">What is Melting?</a></li>
+        <li><a href="#top" onclick="tocPageJump(6)">Common Misunderstandings</a></li>
+        <li><a href="#top" onclick="tocPageJump(7)">Check Your final Understanding</a></li>
+      </ul>
+    </div>
+
+        </div>
+
+        
+
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png">
+            <br>
+            <p>
+                ***Note for Teachers: You can access more information about this website and find other resources for science inquiry on the
+                <a href="https://www.isptutor.org/background-research"> ISP Tutor website.</a>
+            </p>
+            <p>©2021 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>
+                Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in part by the National Science Foundation, Grant SBE035442. The ISP Tutor project is funded by IES,
+                Grant R305A170176.
+            </p>
+            <p>
+                The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education, through Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of
+                the authors and do not represent views of the Institute or the U.S. Department of Education.
+            </p>
+        </div>
+
+
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
+</html>

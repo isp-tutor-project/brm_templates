@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Plants</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <!-- <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg"> -->
+         <div style="text-align:center" id="research-question"> </div>
+         
+
+<div style="float:left;margin-left:20px">
+<br><br>
+        <img alt="ISP logo" src="../ISPtutor_logo.jpg" width="80"/>
+      </div>
+
+
+
+      <div style="float:right;margin-right:20px">
+
+      <br><br><br>
+
+      <script type="text/javascript">
+
+      function newPopup(url) {
+            popupWindow = window.open(
+              url,'popUpWindow','height=400,width=800,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+          }
+
+          </script>
+        
+        <a href="JavaScript:newPopup('../glossary');">
+        
+        <button id="home-btn" class="glossary-btn">Glossary</button>
+        
+        </a>
+
+      </div>
+
+
+
+
+
+
+
+        <div id="header-bg-extension" style="text-align:center;font-size:18px"><br><b>You can search below or click on a science 
+        area to find information for your research question:</b></div>
+                <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn htmlhelp">Home &amp; HELP</button></a>
+           <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            
+        </div>
+
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Plants</h1>
+
+<div class="page" id="page1">
+      <p>
+        <b>What are Plants?</b> Plants are living organisms composed of one or more cells. A cell is the
+        smallest unit that can be said to be alive. Some plants —such as some types of algae— are a single
+        cell. (Similarly, some animals, like amoebas, are a single cell.)
+      </p>
+      <p>Like animal cells,
+        each plant cell has a nucleus (see the picture of a plant cell below). Having a cell nucleus is a key
+        characteristic of all living things.
+      </p>
+      <p>
+        One difference between plant and animal cells is that the cells of plants have "walls", which are rigid
+        and firm. Animal cells do not have cell walls but thinner cell membranes. This makes sense because plants
+        do not have skeletons that support them. If plant cells did not have firm cell walls, plants would be more
+        or less shapeless blobs.
+      </p>
+      <p>
+        In the cell shown below, you can put the cursor on the red triangles to see a description of the tiny organs
+        ("organelles") and
+        other substances inside the cell.
+      </p>
+
+      <br/>
+
+      <div class="text-centered">
+        <iframe height="525" src="https://isp-tutor-project.github.io/demo/games/plantcell" width="600">
+        </iframe>
+      </div>
+      <br/>
+      One important function of the DNA in the cell's
+
+      <select class="fib_select" id="FIB1" onchange="fibUpdate('FIB1')">
+        <option value="#ffffff">(Select one)</option>
+        <option value="#11bf7a">nucleus</option>
+        <option value="#ed8587">endoplasmic reticuli</option>
+        <option value="#ed8587">mitochondria</option>
+        <option value="#ed8587">chloroplasts</option>
+      </select>
+
+
+      is to make very important molecules called proteins. Proteins are made in cell organelles called ribosomes (not
+      shown above).
+      Proteins do most of the work in cells and are required for the structure,
+      function, and regulation of the plant (or animal).
+
+      <br/><br/>
+
+      Photosynthesis, another important process in which sugars are made, happens in the
+
+      <select class="fib_select" id="FIB2" onchange="fibUpdate('FIB2')">
+        <option value="#ffffff">(Select one)</option>
+        <option value="#ed8587">nucleus</option>
+        <option value="#ed8587">endoplasmic reticuli</option>
+        <option value="#ed8587">mitochondria</option>
+        <option value="#11bf7a">chloroplasts</option>
+      </select>
+
+
+      in plant cells.
+
+    </div>
+
+<div class="page" id="page2">
+      <p>
+        Plants usually grow in one location (rather than move around, like
+        most animals do). Because of this, plants must depend on their local environment —and themselves—
+        for nourishment.
+        Plants get some nutrients they need through the absorption of water and minerals through their roots.
+      </p>
+
+      <p>
+        Plants make their own food (sugars) through the process of
+        <a class="brm-link" href="../photosynthesis/" target="_blank">photosynthesis</a>. 
+        In this process, sunlight provides the energy to convert carbon dioxide and water into sugars. This process
+        happens in the chloroplasts in the cells of plant leaves.
+      </p>
+
+    </div>
+
+<div class="page" id="page3">
+      <p>
+        <b>Plants</b> can be divided into two main groups: Vascular and Non-vascular. (See the diagram below.)
+      </p>
+
+      <ul class="list-no-bullets">
+        <li>
+          <a class="brm-link" href="../vascular-plants/" target="_blank">Vascular plants</a>
+          have cells that form tubes for carrying water and nutrients throughout the plant.
+          <a class="brm-link" href="../non-vascular-plants/" target="_blank">Non-vascular plants</a>
+          do not have tubes to carry water and nutrients. Instead, water and nutrients move from cells to their
+          neighboring cells. In case you were wondering, this is why (as shown in the picture of the plant cell two
+          pages ago) the cell walls have little holes in them. This is so water and other nutrients can move from
+          cell to cell.
+        </li>
+      </ul>
+
+      <p class="text-centered text-xl">
+        <b>Plant Hierarchy</b>
+      </p>
+
+      <img alt="Vascular and Nonvascular Plants Chart" class="img-centered img-size_700" src="RevisedPlantCategoriesNoHighlight_cropped.jpg"/>
+
+      <form class="quiz_open quiz">
+        <b>
+          Q1: Do you think that humans are more like vascular or nonvascular plants? Why?</b>
+        <textarea></textarea><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          Humans are more like vascular plants because both humans and vasular plants have tubes that carry water
+          and nutrients throughout
+          their bodies. In humans, we call these arteries and veins.
+        </div>
+      </form>
+
+    </div>
+
+
+
+            
+    <!-- Nav Buttons -->
+    <div class="nav-btn-container">
+  <img id="back-btn-inactive" class="nav-btn" src="../_assets/WhiteGrayBlue_smaller.jpg"> 
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/WhiteGrayBlue_smaller.jpg"> 
+    <img id="back-btn-active" class="nav-btn" src="../_assets/ButtonBlackWhite.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/ButtonBlackWhite.png">
+</div>
+
+    <br>
+
+
+            
+        </div>
+
+        
+
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png">
+            <br>
+            <p>
+                ***Note for Teachers: You can access more information about this website and find other resources for science inquiry on the
+                <a href="https://www.isptutor.org/background-research"> ISP Tutor website.</a>
+            </p>
+            <p>©2021 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>
+                Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in part by the National Science Foundation, Grant SBE035442. The ISP Tutor project is funded by IES,
+                Grant R305A170176.
+            </p>
+            <p>
+                The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education, through Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of
+                the authors and do not represent views of the Institute or the U.S. Department of Education.
+            </p>
+        </div>
+
+
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
+</html>

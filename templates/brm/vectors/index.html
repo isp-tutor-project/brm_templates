@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Vector vs. Scalar Quantities</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <!-- <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg"> -->
+         <div style="text-align:center" id="research-question"> </div>
+         
+
+<div style="float:left;margin-left:20px">
+<br><br>
+        <img alt="ISP logo" src="../ISPtutor_logo.jpg" width="80"/>
+      </div>
+
+
+
+      <div style="float:right;margin-right:20px">
+
+      <br><br><br>
+
+      <script type="text/javascript">
+
+      function newPopup(url) {
+            popupWindow = window.open(
+              url,'popUpWindow','height=400,width=800,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+          }
+
+          </script>
+        
+        <a href="JavaScript:newPopup('../glossary');">
+        
+        <button id="home-btn" class="glossary-btn">Glossary</button>
+        
+        </a>
+
+      </div>
+
+
+
+
+
+
+
+        <div id="header-bg-extension" style="text-align:center;font-size:18px"><br><b>You can search below or click on a science 
+        area to find information for your research question:</b></div>
+                <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn htmlhelp">Home &amp; HELP</button></a>
+           <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            
+        </div>
+
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Vector vs. Scalar Quantities</h1>
+
+<div class="page" id="page1">
+      <p>
+        <b>Vector</b> quantities are variables that have both a <u>magnitude</u> (or amount) <i>and</i> a
+        <u>direction</u>. Vectors are represented by arrows. The length of the arrow represents the magnitude, and
+        the direction the arrow points is the direction.
+      </p>
+      <p>
+        Some examples of vector quantities are:
+      </p>
+
+      <ul class="brm-list">
+        <li>
+          <b>Force:</b> It has a magnitude (amount of force) and direction the force acts on an object. In the
+          picture below, the arrows show the direction that each force acts on the object. The length of the arrows
+          represents the magnitude of each force. Because the force of gravity acting on the body is greater than
+          the other forces, the arrow representing the force of gravity (or the weight of the object) is longest.
+        </li>
+      </ul>
+
+     
+        <img alt="slope_diagram" class="img-centered img-size_med" src="SteepSlopeNew_cropped.png"/>
+      
+
+      <ul>
+        <li>
+          <b>Instantaneous Velocity:</b> This is both the <u>speed</u> of an object and the <u>direction</u> it is
+          moving at a point in time. The picture below shows the instantaneous velocity of a ball at two points as
+          it rolls down a hill. When it is at the top of the hill, it is moving slower than when it's at the bottom
+          of the hill. This is why the arrow is longer when the ball is at the bottom of the hill. The direction of
+          the arrow is the direction the ball is moving at that point in time.
+        </li>
+      </ul>
+
+      
+        <img alt="ball_rolling_down_hill" class="img-centered img-size_med" src="BallRollingVelocityVector.GIF"/>
+      
+
+      <ul>
+        <li>
+          <b>Acceleration:</b> This is how quickly an object
+            changes in speed and the direction of its change in
+            speed. For example, in the picture below, two
+            objects are falling downward due to gravity (there
+            are no other forces acting on the objects). The
+            direction of the arrows indicate that the objects
+            are accelerating downward. The arrows are the same
+            lengths because the objects accelerate by the same
+            amount. (All objects fall with the same acceleration
+            if only gravity acts on the objects!)
+        </li>
+      </ul>
+
+      
+        <img alt="object_accelerating_down" class="img-centered img-size_med" src="ObjectsAcceleratingDown.GIF"/>
+      
+      <br/>
+
+    </div>
+
+<div class="page" id="page2">
+      <p>
+        <b>Scalar</b> quantities are variables that only have a magnitude (or amount); they do not have a direction.
+        Here are some examples:
+      </p>
+
+      <ul class="brm-list">
+        <li>
+          <b>Volume</b> is just the amount of space an object occupies. (It does not have a direction; how can it?)
+        </li>
+        <li>
+          <b>Mass</b> is the amount of stuff (atoms and molecules) that makes up an object. (It does not have
+          a direction.)
+        </li>
+        <li>
+          <b>Distance</b> is the length of something or how far something moves. (It doesn't matter the direction(s)
+          that the object traveled.)
+        </li>
+        <li>
+          <b>Average Speed</b> is just how far an object moves divided by the time it took the object to move that
+          distance. The object might have changed direction many times while it was moving.
+        </li>
+      </ul>
+    </div>
+
+
+
+            
+    <!-- Nav Buttons -->
+    <div class="nav-btn-container">
+  <img id="back-btn-inactive" class="nav-btn" src="../_assets/WhiteGrayBlue_smaller.jpg"> 
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/WhiteGrayBlue_smaller.jpg"> 
+    <img id="back-btn-active" class="nav-btn" src="../_assets/ButtonBlackWhite.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/ButtonBlackWhite.png">
+</div>
+
+    <br>
+
+
+            
+        </div>
+
+        
+
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png">
+            <br>
+            <p>
+                ***Note for Teachers: You can access more information about this website and find other resources for science inquiry on the
+                <a href="https://www.isptutor.org/background-research"> ISP Tutor website.</a>
+            </p>
+            <p>©2021 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>
+                Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in part by the National Science Foundation, Grant SBE035442. The ISP Tutor project is funded by IES,
+                Grant R305A170176.
+            </p>
+            <p>
+                The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education, through Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of
+                the authors and do not represent views of the Institute or the U.S. Department of Education.
+            </p>
+        </div>
+
+
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
+</html>

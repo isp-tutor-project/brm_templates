@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Molecules</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <!-- <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg"> -->
+         <div style="text-align:center" id="research-question"> </div>
+         
+
+<div style="float:left;margin-left:20px">
+<br><br>
+        <img alt="ISP logo" src="../ISPtutor_logo.jpg" width="80"/>
+      </div>
+
+
+
+      <div style="float:right;margin-right:20px">
+
+      <br><br><br>
+
+      <script type="text/javascript">
+
+      function newPopup(url) {
+            popupWindow = window.open(
+              url,'popUpWindow','height=400,width=800,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+          }
+
+          </script>
+        
+        <a href="JavaScript:newPopup('../glossary');">
+        
+        <button id="home-btn" class="glossary-btn">Glossary</button>
+        
+        </a>
+
+      </div>
+
+
+
+
+
+
+
+        <div id="header-bg-extension" style="text-align:center;font-size:18px"><br><b>You can search below or click on a science 
+        area to find information for your research question:</b></div>
+                <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn htmlhelp">Home &amp; HELP</button></a>
+           <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            
+        </div>
+
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Molecules</h1>
+
+<div class="page" id="page1">
+
+      <p>
+        <b>What are Molecules?</b> Atoms can be attracted to other atoms. When this happens, they form groups of atoms
+        called molecules. Molecules are two or more atoms that are bonded together through some attractive force (often,
+        the <a href="../electric-force/index.html" target="_blank"><b>electric force</b></a>).
+      </p>
+      <p>
+        Molecules can be made of atoms of the same type. For example, an oxygen molecule, O<sub>2</sub>, is made of 2
+        oxygen atoms.
+      </p>
+      <p>
+        Or, molecules can be made of atoms of different types (or different elements). For example, a water molecule,
+        H<sub>2</sub>O, is made of two different elements: hydrogen (H) and oxygen (O).
+      </p>
+
+      <ul>
+        <li>
+          We call molecules that are made of different elements "<b>compounds</b>." H<sub>2</sub>O and NaCl are
+          both compounds. O<sub>2</sub> is not a compound, since it's made of two of the same type of atom (oxygen).
+        </li>
+      </ul>
+      <br/>
+    </div>
+
+<div class="page" id="page2">
+
+      <b>Understanding how molecule names are abbreviated</b>
+      <p>As you've probably noticed, the name of a molecule (such as CO<sub>2</sub>) is abbreviated by combining the symbols for elements
+        that make up the molecule.
+        For example, the molecule "water" is written as "H<sub>2</sub>O," which combines the symbols H (for hydrogen) and O (for oxygen).
+        You can tell how many different elements are in a molecule by the number of capitalized letters there are (since element symbols
+        are one or two letters beginning with a capital letter).
+        Since there are two capitalized letters in "H<sub>2</sub>O," we know there are two elements (H and O).
+      </sub></p>
+      <p>
+        The number after each element shows the number of atoms of that element in the molecule. If there is no number
+        after the element, that means there is just one atom of that element. For example, in H<sub>2</sub>O, the "2"
+        after H means that there are 2 hydrogen atoms in a molecule of H<sub>2</sub>O. There are no numbers after "O,"
+        which means there is just one oxygen atom.
+      </p>
+
+      <br/>
+      <form class="quiz_choice quiz">
+        <b>
+          Q0.5: Which of the following is true of one molecule of CO<sub>2</sub>?</b>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) It has one carbon atom and one oxygen atom.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) It has two carbon atoms and one oxygen atom.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) It has two carbon atoms and two oxygen atoms.</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">d) It has one carbon atom and two oxygen atoms.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          Right! In "CO<sub>2</sub>", there is no number after the "C." This means there is only one carbon atom. The
+          "2" after "O" means that there are two oxygen atoms in one CO<sub>2</sub> molecule.
+        </div>
+        <div class="feedback-incorrect feedback">
+          Well, in "CO<sub>2</sub>", there is no number after the "C." This means there is only one carbon atom. The
+          "2" after "O" means that there are two oxygen atoms in one CO<sub>2</sub> molecule.
+        </div>
+      </form>
+
+      <br/>
+
+      <form class="quiz_choice quiz">
+        <b>
+          Q0.6: Which of the following is true of one molecule of NaCl?</b>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">a) It has a total of two atoms.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) It has a total of three atoms.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) It has a total of four atoms.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          Right! NaCl is made of one Na (sodium) atom and one Cl (chlorine) atom. So, it has a total of 2 atoms.
+        </div>
+        <div class="feedback-incorrect feedback">
+          Well, NaCl is made of one Na (sodium) atom and one Cl (chlorine) atom. So, it has a total of 2 atoms.
+        </div>
+      </form>
+
+      <br/>
+
+      <form class="quiz_choice quiz">
+        <b>
+          Q0.7: Which of the following is true of one molecule of CH<sub>4</sub>?</b>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) It has a total of two atoms.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) It has a total of three atoms.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) It has a total of four atoms.</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">c) It has a total of five atoms.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          Right! CH<sub>4</sub> is made of one C (carbon) atom and four H (hydrogen) atoms.
+        </div>
+        <div class="feedback-incorrect feedback">
+          Well, actually, CH<sub>4</sub> is made of one C (carbon) atom and four H (hydrogen) atoms.
+        </div>
+      </form>
+
+      <br/>
+      Let's look at some different molecules now...
+
+    </div>
+
+<div class="page" id="page3">
+      <p>
+        <b>Example 1: O<sub>2</sub>.</b> Two oxygen atoms may bond together to form an O<sub>2</sub> molecule (the "2"
+        after the "O" means that there are two Oxygen atoms in this molecule). Below are two different ways of
+        representing bonded Oxygen atoms that form the molecule O<sub>2</sub>. The picture on the left shows a very
+        simple "ball" model of an oxygen molecule:
+      </p>
+
+      <img class="img-centered img-size" src="OxygenTwoReps2.png" alt="salt molecule NaCl" />
+      <br/>
+
+      <p>
+        The picture above on the right shows a more detailed model. Here, the "O"s (for "Oxygen") are shown in place
+        of the nucleus. This is just a simpler way to represent the nucleus of an oxygen atom. The electrons (e-) from
+        the oxygen atom on the left are shown as Xs and the electrons from the oxygen atom on the right are shown
+        as dots.
+      </p>
+      <p>
+        The electrons are shown along circles. You may have noticed that there are 4 electrons that are between the
+        oxygen atoms (on the outside circles). The oxygen atoms "share" these 4 electrons.
+      </p>
+      <p>
+        (Note: The circle that each electron is associated with is not a physical "thing", but represents the amount
+        of energy the electrons on that <b>Energy circle</b> have.) 
+      </p>
+
+      <br/><br/>
+    </div>
+
+<div class="page" id="page4">
+
+      <p>
+        <b>Example 2: NaCl.</b> An atom of sodium (Na) and an atom of chlorine (Cl), bond to make a molecule of NaCl
+        (sodium chloride, or common table salt). Because NaCl molecules are made of two different elements (Na and Cl),
+        NaCl is a <b>compound</b>.
+      </p>
+      <p class="text-centered">
+        Below are two ways to represent an NaCl molecule.
+      </p>
+
+      <img alt="salt, NaCl diagram" class="img-centered img-size" src="NewNAClDiagram.jpg"/>
+
+      <p>
+        In the picture above on the right, the electrons are shown this time as dots on the <b>Energy circles</b>.
+        This picture shows how an electron (e-) from Na moves to the Cl atom. Because there is an extra electron (e-)
+        on the Cl side of the NaCl molecule, the Cl side is negatively charged. Because the Na atom has lost an
+        electron, it becomes
+        <select class="fib_select" id="FIB2" onchange="fibUpdate('FIB2')">
+          <option value="#ffffff">(Select one)</option>
+          <option value="#11bf7a">positively charged</option>
+          <option value="#ed8587">negatively charged</option>
+          <option value="#ed8587">neutral (no charge)</option>
+        </select>.
+      </p>
+      <p>
+        <b>Note:</b> In the names of molecules with two elements (like NaCl), the positively-charged atom is written first and the 
+        negatively-charged atom is written last. For example, with NaCl, Na is the positively-charged atom and Cl is the negatively-charged 
+        atom. 
+      </p>
+
+      <br/><br/>
+    </div>
+
+<div class="page" id="page5">
+      <p>
+        <b>Example 3: H<sub>2</sub>O</b>. A water molecule (H<sub>2</sub>O) has two hydrogen (H) atoms (the "2" after
+        the "H" means there are two hydrogen atoms) and one oxygen (O) atom. Some people think a water molecule looks
+        like Mickey Mouse, where its "ears" are the H atoms. Maybe that can help you remember its shape? 
+      </p>
+
+      <img alt="Water Molecule" class="img-centered img-size" src="Example3_final_cropped.jpg"/>
+      <br/>
+
+      <p>
+        In the picture on the right, there are four electrons (e-) that are shared by the oxygen and two hydrogen atoms.
+        These 4 shared electrons are the two lighter blue electrons (the hydrogen's) and darker blue electrons (the
+        oxygen's) that are in the Energy circle of each H atom. These four electrons are also in the oxygen atom's
+        outer Energy circle. This means that sometimes these electrons "belong" to the hydrogen atoms and sometimes
+        "belong" to the oxygen atom.
+      </p>
+      <p>
+        <b>Fill-in-the-blank:</b> H<sub>2</sub>O molecules have
+        <select class="fib_select" id="FIB3" onchange="fibUpdate('FIB3')">
+          <option value="#ffffff">(Select one)</option>
+          <option value="#11bf7a">no overall charge</option>
+          <option value="#ed8587">a positive charge</option>
+          <option value="#ed8587">a negative charge</option>
+        </select>.
+      </p>
+    </div>
+
+<div class="page" id="page6">
+
+      <p>
+        <b>Example 4: CO<sub>2</sub></b>. A carbon dioxide molecule (CO<sub>2</sub>) has three atoms: one carbon (C)
+        atom and two oxygen (O) atoms. Do you see how there are 8 electrons that are between the carbon and each
+        oxygen atom (there are 4 on each side of the carbon's nucleus)? These electrons are shared by the carbon and
+        oxygen atoms.
+      </p>
+
+      <img alt="carbon dioxide molecule" class="img-centered img-size" src="CO2_TwoReps2.png"/>
+      <br/>
+
+      <form class="quiz_choice quiz">
+        <b>
+          Q1: Each oxygen atom has 8 protons in its nucleus. The carbon atom has 6 protons in its nucleus. Do you
+          think the shared electrons would spend more time orbiting the oxygen or carbon atoms? (Hint: Think about
+          the electric force.)</b>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">a) The oxygen atoms.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) The carbon atom.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) The electrons will spend about the same amount of time orbiting the oxygen and
+          carbon atoms.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) I'm confused.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          Right! The electrons would be pulled more to the nucleus of the oxygen atoms, which have more protons to
+          pull on electrons. So, the shared electrons would spend more time closer to the oxygen atoms. This would
+          give the oxygen ends of the CO<sub>2</sub> molecules negative charges.
+        </div>
+        <div class="feedback-incorrect feedback">
+          Well, let's think about this. The electrons would be pulled more to the nucleus of the oxygen atoms,
+          which have more protons to pull on electrons. So, the shared electrons would spend more time closer to
+          the oxygen atoms. This would give the oxygen ends of the CO<sub>2</sub> molecules negative charges. So,
+          the answer is (a).
+        </div>
+      </form>
+
+    </div>
+
+<div class="page" id="page7">
+
+      <p>
+        <b>Example 5: C<sub>12</sub>H<sub>22</sub>O<sub>11</sub> (sucrose, or common table sugar)</b>.
+        A sugar molecule is much more complex! Sucrose, or common table sugar, has 12
+        carbon atoms, 22 hydrogen atoms, and 11 oxygen atoms.
+      </p>
+
+      <img alt="sugar molecule" class="img-centered img-size" src="SugarMoleculeImage.jpg"/>
+
+      <p>
+        The picture above to the right represents a molecule of sucrose (C<sub>12</sub>H<sub>22</sub>O<sub>11</sub>)
+        or "sugar". This way of representing a molecule is called a "ball and stick" model, where the balls represent
+        the atoms, and the black "sticks" represent bonds between particular atoms.
+      </p>
+      <p>
+        It is important to understand that bonds between atoms—represented as "sticks" in this picture—are <b>not</b>
+        material or physical objects or things with mass. Bonds are just attractive <i>forces</i> between two atoms
+        (which <i>do</i> have mass), resulting from electric forces between charged particles (electrons and protons). 
+      </p>
+      <p>
+        (A common misconception people have is that "energy" is "contained" or "stored" within bonds. This is false.
+        Energy is an abstract measurement of the motion of objects or radiation.) 
+      </p>
+
+      <br/><br/>
+    </div>
+
+<div class="page" id="page8">
+      <p><b>Why do atoms bond to form molecules?</b></p>
+
+      <p>It
+        may seem a bit strange, but atoms bond with each other because they "like" it when their
+        outer Energy circle is full. (This is discussed more in the unit
+        <a href="../atoms-electron-organization/index.html" target="_blank"><b>Atoms: Electron Organization</b></a>.)
+        Energy circles are full when no more electrons can be in that Energy circle. Atoms are more stable when
+        their outer Energy circle is full. 
+      
+      <ul>
+        <li>The first Energy circle (E1) is full when there are 2 electrons.</li>
+      </ul>
+      <ul>
+        <li>The second Energy circle (E2) is full when there are 8 electrons.</li>
+      </ul>
+      <ul>
+        <li>The third Energy circle (E3) is full when there are 18 electrons.</li>
+      </ul>
+      <br/>
+
+For atoms to achieve full outer energy circles, they can either lose or gain electrons.
+</p>
+<br>
+
+ </div>
+
+<div class="page" id="page9">
+      <p>
+        <b>Some bonding between atoms results from atoms having only one electron in the outer-most Energy circle.</b>
+        To minimize (potential) energy, the electron may move from an Energy circle (or energy level) in one atom to
+        another. Atoms may also <u>share</u> electrons with each other in order to fill up the outer Energy circles. 
+      </p>
+
+      <ul>
+        <li>
+          <b>Bonding Example 1: NaCl.</b> An atom of Na (sodium) has only one electron in its 3rd Energy circle. So,
+          the electron moves from the Na (sodium) atom to the Cl (chlorine) atom. This is shown in the figure below
+          (left). This electron now orbits around the Cl atom (shown below, right). As a result of losing an electron,
+          the Na atom becomes positively charged. And, as a result of gaining an electron (which has a negative
+          charge), the Cl atom becomes negatively charged. 
+        </li>
+      </ul>
+
+      <img alt="NaCl molecule with positive and negative sides" class="img-centered img-size" src="NaCl_PosNegSides_cropped.png"/>
+
+      <ul>
+        <li>
+          The <i>electric force</i> between the positively charged Na atom (Na+) and the negatively charged Cl atom
+          (Cl-) pulls them together. Because of this, the Na and Cl atoms are attracted to each other. We say that
+          they are "bonded". But this just means that the atoms are attracted to each other. The result of this bonding
+          between atoms is the NaCl (or salt) molecule. 
+        </li>
+      </ul>
+
+      <img alt="NaCl molecule" class="img-centered img-size_smaller" src="NaCl_molecule2.png"/>
+      <br/>
+
+      <!-- Quiz: Choice -->
+      <form class="quiz_choice quiz">
+        <b>Q2: Why is the Na (Sodium) side of an NaCl (salt) molecule positively charged?</b>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">(a) Because an electron moves from the Cl atom to the Na atom.</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">(b) Because an electron moves from the Na to the Cl atom.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">(c) Because the Na and Cl atoms share one electron.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">(d) Because the Na atom loses a proton.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">(e) Because the Cl atom loses a proton.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          Right! The Cl atom only needs one more electron to fill its outer energy circle. The Na atom only has one
+          electron in its outer energy circle. Because atoms "like" to have full energy circles, the Na atom "gives"
+          its electron to the Cl atom. Electrons have a negative charge. So, this transfer of the electron causes the
+          Na atom to become positively charged and the Cl atom to become negatively charged.
+        </div>
+        <div class="feedback-incorrect feedback">
+          Actually, the Cl atom only needs one more electron to fill its outer energy circle. The Na atom only has
+          one electron in its outer energy circle. Because atoms "like" to have full energy circles, the Na atom
+          "gives" its electron to the Cl atom. Electrons have a negative charge. So, this transfer of the electron
+          causes the Na atom to become positively charged and the Cl atom to become negatively charged.
+        </div>
+      </form>
+
+      <br/>
+
+      <form class="quiz_choice quiz">
+        <b>Q3: A group of NaCl molecules form a (straight line) chain.
+          What is the most likely arrangement of the NaCl molecules in this chain? (choose all that apply)?</b>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) Alternating, with every other molecule "flipped": NaClClNaNaClClNa</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">b) In a regular line: NaClNaClNaCl</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) The Na atoms would line up with each other: NaNaNaClClCl</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) Random, nonrepeating pattern: (for example) NaNaClNaClCl</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">e) It's really impossible to know.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          Right! The Na and Cl atoms will alternate.
+        </div>
+        <div class="feedback-incorrect feedback">
+          Actually, the correct answer is b. The Na and Cl atoms will alternate.
+        </div>
+      </form>
+
+      <br/>
+
+      <form class="quiz_choice quiz">
+        <b>Q4: (Check your basic understanding of cause): What causes NaCl molecules to arrange in this way?</b>
+
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) Magnetic forces</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) The "strong" force</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) Gravity (gravitational force)</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">d) The electric force</div><br/>
+
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          Nice! This pattern is due to the electric force. Oppositely-charged sides of the NaCl molecules attract each
+          other. (And like-charged sides of the NaCl molecules repel each other.)
+        </div>
+        <div class="feedback-incorrect feedback">
+          Well, this pattern is due to the electric force. Oppositely-charged sides of the NaCl molecules attract each
+          other. (And like-charged sides of the NaCl molecules repel each other.)
+        </div>
+      </form>
+
+      <br/><br/>
+    </div>
+
+<div class="page" id="page10">
+      <p>
+        <b>Bonding Example 2: H<sub>2</sub>O</b> (water). 
+      </p>
+      <br/>
+      <blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+        <blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+          <div style="text-align:left">
+            <div>Reminder: Atoms "like" having a "full" outer Energy circle.</div>
+          </div>
+        </blockquote>
+      </blockquote>
+      <ul>
+        <ul>
+          <ul>
+            <ul>
+              <li>The first Energy circle (E1) in an atom is full when there are 2 electrons.</li>
+            </ul>
+          </ul>
+        </ul>
+      </ul>
+      <ul>
+        <ul>
+          <ul>
+            <ul>
+              <li>The second Energy circle (E2) in an atom is full when there are 8 electrons.</li>
+            </ul>
+          </ul>
+        </ul>
+      </ul>
+      <ul>
+        <ul>
+          <ul>
+            <ul>
+              <li>The third Energy circle (E3) in an atom is full when there are 18 electrons.</li>
+            </ul>
+          </ul>
+        </ul>
+      </ul>
+      <br/>
+      <ul>
+        <li>
+          In an H<sub>2</sub>O molecule, Oxygen atoms have 6 electrons in their second (and outer) Energy circle.
+          Oxygen "wants" 2 more electrons to complete that Energy circle. Each Hydrogen atom only has one electron,
+          which is in the first Energy circle. So, the electron from each hydrogen atom is pulled into the outer
+          Energy circle of the Oxygen atom to complete that Energy circle. 
+          <br/><br/>
+          The oxygen atom has eight protons and each hydrogen atom only has one proton. So, the oxygen nucleus pulls
+          on the electrons more strongly than each hydrogen nucleus. As a result, the electrons are more often on the
+          oxygen side of the molecule.
+
+          The additional electrons cause the Oxygen to become more negatively
+          charged and the Hydrogen atoms to become more positively charged. Due to electric forces,
+          the (more positively charged) hydrogen atoms and the (more negatively charged) oxygen atom
+          are attracted to each other. As a result, the three atoms are held together, forming a
+          water molecule.
+        </li>
+      </ul>
+      <br/>
+
+      <img alt="Water Molecule, Hydrgen and Oxygen" class="img-centered img-size" src="InkedCombinedOxygenHydrogen_A1-T1_LI2_cropped.jpg"/>
+      <br/>
+
+      <ul>
+        <li>
+          Electrons may move from one atom to another atom in molecules. This results in molecules — including
+          salt molecules, sugar molecules, and water molecules — having areas that are more positively charged and
+          areas that are more negatively charged. This property of molecules, called polarity, helps other molecules
+          with charged areas, like salt and sugar, dissolve in water. 
+        </li>
+      </ul>
+      <br/>
+
+      <form class="quiz_choice quiz">
+        <b> Q5: Why are the Hydrogen sides of an H<sub>2</sub>O (water) molecule positively charged?</b>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">a) Because an electron moves from each Hydrogen atom to the Oxygen atom.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) Because electrons move from the Oxygen to the Hydrogen atoms.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) Because Hydrogen atoms have an additional proton.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) Because Oxygen atoms have an additional proton.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          Right! This has to do with energy circles. Each hydrogen shares its electron with the oxygen atom. This
+          completes the oxygen atom's outer energy circle. Because the electron spends more of its time in the
+          oxygen's energy circle, the hydrogen sort of "loses" its electron and becomes positively charged.
+        </div>
+        <div class="feedback-incorrect feedback">
+          This has to do with energy circles. Each hydrogen shares its electron with the oxygen atom. This completes
+          the oxygen atom's outer energy circle. Because the electron spends more of its time in the oxygen's energy
+          circle, the hydrogen somewhat "loses" its electron and becomes positively charged.
+        </div>
+      </form>
+      <br/>
+      <form class="quiz_choice quiz">
+        <b>
+          Q6: Based on the properties of H<sub>2</sub>O and NaCl molecules, would you expect salt (NaCl) crystals to
+          dissolve in water?</b>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) No. They are two very different types of molecules.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) No. H<sub>2</sub>O and NaCl molecules wouldn't share electrons, so they would not bond.
+        </div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">c) Yes. The oppositely charged sides of H<sub>2</sub>O and NaCl molecules would attract each
+          other.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) Yes. The H<sub>2</sub>O and NaCl molecules would share electrons, causing them to bond.
+        </div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">e) Yes. The H<sub>2</sub>O molecules would be pulled apart into H and O atoms.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          Yes. The oppositely charged sides of H<sub>2</sub>O and NaCl molecules would attract each other.
+        </div>
+        <div class="feedback-incorrect feedback">
+          Actually, yes. The oppositely charged sides of H<sub>2</sub>O and NaCl molecules would attract each other.
+        </div>
+      </form>
+
+    </div>
+
+<div class="page" id="page11">
+      <p>
+        <b>Bonding Example 3: CO<sub>2</sub>.</b> In CO<sub>2</sub>, different atoms "share" electrons. Two of each of
+        the oxygen's electrons (represented as dots below) orbit both the oxygen atom and the carbon atom. Also,
+        four of the carbon atom's electrons (represented as "X"s below) orbit both the oxygen and carbon atoms. So,
+        there is a lot of sharing of electrons in a CO<sub>2</sub> molecule! Now, all three atoms have two electrons
+        in the closest Energy circle, and also share 8 electrons in the second Energy circle.
+      </p>
+
+      <br/>
+      <img alt="Water Molecule" class="img-centered img-size" src="CO2_EnergyLevels.png"/>
+      <br/>
+      <p>
+        The oxygen atoms only need two more electrons to complete their outer Energy circle. But the carbon atom needs
+        four more electrons to do that. So, the oxygen atoms are closer to having their second Energy circles
+        completed. 
+      </p>
+      <p>
+        Also, oxygen atoms have 8 protons (each with a positive charge). Carbon atoms have 6 protons. So, electrons
+        (which are negatively charged and attracted to positively charged protons) tend to be pulled to
+        <select class="fib_select" id="FIB4" onchange="fibUpdate('FIB4')">
+          <option value="#ffffff">(Select one)</option>
+          <option value="#ed8587">the Carbon side (or center)</option>
+          <option value="#11bf7a">the Oxygen ends</option>
+          <option value="#ed8587">neither side</option>
+        </select>
+
+        of the CO<sub>2</sub>molecules. 
+      </p>
+      <p>
+        Because the oxygen atoms have more protons and pull harder on the electrons, the shared electrons spend more
+        of their time in the oxygen atoms' Energy circles. As a result, the oxygen ends of the CO<sub>2</sub>
+        molecules tend to be more negatively charged (represented as red in Figure 1 below). The carbon in the middle
+        tends to be more positively charged (represented as blue in Figure 1 below).
+      </p>
+      <p>
+        <b>Figure 1.</b> Charge distribution of Carbon dioxide molecule (red: negative charge; blue: positive charge)
+      </p>
+
+      <img alt="Charge distribution of Carbon dioxide molecule (red: negative charge; blue: positive charge)" class="img-centered img-size_smaller" src="Molecule_A1-T1revised.jpg"/>
+      <br/>
+
+      <p>
+        For more information about why atoms "take" or "share" electrons from/with other atoms, please see the unit:
+        <a href="../atoms-electron-organization/index.html" target="_blank"><b>How Electrons are organized</b></a>. 
+      </p>
+
+    </div>
+
+<div class="page" id="page12">
+      <p>
+        <b>(Slightly Advanced concept: Polarity)</b>
+      </p>
+      <p>
+        <b>Polarity.</b> When one side of a molecule has a positive charge and the opposite side has a negative
+        charge, the molecule is considered to be "polar." Polar molecules attract the oppositely-charged parts of other
+        polar molecules. Water molecules are polar molecules: the hydrogen sides are positively charged and the
+        opposite (oxygen) sides are negatively charged. This is why they "stick" to other water molecules. (This is
+        also why your hairs stick to each other when they are wet but not dry!)
+      </p>
+      <p>
+        Below are two water molecules. The positively charged side of the first molecule and the negative side of the
+        second molecule attract each other. These attractions allow water molecules to form droplets.
+      </p>
+
+      <img alt="positive and negative water molecule" class="img-centered img-size" src="InkedWater_Molecules_Polar_LI_PosNeg.jpg"/>
+      <br/>
+
+      <p>
+        A carbon dioxide (CO<sub>2</sub>) molecule is represented below.
+      </p>
+
+      <img alt="CO2 molecule" class="img-centered img-size_med" src="CO2_molecule2_clean2.png"/>
+
+      <br/><br/>
+      <form class="quiz_open quiz">
+        <b>Q6: Do you think CO<sub>2</sub> is a polar molecule? Explain why you do or do not.</b>
+        <textarea></textarea><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          No, CO<sub>2</sub> is not a polar molecule because its charge is symmetrical. Its opposite ends (oxygen) are
+          both negatively charged.
+        </div>
+      </form>
+      <br/>
+      <br/>
+
+    </div>
+
+<div class="page" id="page13">
+
+      <div class="text-centered">
+        <p>
+        </p><h4>Now that you're more familiar with molecules and compounds, try the Match the Molecules Game below!</h4>
+        <p></p>
+      </div>
+      <br/>
+
+      <div class="text-centered">
+        <iframe height="600" src="https://isp-tutor-project.github.io/demo/games/CompoundMatchingGame/" width="900">
+        </iframe>
+      </div>
+
+      <br/>
+      <p>
+        <b>You've reached the end of this unit. You can click on the Chemical and Physical Reactions button above for
+          more units related to your research question.</b>
+      </p>
+
+    </div>
+
+
+
+            
+    <!-- Nav Buttons -->
+    <div class="nav-btn-container">
+  <img id="back-btn-inactive" class="nav-btn" src="../_assets/WhiteGrayBlue_smaller.jpg"> 
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/WhiteGrayBlue_smaller.jpg"> 
+    <img id="back-btn-active" class="nav-btn" src="../_assets/ButtonBlackWhite.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/ButtonBlackWhite.png">
+</div>
+
+    <br>
+
+
+            
+<div class="nav-toc-container">
+      <h3>Table of Contents: Molecules unit</h3>
+      <ul>
+        <li><a href="#top" onclick="tocPageJump(1)">What are Molecules?</a></li>
+        <li><a href="#top" onclick="tocPageJump(3)">Oxygen (O<sub>2</sub>) molecule</a></li>
+        <li><a href="#top" onclick="tocPageJump(4)">Table salt (NaCl) molecule</a></li>
+        <li><a href="#top" onclick="tocPageJump(5)">Water (H<sub>2</sub>O) molecule</a></li>
+        <li><a href="#top" onclick="tocPageJump(6)">Carbon dioxide (CO<sub>2</sub>) molecule</a></li>
+        <li><a href="#top" onclick="tocPageJump(7)">Sucrose sugar molecule</a></li>
+        <li><a href="#top" onclick="tocPageJump(8)">Why atoms form molecules</a></li>
+        <li><a href="#top" onclick="tocPageJump(9)">Bonding in NaCl</a></li>
+        <li><a href="#top" onclick="tocPageJump(10)">Bonding in water molecules</a></li>
+        <li><a href="#top" onclick="tocPageJump(11)">Bonding in CO<sub>2</sub>molecules</a></li>
+        <li><a href="#top" onclick="tocPageJump(12)">Polarity of water, carbon dioxide</a></li>
+        <li><a href="#top" onclick="tocPageJump(13)">Game: Match the Molecules!</a></li>
+      </ul>
+    </div>
+
+        </div>
+
+        
+
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png">
+            <br>
+            <p>
+                ***Note for Teachers: You can access more information about this website and find other resources for science inquiry on the
+                <a href="https://www.isptutor.org/background-research"> ISP Tutor website.</a>
+            </p>
+            <p>©2021 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>
+                Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in part by the National Science Foundation, Grant SBE035442. The ISP Tutor project is funded by IES,
+                Grant R305A170176.
+            </p>
+            <p>
+                The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education, through Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of
+                the authors and do not represent views of the Institute or the U.S. Department of Education.
+            </p>
+        </div>
+
+
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
+</html>
