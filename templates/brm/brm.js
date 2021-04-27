@@ -267,8 +267,8 @@ function HideSeeText(myButtonID) {
     button.onclick = function() {}
 }
 
-function toggleText() {
-    var text = document.getElementById("demo");
+function toggleText(myToggleId) {
+    var text = document.getElementById(myToggleId);
     if (text.style.display === "none") {
       text.style.display = "block";
     } else {
