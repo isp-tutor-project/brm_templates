@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Energy</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <!-- <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg"> -->
+         <div style="text-align:center" id="research-question"> </div>
+         
+
+<div style="float:left;margin-left:20px">
+<br><br>
+        <img alt="ISP logo" src="../ISPtutor_logo.jpg" width="80"/>
+      </div>
+
+
+
+      <div style="float:right;margin-right:20px">
+
+      <br><br><br>
+
+      <script type="text/javascript">
+
+      function newPopup(url) {
+            popupWindow = window.open(
+              url,'popUpWindow','height=400,width=800,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+          }
+
+          </script>
+        
+        <a href="JavaScript:newPopup('../glossary');">
+        
+        <button id="home-btn" class="glossary-btn">Glossary</button>
+        
+        </a>
+
+      </div>
+
+
+
+
+
+
+
+        <div id="header-bg-extension" style="text-align:center;font-size:18px"><br><b>You can search below or click on a science 
+        area to find information for your research question:</b></div>
+                <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn htmlhelp">Home &amp; HELP</button></a>
+           <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            
+        </div>
+
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Energy</h1>
+
+<div class="page" id="page1">
+      <p>
+        <b>First, what is Energy *not*?</b> The idea of energy is confusing to a lot of people. 
+        But you need to understand that energy is <u>not</u> a type of substance. It is related to the motion or movement of atoms, molecules, and objects.
+      </p>
+      <p>
+        Energy is an abstract (mathematical) measure related to the amount of motion of objects (including atoms and molecules). Energy related to motion is called "kinetic energy."
+        Energy is also an abstract (mathematical) measure of the potential for <b>more</b> motion. Energy related to the potential for motion is called "potential energy."
+      </p>
+      <p>
+        <b>Kinetic energy:</b> the abstract (mathematical) way to measure an object's kinetic energy due to movement over a distance is:
+      </p>
+
+      <ul class="brm-list">
+        <li>KE (of object) = 1/2*(mass of object)*(speed of object)<sup>2</sup></li>
+      </ul>
+
+      <p>
+        So, you can see from this equation that kinetic energy is a measure of the object's motion: speed (as well as
+        its mass).
+      </p>
+      
+<p>
+        <b>Potential energy:</b> An abstract (mathematical) way to measure an object's potential energy (PE) due to gravity is:
+      </p>
+
+      <ul class="brm-list">
+        <li>PE (of object) = (mass of object)*(height of object above the ground)*(acceleration due to gravity or "g")
+      </ul>
+
+      <p>So, both measures of energy include the <b>mass</b> of the object that is either moving or has potential to move. It's not 
+      obvious for potential energy, but both measures also include the <b>speed of the object</b>. For the potential energy of an object 
+      falling in a vacuum, </p>
+
+      <ul class="brm-list">
+      <li>(height of object above the ground)*(acceleration due to gravity) = 1/2*(speed of object right before it hits the ground)<sup>2</sup>  
+     </ul>
+
+
+
+
+
+
+So, for an object falling in a vacuum: 
+
+     <ul class="brm-list">
+      <li>PE (of object) = 1/2*(mass of object)*(speed of object right before it hits the ground)<sup>2</sup>  
+     </ul>
+
+     <p id="demo" style="display: none">
+
+
+
+<img alt="roller coaster" class="img-centered img-size" src="Energy_Def_AlgProof.jpg"/>
+       
+
+</p>
+
+
+<button onclick="toggleText('demo')" type="button"> <b>How do we know that height*acceleration = 1/2(speed)^2?</b></button>
+
+    </div>   
+
+
+
+            
+    <!-- Nav Buttons -->
+    <div class="nav-btn-container">
+  <img id="back-btn-inactive" class="nav-btn" src="../_assets/WhiteGrayBlue_smaller.jpg"> 
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/WhiteGrayBlue_smaller.jpg"> 
+    <img id="back-btn-active" class="nav-btn" src="../_assets/ButtonBlackWhite.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/ButtonBlackWhite.png">
+</div>
+
+    <br>
+
+
+            
+        </div>
+
+        
+
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png">
+            <br>
+            <p>
+                ***Note for Teachers: You can access more information about this website and find other resources for science inquiry on the
+                <a href="https://www.isptutor.org/background-research"> ISP Tutor website.</a>
+            </p>
+            <p>©2021 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>
+                Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in part by the National Science Foundation, Grant SBE035442. The ISP Tutor project is funded by IES,
+                Grant R305A170176.
+            </p>
+            <p>
+                The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education, through Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of
+                the authors and do not represent views of the Institute or the U.S. Department of Education.
+            </p>
+        </div>
+
+
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
+</html>
