@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Forces and Motion-Newton&#39;s Second Law</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <!-- <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg"> -->
+         <div style="text-align:center" id="research-question"> </div>
+         
+
+<div style="float:left;margin-left:20px">
+<br><br>
+        <img alt="ISP logo" src="../ISPtutor_logo.jpg" width="80"/>
+      </div>
+
+
+
+      <div style="float:right;margin-right:20px">
+
+      <br><br><br>
+
+      <script type="text/javascript">
+
+      function newPopup(url) {
+            popupWindow = window.open(
+              url,'popUpWindow','height=400,width=800,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+          }
+
+          </script>
+        
+        <a href="JavaScript:newPopup('../glossary');">
+        
+        <button id="home-btn" class="glossary-btn">Glossary</button>
+        
+        </a>
+
+      </div>
+
+
+
+
+
+
+
+        <div id="header-bg-extension" style="text-align:center;font-size:18px"><br><b>You can search below or click on a science 
+        area to find information for your research question:</b></div>
+                <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn htmlhelp">Home &amp; HELP</button></a>
+           <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            
+        </div>
+
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Forces and Motion-Newton's Second Law</h1>
+
+<div class="page" id="page1">
+
+
+
+      <p class="text-justified">
+        <b>What is Newton's Second Law?</b> If we know all of the forces that are acting on an object, we can know how the object will
+          move. This is how NASA scientists are able to predict the motion of planets, comets, and
+          other astronomical bodies.  
+      </p>
+
+<img class="img-centered img-size_med" src="earth-1388003_1920.jpg"/>
+
+<br/>
+      <p class="text-justified">
+        Closer to home, here on Earth, we can also predict the motion of everyday objects if we know all of the forces
+        acting on the objects. For example, we can predict the motion of a shopping cart someone is pushing through a
+        supermarket or the motion of a ball rolling down a hill.
+      </p>
+
+
+        <img alt="woman_grocery_shopping_soccerball_rolling" class="img-centered img-size" src="Finalcombined2ndlaw.jpg"/>
+
+
+      <p>
+        We can figure out the motion of objects using the equations of <b>Newton's Second Law.</b> Newton's Second law
+        is sometimes expressed as: Force equals mass times acceleration (or <b>F</b> = <b>ma</b>). 
+      </p>
+      <p>
+        This is a much simpler way of saying what Newton's second Law really means:<br/><br/><b>
+        The acceleration of an object <u>in a given direction</u> is equal to the "net" sum of all
+        forces that are acting on the object <u>in that direction</u> divided by the mass of the object.</b>
+      </p>
+
+
+      </div>
+
+<div class="page" id="page2">
+
+      <ul class="brm-list">
+
+          <b>Important note:</b> One important thing to realize is that only forces that are external to the object and act
+          on the object affect the object's acceleration. This is why you can't, for example, pull
+          yourself up off the ground: your pulling on yourself is an internal force. You would need
+          someone or something else pulling on you to actually lift you up off of the ground!
+
+      </ul>
+
+      <img class="img-centered img-size" src="PullUpByBootstraps.jpg"/>
+
+
+    </div>
+
+<div class="page" id="page3">
+
+      <p>
+        <b>Question for you:</b> Does an object's acceleration cause forces to act on the object ((OR)) do forces
+        acting on the object cause an object's acceleration?
+       <br/>
+       <br/>
+        (Think about this for a few seconds before going to the next page...)
+      </p>
+
+</div>
+
+<div class="page" id="page4">
+
+      <p>
+        If you said the forces acting <i>on</i> an object determine the object's acceleration, then you were right. (Good going!)
+      </p>
+      <p>
+        Because an object's acceleration is caused by forces acting on it, it actually makes much more sense to
+        write <b>Newton's second law</b> as: 
+      </p>
+
+      <ul class="brm-list">
+        <li>
+          The <b>acceleration</b> of an object in a given direction is equal to the <b>sum of all forces</b> 
+          ("net" force) acting on the object in that direction divided by the mass of the object.
+        </li>
+        <li>
+          Or: <b>a </b> = <b>F<sub>net</sub></b> / m.
+        </li>
+      </ul>
+
+
+      <img alt="graph_showing_relationship_between_net_force_and_acceleration" class="img-centered img-size_med" src="GraphNewBRMColor.jpg"/>
+      <br/>
+
+      <ul class="brm-list">
+        <li>
+          The acceleration of an object is also determined by its mass (see
+          <a class="brm-link" href="../mass/index.html" target="_blank">Mass</a>
+          unit). The more mass an object has, the more it will resist changing its motion.
+          In other words, the more mass an object has, the less it will accelerate.
+        </li>
+      </ul>
+
+      <p>
+        <b>So, we can figure out the acceleration of an object in a direction if we know (a) its mass and (b) the
+          sum of all of the forces that are acting on the object in that direction.</b>
+      </p>
+      <p>
+        This may be a little hard to understand (it's a bit complicated!). Let's see what this means. We will give
+          examples of applying Newton's Second Law, starting with the simplest scenarios...
+      </p>
+    </div>
+
+<div class="page" id="page5">
+      <p>
+        <b>Acceleration when no forces act on object.</b> Here on Earth, because gravitational forces affect all
+        objects, we don't come across cases where no forces act on objects. We need to go deep into outer space for that...
+      </p>
+
+     <br/>
+
+      <hr/>
+
+      <p>
+        <i><b>Example.</b> An space rock is in outer space. No forces are acting on the space rock.
+          What is its acceleration?</i>
+      </p>
+
+      <img alt="graph_showing_relationship_between_net_force_and_acceleration" class="img-centered img-size" src="SpaceRock.png"/>
+<hr/>
+      <p>
+        This means that the sum of all forces acting on the space rock (in any direction) is equal to 0 N.
+
+        </p><p id="demo" style="display: none">("N" stands for "Newtons," which is a unit of force. It is named after the famous
+        physicist and mathematician
+        <a class="brm-link" href="../isaacnewton/index.html" target="_blank">Isaac Newton</a>,
+        whose second law of motion we are applying here! One Newton is equal to 1 kg*m/s<sup>2</sup>.
+        In other words, one Newton (N) is equal to the amount of force needed to accelerate a 1 kg
+        object at 1 m/s<sup>2</sup>.)</p>
+
+<button onclick="toggleText('demo')" type="button"> <b>Click for more/less info</b></button>
+
+      <p></p>
+      <p>
+        We will apply Newton's Second Law:
+      </p>
+      <ul class="brm-list">
+        <li>
+          <b>a</b> = <b>F</b><b><sub>net</sub></b> / m
+        </li>
+        <li>
+          The acceleration of the space rock =  the sum of all forces acting on the space rock / mass of the space rock.
+        </li>
+        <li>
+          The acceleration of space rock = 0 / mass of the space rock.
+        </li>
+        <li>
+          So, the acceleration of the space rock is equal to zero. (It doesn't change its motion.)
+        </li>
+      </ul>
+
+      <p>
+        And because there are no forces acting in any direction, the acceleration of the space rock is zero in all
+        directions. That is, the space rock does not accelerate in <i>any</i> direction.
+      </p>
+
+</div>
+
+<div class="page" id="page6">
+
+      <form class="quiz_choice quiz">
+        <b>Q0.5: In the previous example, the space rock's acceleration is zero because no forces are acting on it. What does this mean?</b>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">a) It will keep moving at the same speed and in the same direction.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) It will gradually slow down (but still move in the same direction).</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) It will gradually speed up (in the same direction).</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) It will keep moving at the same speed but change direction.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+            Right! When no forces are acting on an object, it will keep on moving at the SAME speed *and* SAME direction!
+        </div>
+        <div class="feedback-incorrect feedback">
+            Actually, when no forces are acting on an object, it will keep on moving at the SAME speed *and* SAME direction! It will not speed up.
+            And it will also not slow down at all!
+        </div>
+      </form>
+    </div>
+
+<div class="page" id="page7">
+
+        <b>Acceleration when one force acts on an object.</b> Now, let's say there is only <b>one force</b> acting
+        on an object in a given direction... 
+     <br/>
+     <br/>
+
+<hr/>
+
+      <p>
+
+    <i>    <b>Example 1 (One force):</b> Two astronauts are in a space shuttle in outer space, where there is no gravity. The
+          astronauts are hungry, so one gets a candy bar from storage and gently pushes it to the other astronaut with a
+          force of 0.1 N (one-tenth of a Newton). </i>
+      </p>
+      <img class="img-centered" width="350" src="PushingCandyBar.png"/>
+      <p>
+        <i>This means that the sum of all forces acting the object (candy bar) would be 0.1 N.</i>
+      </p>
+      <p>
+        <i>The candy bar has a mass of 0.1 kg. What is the acceleration of the candy bar while the astronaut
+          is pushing it?</i>
+      </p>
+
+<hr/>
+
+     <br/>
+      <p>
+        We will apply Newton's Second Law here:
+      </p>
+      <ul class="brm-list">
+        <li>
+          <b>a</b> = <b>F</b><b><sub>net</sub></b> / m
+        </li>
+        <li>
+          The acceleration of the candy bar = the sum of all forces acting on the candy bar in
+          given direction / mass of the candy bar.
+        </li>
+        <li>
+          The acceleration of the candy bar = 0.1 N (in the direction of the push) / 0.1 kg.
+        </li>
+        <li>
+          Acceleration = 1 N/kg = 1 m/s<sup>2  </sup>(Since 1 Newton is equal to 1 kg*m/s<sup>2</sup>)
+                in the direction of the push.
+        </li>
+      </ul>
+
+      <p>
+        It's important to understand that when the astronaut stops pushing on the candy bar, its acceleration
+        becomes zero. This is because now there are no forces acting on the candy bar.
+      </p>
+
+      <br/>
+
+</div>
+
+<div class="page" id="page8">
+
+<hr/>
+      <p>
+        <i><b>Example 2 (One force):</b> A 10 kg block is sitting on a flat horizontal ice surface. As shown below, someone
+          pushes horizontally on the block in the +x-direction (to the right) with a force of 2 N. </i>
+      </p>
+
+     
+        <img class="img-centered" width="450" src="IceBlockHorizSurface2.png"/>
+      
+
+      <p>
+        <i>What is the horizontal acceleration of the block while it is being pushed? (Assume that there is
+          no friction between the block and ice surface.)</i>
+      </p>
+<hr/>
+      <br/>
+
+      <p>
+        To answer this question, we will again apply <b>Newton's second law</b>: The <b>acceleration</b> of an object
+        in the horizontal direction is equal to the <b>sum of all forces</b> ("net" force) acting on the object
+        in the horizontal direction divided by the mass of the object (or <b>a = F</b>/ m).
+      </p>
+      <p>
+        Only one force acts on the block in the horizontal direction: the +2 N pushing force. 
+      </p>
+
+      <ul class="brm-list">
+        <li>
+          <b>a</b> = <b>F</b><b><sub>net</sub></b> / m
+        </li>
+        <li>
+          Acceleration of the block = +2 N / 10 kg
+        </li>
+        <li>
+          Acceleration of block = +0.2 m/s<sup>2</sup>.
+        </li>
+      </ul>
+
+      <p>
+        (But right when the push ends, the acceleration of the block will be zero.)
+      </p>
+
+    </div>
+
+<div class="page" id="page9">
+      <p>
+        <b>Acceleration when <u>more than one force</u> acts on an object.</b> Things get a bit more
+        complicated when there is <b>more than one force</b> acting on an object in a particular direction. 
+      </p>
+      <p>
+        Again, <b>Newton's Second Law</b> says that the acceleration of an object in a particular direction is equal
+        to the sum of all forces acting on the object (the "net force") in that direction divided by the acceleration
+        of the object in that direction.
+      </p>
+      <p>
+        When there is more than one force acting on an object, we need to calculate the "net" force.
+      </p>
+      <p>
+        <b>Calculating the Net force</b>. The “net” force in a given direction is the sum of all forces acting
+        in that direction <u>minus</u> the sum of all forces acting in the <i>opposite</i> direction.
+      </p>
+
+      <br/>
+
+</div>
+
+<div class="page" id="page10">
+<br/>
+      <p>
+
+      </p><hr/>
+        <i><b>Example 1 (Multiple forces): </b>In the picture below, a 1 kg book is sitting on a desk. There are two forces on the
+        book in the vertical (up/down) direction. </i>
+<br/>
+
+
+        <img alt="image of book on desk" class="img-centered img-size_smaller" src="BookOnDesk.png"/>
+      
+        <hr/>
+      <p></p>
+     <br/>
+      <p>
+        We will calculate the <b>Net force</b> in the vertical direction: 
+      </p>
+
+      <ul class="brm-list">
+        <li>
+          This is equal to the force of gravity pulling down on the book MINUS the force of the
+          table pushing upward on the book. These two forces are equal (according to Newton's Third Law). Therefore, the Net force
+          in the vertical direction is equal to zero.
+        </li>
+      </ul>
+
+      <p>
+        We now know the net force force acting on the book in the vertical direction (0 N). We also know the
+        mass of the book (1 kg).
+      </p>
+
+      <ul class="brm-list">
+        <li>
+          So, we can calculate the book's acceleration in the vertical direction using Newton's
+          second law (<b>a</b> = <b>F</b><b><sub>net</sub></b>/m):
+         <br/>
+         <br/>
+          <b>a</b> = 0 / 1 kg = 0
+        </li>
+      </ul>
+
+      <p>
+        So, the book's acceleration is equal to zero. It does not change its motion since the forces acting on it are balanced.
+      </p>
+     <br/>
+
+</div>
+
+<div class="page" id="page11">
+
+<hr/>
+      <p>
+       <i> <b>Example 2 (Multiple forces).</b> In a game of tug-of-war,
+          there are two forces acting on the rope (with a red flag in the middle) in the horizontal
+          direction. (See picture below.) If the two teams pull equally hard on the rope but
+          in the opposite directions (one team pulls horizontally to the right and the other
+          team pulls horizontally to the left), the rope will not move; neither will the people
+          pulling. </i>
+      </p>
+
+      <img class="img-centered img-size" src="tugofwarRevised.jpg"/>
+
+
+      <p>
+      <i>Now, let's say that someone on the team on the right lost their grip on the rope for just
+        a moment. As a result, the rope starts moving (or accelerates) to the left. After the recovery and the
+        person regains their grip, both teams are again pulling in opposite directions with the same force. Because
+        the net force acting on the rope is once again zero, the rope does not accelerate: the rope does not speed
+        up or slow down. Instead, it keeps moving to the left at that same speed. Soon, the team on the left wins
+        the contest! </i>
+      </p>
+
+
+<hr/>
+
+<br/>
+      <p>
+        In these examples, the net force acting on the object in the given direction was zero. So, the acceleration
+        of the object was also zero in that direction. (Remember: constant speed — without changing direction — is
+        also zero acceleration!) 
+      </p>
+
+</div>
+
+<div class="page" id="page12">
+
+      <form class="quiz_choice quiz">
+        <b>Q1: In general, when the net force acting on a body is zero in a given direction, what is the acceleration of the body in that direction?</b>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) Greater than zero.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) Less than zero.</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">c) Zero.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) It is impossible to know.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+            Right! When the sum of forces in a given direction is equal to zero, the acceleration from that force is also zero in that direction.
+        </div>
+        <div class="feedback-incorrect feedback">
+            Actually, when the sum of forces in a given direction is equal to zero, the acceleration from that force is also zero in that direction.
+        </div>
+      </form>
+
+
+      <form class="quiz_choice quiz">
+        <b>Q1.5: An object in a vaccum is pulled straight downward by the force of the earth's gravity. This is the only force acting on the object. What is the acceleration
+        of the object in the horizontal direction (perpendicular to the force of gravity)?</b>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) Greater than zero.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) Less than zero.</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">c) Zero.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) It is impossible to know.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+            Right! Since the only force acting on the object is downward, there is no force acting on the object in the horizontal direction.
+            So, the acceleration is zero in the horizontal direction.
+        </div>
+        <div class="feedback-incorrect feedback">
+            Well, actually... since the only force acting on the object is downward, there is no force acting on the object in the horizontal direction.
+            So, the acceleration is zero in the horizontal direction.
+        </div>
+      </form>
+
+     <br/>
+
+</div>
+
+<div class="page" id="page13">
+
+      <p>
+
+      </p><hr/>
+        <i><b>Example 3 (Multiple forces):</b> In the picture below, a mom is wearing slippers and standing on a newly-waxed floor
+          (which is slippery). The only forces acting on her in the horizontal (or x-) direction are the forces
+          from her kids pulling on her.</i>
+      <p></p>
+      <p>
+        <i>The mom is pulled in two opposite directions
+        by her two children. The older child pulls her to the right with a force of 50
+        Newtons. The younger child pulls her to the left with a force of 20 Newtons. </i>
+      </p>
+
+
+      <img alt="Person being pulled by two different forces" class="img-centered img-size_smaller" src="WomanForceGraphicA1-T1b.jpg"/>
+
+      <form class="quiz_choice quiz">
+        <b>Q2: What is the Net force acting on the Mom in the +x direction (or to the right)?</b>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) 0 N (there is no net force acting on the Mom)</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) -20 N (negative: to the left)</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) +20 N (positive: to the right)</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">d) +30 N (positive: to the right)</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">e) 70 N</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+            Right! The Net force acting on the Mom is equal to +50 N - 20 N = +30 N. (The + means that the force is in the positive x-direction.)
+        </div>
+        <div class="feedback-incorrect feedback">
+            Actually...The Net force acting on the Mom is equal to +50 N - 20 N = +30 N. (The + means that the force is in the positive x-direction.)
+        </div>
+      </form>
+
+      <form class="quiz_choice quiz">
+        <b>Q3: If the Mom weighs 60 kg, what is her acceleration? (Hint: You need to use the net force from Q2 above.)</b>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">a) 0 m/s<sup>2</sup> (she will not accelerate).</div><br/>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">b) +0.5 m/s<sup>2</sup> (positive: to the right)</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) -0.5 m/s<sup>2</sup> (negative: to the left)</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) +2 m/s<sup>2</sup> (to the right)</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+            Right! The (poor) mom will accelerate at +0.5 m/s<sup>2</sup>. This was calculated from Newton's Second Law: a = F<sub>net</sub>/m = +30N/60kg = +0.5 m/s<sup>2</sup>.
+        </div>
+        <div class="feedback-incorrect feedback">
+            Actually...The (poor) mom will accelerate at +0.5 m/s<sup>2</sup>. This was calculated from Newton's Second Law: a = F<sub>net</sub>/m = +30N/60kg = +0.5 m/s<sup>2</sup>.
+        </div>
+      </form>
+
+     <br/>
+
+</div>
+
+<div class="page" id="page14">
+
+      <p>
+        <i><b>Example 4 (Multiple forces):</b> Now, let's say we have a 10 kg object, which is acted on by four forces as shown
+          below. What is the acceleration of the object?</i>
+      </p>
+
+      <img class="img-centered img-size_700" src="Example4_FourForces.png"/>
+      <br/>
+
+<hr/>
+First, what is the net force acting on the object? Select your answer:
+
+<select class="fib_select" id="FIB1" onchange="fibUpdate('FIB1')">
+            <option disabled="" selected="" value="#ffffff">(Select one)</option>
+            <option value="#ed8587">0 N</option>
+            <option value="#ed8587">32 N </option>
+            <option value="#ed8587">+2 N (to the right)</option>
+            <option value="#11bf7a">-2 N (to the left)</option>
+
+          </select>
+      <p>
+        We can find the acceleration of the body by (you guessed it!) applying Newton's Second Law: 
+        <b>a</b> = <b>F</b><b><sub>net</sub></b> / m
+      </p>
+
+      <ul class="brm-list">
+        <li>
+          a = -2 N / 10 kg = -0.2 m/s<sup>2</sup>.  The negative sign means that
+          the acceleration is in the negative x-direction (or to the left).
+        </li>
+      </ul>
+    </div>
+
+<div class="page" id="page15">
+
+      <p>
+        <b>Summary:</b> The Net force acting on an object determines its acceleration. If the Net force
+        acting on an object in a given direction is NOT equal to zero, the object will
+          accelerate in the direction of the net force. 
+      </p>
+      <p>
+        For example:
+      </p>
+
+      <ul class="brm-list">
+        <li>
+          If there is only one force acting on the object in that direction, the object will accelerate in
+          that direction.
+        </li>
+        <li>
+          If there are two unbalanced forces acting on the object in that direction, the object will accelerate
+          in that direction.
+        </li>
+        <li>
+          In general, if the sum of all forces acting on the object in one direction is not equal to the sum of
+          forces acting on it in the opposite direction, the object will accelerate in the direction of the net force.
+        </li>
+      </ul>
+
+      <p>
+        How fast the object accelerates depends on the <i>magnitude</i> (value or amount) of the net force. As the
+        magnitude of net force increases, the magnitude of the acceleration will also increase.
+      </p>
+
+    </div>
+
+<div class="page" id="page16">
+
+      <p>
+        <b>Mass and Acceleration</b>.
+      </p>
+      <p>
+        The <a class="brm-link" href="../mass/" target="_blank">mass</a>
+        of the object also affects how much the object accelerates when a net force acts on the object. 
+      </p>
+      <p>
+        As you probably think, the more mass an object has, the less the object will accelerate when the same net
+        force acts on it. 
+      </p>
+      <p>
+        And the <i>less </i>mass an object has, the <i>more</i> it will accelerate when that same net force acts
+        on the object.  
+      </p>
+      <p>
+        This relationship between mass and acceleration is shown below.
+      </p>
+
+      
+        <img class="img-centered img-size_smaller" src="AccMassGraph.PNG"/>
+    
+
+      <p>
+
+        This relationship between mass and acceleration for a constant force (shown in the graph above) can be written as:
+       <br/>
+      </p>
+      <p>
+        <span style="color:#0b5394">Acceleration (of object)</span>  
+        <span clas="font-roboto"> ∝ </span>
+        <span style="color:#0b5394">1 / mass (of object) </span>
+      </p>
+
+      <br/>
+</div>
+
+<div class="page" id="page17">
+      <i><b>Example:</b> The dad shown below (to the left) has a mass of 150 kg. The dad to the right has a mass of 200 kg.
+      Both are pulled to the right by their child with the same force (10 N). </i>
+      <br/>
+
+<br/>
+
+      <img class="img-centered img-size_med" src="Example_Dad.png"/>
+  <hr/>
+      <br/>
+The acceleration of the smaller (less massive) dad on the left will be
+
+<select class="fib_select" id="FIB2" onchange="fibUpdate('FIB2')">
+            <option disabled="" selected="" value="#ffffff">(Select one)</option>
+            <option value="#11bf7a">greater than</option>
+            <option value="#ed8587">less than</option>
+            <option value="#ed8587">the same as</option>
+          </select>
+
+
+the acceleration of the larger (more massive) dad.
+    </div>
+
+<div class="page" id="page18">
+      <p>
+        <b>Relationship between Net force, Mass, and Acceleration</b>.
+      </p>
+      <p>
+        In summary, the acceleration of an object is directly proportional to the net force acting on the object and
+        <a class="brm-link" href="../proportional-1/" target="_blank"> inversely proportional to</a>
+        its mass. These relationships are summarized in <b>Newton's Second Law</b>: The acceleration of an object
+        [in a given direction] is equal to the net force acting on the object in that direction divided by the mass of
+        the object: 
+      </p>
+
+       <img class="img-centered img-size_700" src="NSL_AccDef_NetForceDef.png"/>
+       <br/>
+
+
+
+    <!-- Quiz: Checkbox -->
+      <form class="quiz_checkbox quiz">
+        <b>Q4: What two quantities determine the acceleration of an object in a given direction?</b>
+        <input name="question" type="checkbox" value="incorrect"/>
+        <div class="label">(a) the weight of the object
+        </div><br/>
+        <input name="question" type="checkbox" value="correct"/>
+        <div class="label">(b) the mass of the object
+        </div><br/>
+        <input name="question" type="checkbox" value="incorrect"/>
+        <div class="label">(c) the total amount of forces acting on the object
+        </div><br/>
+        <input name="question" type="checkbox" value="incorrect"/>
+        <div class="label">(d) the amount of force the object has
+        </div><br/>
+        <input name="question" type="checkbox" value="correct"/>
+        <div class="label">(e) the "net" sum of forces acting on the object in that direction
+        </div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+          Good job! The object's mass and the "net" sum of forces acting on the object in that direction determine the object's acceleration in that direction.
+        </div>
+        <div class="feedback-incorrect feedback">
+          Actually, the object's mass and the "net" sum of forces acting on the object in that direction determine the object's acceleration in that direction.
+        </div>
+      </form>
+
+
+
+    </div>
+
+
+
+            
+    <!-- Nav Buttons -->
+    <div class="nav-btn-container">
+  <img id="back-btn-inactive" class="nav-btn" src="../_assets/WhiteGrayBlue_smaller.jpg"> 
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/WhiteGrayBlue_smaller.jpg"> 
+    <img id="back-btn-active" class="nav-btn" src="../_assets/ButtonBlackWhite.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/ButtonBlackWhite.png">
+</div>
+
+    <br>
+
+
+            
+<div class="nav-toc-container">
+    <h3>Table of Contents: Newton's Second Law unit</h3>
+    <ul>
+    <li><a href="#top" onclick="tocPageJump(1)">What is Newton's Second Law?</a></li>
+      <li><a href="#top" onclick="tocPageJump(2)">Forces in NSL are external to object</a></li>
+      <li><a href="#top" onclick="tocPageJump(4)">Forces on object cause its acceleration</a></li>
+      <li><a href="#top" onclick="tocPageJump(5)">NSL when no forces act on object</a></li>
+      <li><a href="#top" onclick="tocPageJump(7)">NSL when one force acts on object</a></li>
+      <li><a href="#top" onclick="tocPageJump(9)">NSL when more than one force acts on object</a></li>
+      <li><a href="#top" onclick="tocPageJump(15)">Summary</a></li>
+      <li><a href="#top" onclick="tocPageJump(16)">Mass &amp; Acceleration</a></li>
+      <li><a href="#top" onclick="tocPageJump(17)">Example: Mass &amp; Acceleration</a></li>
+      <li><a href="#top" onclick="tocPageJump(18)">Formal statement of Newton's Second Law</a></li>
+    </ul>
+  </div>
+
+        </div>
+
+        
+
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png">
+            <br>
+            <p>
+                ***Note for Teachers: You can access more information about this website and find other resources for science inquiry on the
+                <a href="https://www.isptutor.org/background-research"> ISP Tutor website.</a>
+            </p>
+            <p>©2021 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>
+                Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in part by the National Science Foundation, Grant SBE035442. The ISP Tutor project is funded by IES,
+                Grant R305A170176.
+            </p>
+            <p>
+                The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education, through Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of
+                the authors and do not represent views of the Institute or the U.S. Department of Education.
+            </p>
+        </div>
+
+
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
+</html>

@@ -19,6 +19,9 @@ h1 {
 
 button {
   cursor: pointer;
+  background-color: #95d5f5;
+  color: #1d2a31;
+  text-align: center;
 }
 
 .nav-toc-container {
@@ -73,14 +76,20 @@ button {
   color: white;
   padding: 5px 5px;
   margin: 0px 1px;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'Boogaloo', cursive;
   -webkit-appearance: none;
   border-radius: 10px;
 }
-.header-btn.htmlhelp {
+.header-btn.htmlabout {
   background-color: #f1b900;
   border-color: #f1b900;
+  border-radius: 10px;
+}
+
+.header-btn.htmlhelp {
+  background-color: #24a34a;
+  border-color: #24a34a;
   border-radius: 10px;
 }
 
@@ -94,6 +103,18 @@ button {
   font-family: 'Boogaloo', cursive;
   -webkit-appearance: none;
   border-radius: 10px;
+}
+
+.notebook-btn {
+  background-color: #09b9ee;
+  border-color: #747483;
+  color: white;
+  padding: 5px 5px;
+  margin: 2px 2px;
+  font-size: 20px;
+  font-family: 'Boogaloo', cursive;
+  -webkit-appearance: none;
+  border-radius: 15px;
 }
 
 .header-btn:hover {
@@ -171,7 +192,7 @@ button {
 }
 
 .demo {
-  
+  background-color: #5681cc;
 }
 
 
@@ -508,3 +529,77 @@ ol.brm-list.nested-list > li:last-of-type {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.container {
+  position: relative;
+  text-align: center;
+  color: rgb(55, 10, 252);
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered1 {
+  position: absolute;
+  top: 60%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+}
+
+.centered2 {
+  position: absolute;
+  top: 55%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+}
+
+.centered3 {
+  position: absolute;
+  top: 65%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+}
+
+.centered4 {
+  position: absolute;
+  top: 70%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+}
+
+.centered5 {
+  position: absolute;
+  top: 85%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.fib_select {
+  background-color: rgb(250, 246, 208);
+  text-align: center;
+}

@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Electric Force</title>
+        <title>Coulomb&#39;s Law</title>
         <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../main.css">
@@ -87,17 +87,21 @@
 <div class="page" id="page1">
       <p>
         <b>Coulomb's Law.</b> The strength of the electric force between two charged particles is related to two
-        variables: (a) the distance between them, and (b) how much charge they have. We'll talk about how the strength
+        variables: (a) the distance between them (r), and (b) the "net" charges of the particles. We'll talk about how the strength
         of the electric force (F<sub>e</sub>) changes with distance first.
       </p>
+
+      <img alt="Particles_distance_between" class="img-centered" src="Particles_Distance.png" width="450px"/>
 
       <hr/>
 
       <p>
-        <b><i>Distance.</i></b> There is a strong relationship between the strength of Fe and distance between the
+        <b><i>Distance.</i></b> There is a strong relationship between the strength of the electric force, Fe, and distance between the
         charged particles. The relationship between the strength of the attractive or repulsive force between
         charged particles (F<sub>e</sub>) and distance between the particles (r) is shown below:
       </p>
+
+      
 
       <img alt="Graph_showing_relationship_between_strength_of_Fe_and_distance_between_the_charged_particles" class="img-centered" src="OneOverRsquaredRel.PNG" width="400px"/>
       <br/>
@@ -123,8 +127,15 @@
 
       <ul class="brm-list">
         <li>
-          Net charge of a particle (<b>q<sub>net</sub></b>) = Number of protons that particle has - Number of electrons
-          particle has.
+          Net charge of a particle (<b>q(net)</b>) = Number of protons that particle has - Number of electrons
+          the particle has. So, for example, a particle with 100 electrons and 100 protons would have a net charge of 
+          <select class="fib_select" id="FIB1" onchange="fibUpdate('FIB1')">
+          <option value="#ffffff">(Select one)</option>
+          <option value="#11bf7a">zero</option>
+          <option value="#ed8587">+100</option>
+          <option value="#ed8587">-100</option>
+          <option value="#ed8587">(not enough information is given)</option>
+        </select>.
         </li>
       </ul>
 
@@ -135,31 +146,38 @@
       <p class="text-centered">
         <b>F<sub>e</sub></b>
         <span class="font-roboto text-lg">∝</span>
-        <b>q<sub>net<sub>1</sub></sub></b>
+        <b>q(net)1</b>
       </p>
       <p class="text-centered">
         <b>F<sub>e</sub></b>
         <span class="font-roboto text-lg">∝</span>
-        <b>q<sub>net<sub>2</sub></sub></b>
+        <b>q(net)2</b>
       </p>
+      <img alt="Particles_distance_between" class="img-centered" src="Particles_NetCharge.png" width="450px"/>
+      
       <p>
-        We can combine these relationships into one equation, called Coulomb's Law.
+In the figure above, Particle 1 is made of 2 protons and one electron (for a net charge of +1). Particle 2 is made of 2 electrons and one proton (for a net charge of -1). 
+The net charges of +1 and -1 are +/-1 times the charge of one proton/electron.
+      </p>
+      <br>
+      <p>
+        We can combine the relationships between Fe and r and Fe and q(net) into one equation, called Coulomb's Law...
       </p>
 
-     <br/>
+    
       <hr/>
 
       <p>
-        <b>Coulomb's Law.</b> OK, so we know that the strength of the electric force between charged particles
-        increases as the particles get closer to each other. We also know that the strength of the electic force
-        increases as the total charges of the two particles increases. The exact strength of the electric force between
+        <b>Coulomb's Law.</b> We know that the strength of the electric force between charged particles
+        increases as (1) the particles get closer to each other and (2) as the total charges of the two particles increases. 
+        The exact strength of the electric force between
         two charged particles can be calculated by using Coulomb's Law (below):
       </p>
 
       <p class="text-centered">
         <b>F<sub>e</sub></b> = <b>k<sub>e </sub></b>
         <span class="text-xs">×</span>
-        <b><u>q<sub>net<sub>1</sub></sub>q<sub>net<sub>2</sub></sub></u></b>
+        <b><u>q(net)1*q(net)2</u></b>
        <br/>
         <b>               r<sup>2</sup></b>
       </p>
@@ -170,30 +188,53 @@
           9 × 10<sup>9</sup> Newtons × meters<sup>2</sup>/Coulombs<sup>2</sup>
         </li>
         <li>
-          <b>q<sub>1</sub></b> is the charge (in Coulombs) of Particle 1
+          <b>q(net)1</b> is the net charge (in Coulombs) of Particle 1
         </li>
         <li>
-          <b>q<sub>2</sub></b> is the charge (in Coulombs) of Particle 2
+          <b>q(net)2</b> is the net charge (in Coulombs) of Particle 2
         </li>
         <li>
           <b>r</b> is the distance between the two charged particles.
         </li>
       </ul>
-      <br/>
+      
 
       <p>
-        Note: The charge of one proton is equal to 1.6 × 10<sup>-19</sup> Coulombs.
+        (Note: The charges of protons and electrons are given in the unit called "Coulombs." 
+        One proton is equal to +1.6 × 10<sup>-19</sup> Coulombs. An electron has the same sized charge as a proton, but is negatively charged 
+        (-1.6 × 10<sup>-19</sup> Coulombs). To simplify in the example 
+        below, we'll call the charges of one proton or electron "one charge unit.")
       </p>
+      <hr>
+      <br>
       <p>
-        This means that the force between two charged particles increases as the total amount of charge increases. So,
-        say you rubbed a balloon on your head, which transferred 50 electrons to the balloon. But your sister rubbed
-        another balloon on her head, which transferred 100 electrons. Your sister's hair would be pulled by the balloon
-        with four times the force your hair would be pulled with (and more of her hair would likely stick to the
-        balloon).
+        <b>Applied example:</b> 
+        Say you rubbed an initially uncharged balloon on your hair, which was also initially uncharged. This transferred 50 electrons from your hair to the balloon. 
+        Your look-alike twin rubs another (initially uncharged) balloon on their hair, which transferred 100 electrons from the balloon to their hair. Your twin's hair would be pulled by the 
+        balloon with <b>four</b> times the force your hair would be pulled with. 
       </p>
-      <p>
-        This force also increases as the distance between the charged particles <i>de</i>creases.
+
+<p id="demo" style="display: none">
+
+This is because after rubbing the balloon, you hair has a net charge of +50 charge units. Your balloon now has a net 
+      charge of -50 charge units. So, the product of the net charge is 50*50 = 2,500 charge units. 
+      <br><br>
+      After rubbing the balloon on their hair, your twin's 
+      hair has a net charge of +100 charge units, and their balloon has a net charge of -100 charge units. So, the product of the net charge is 
+      100*100 = 10,000 charge units. 
+      <br><br>
+      10,000 is four times 2,500, when the balloon and hair are the same distances from each other for you and you twin.
+      <br><br>
+        This force also increases as the distance between the charged particles &mdash; in this case the balloon and hair &mdash; 
+        <i>de</i>creases.
       </p>
+
+
+</p>
+<button onclick="toggleText('demo')" type="button">Why four times the force? <b>Think about what's happening before clicking here to find out.</b></button>
+
+
+       
 
     </div>
 

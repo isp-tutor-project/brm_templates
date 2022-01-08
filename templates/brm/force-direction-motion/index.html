@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Force Direction and Motion</title>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Search Bar -->
+        <script src="https://cse.google.com/cse.js?cx=012034798246939675870:grwbnr76mlk"></script>
+        <!-- Google Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18104655-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-18104655-6');
+        </script>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <!-- <img id="brm-header-img" alt="StudentBRMHeader" src="../StudentBRMHeader.jpg"> -->
+         <div style="text-align:center" id="research-question"> </div>
+         
+
+<div style="float:left;margin-left:20px">
+<br><br>
+        <img alt="ISP logo" src="../ISPtutor_logo.jpg" width="80"/>
+      </div>
+
+
+
+      <div style="float:right;margin-right:20px">
+
+      <br><br><br>
+
+      <script type="text/javascript">
+
+      function newPopup(url) {
+            popupWindow = window.open(
+              url,'popUpWindow','height=400,width=800,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+          }
+
+          </script>
+        
+        <a href="JavaScript:newPopup('../glossary');">
+        
+        <button id="home-btn" class="glossary-btn">Glossary</button>
+        
+        </a>
+
+      </div>
+
+
+
+
+
+
+
+        <div id="header-bg-extension" style="text-align:center;font-size:18px"><br><b>You can search below or click on a science 
+        area to find information for your research question:</b></div>
+                <div class="search-container">
+            <div class="gcse-search"></div>
+        </div>
+        <div class="header-btn-container">
+            <a href="../home"><button id="home-btn" class="header-btn htmlhelp">Home &amp; HELP</button></a>
+           <a href="../areachemphys"><button id="chemical-btn" class="header-btn">Chemical &amp; Physical Reactions</button></a>
+            <a href="../area_heattemp"><button id="heat-btn" class="header-btn">Heat &amp; Temperature</button></a>
+            <a href="../area_forcesmotion"><button id="forces-btn" class="header-btn">Forces &amp; Motion</button></a>
+            <a href="../Area_PlantReproduction"><button id="plant-btn" class="header-btn">Plant Reproduction</button></a>
+            
+        </div>
+
+        <!-- Main Page -->
+        <div class="page-container">
+            
+            <h1>Force Direction and Motion</h1>
+
+<div class="page" id="page1">
+      <p>
+        <b>Acceleration from one force.</b> An object will speed up (or "accelerate") in the direction of the 
+        <a class="brm-link" href="../net-force/" target="_blank">Net Force</a> 
+        acting on the object. (This idea is one part of 
+        <a class="brm-link" href="../forces-and-motion-newton-s-second-law/" target="_blank">Newton's Second Law</a>.)
+      </p>
+      <p>
+        <b><i>Example 1</i></b>. For example, say there is only one force (gravity) acting on an object. This force
+        acts vertically downward on the object (toward the center of the Earth). The object will accelerate in the
+        downward direction. 
+      </p>
+
+      <img alt="diagram_of_gravity" class="img-centered" width="200px" src="ForceGravity_Down.png"/>
+
+      <p>
+        Because gravity pulls downward, no part of the force of gravity pulls in the horizontal direction (which is
+        perpendicular, or at a right angle, to the vertical direction). Because there is no force of gravity (or any
+        other forces) in the horizontal direction, the object does not accelerate in the horizontal direction. It
+        falls straight down.
+      </p>
+
+     <br/>
+    </div>
+
+<div class="page" id="page2">
+      <p>
+        <b>Acceleration from more than one force.</b> Now, let's say an object is sitting on flat ground (rather than
+        freely falling). There are two forces acting on the object. Gravity still pulls down on the object. However,
+        the ground will push up on the object with the same force. (When any two objects are in contact, they push on
+        each other with the same amount of force, but in opposite directions: See
+        <a class="brm-link" href="../newton-s-third-law/index.html" target="_blank">Newton's Third Law</a> 
+        Unit.) Because the vertical forces are "<i>balanced"</i>, the net force on the object in the up/down direction
+        is zero and the object will not move in this direction. 
+      </p>
+
+      <img alt="Two forces that are equal in strength act on object" class="img-left img-size_med" src="ForceDirMotionFig1_2.PNG"/>
+     <br/>
+
+      <p>
+        But what happens in the horizontal direction? As we already said, the force of gravity is downward only. The
+        ground pushes straight up on the object. So, neither force pushes the object in the horizontal direction. 
+        Because there are no forces in the horizontal direction, the object does not
+        accelerate—or change its motion—in the horizontal direction either.
+      </p>
+
+     <br/>
+    </div>
+
+<div class="page" id="page3">
+      <p>
+        <b>Acceleration of an object on a ramp.</b> Now, let's say that the object was on a hill instead of on flat
+        ground (as shown below). Gravity still pulls straight downward on the object, like it always does! The ground
+        still pushes upward (perpendicular to the surface) on the object. <i>Let's assume there is no friction between
+        the object and surface of the hill to make things simpler!</i>
+      </p>
+
+      <img alt="gravity_diagram" class="img-centered img-size" src="newdiagram2.png"/>
+
+      <p>
+        We want to see how "much" of each force is in the direction of the hill. This will determine the acceleration
+        of the object down the hill. 
+      </p>
+      <p>
+        The force of the ground pushing up on the object is perpendicular to the hill. Because of this, it does not
+        affect the acceleration of the object down the hill. 
+      </p>
+      <p>
+        However, the force of gravity is no longer perpendicular to the hill surface. <i>The downward force of gravity
+        can be separated into two parts</i>: 
+      </p>
+
+      <ul class="brm-list">
+        <li>
+          one part that is parallel to the surface of the hill, and 
+        </li>
+        <li>
+          the other part that is perpendicular to the surface of the hill. (See the figure below, to the right, for
+          these parts)
+        </li>
+      </ul>
+
+      <p>
+        In other words, some of the force of gravity is in the direction of down the hill (the green arrow in the
+        figure below). Another part of the force of gravity acts perpendicular to the surface, downward
+        (the orange arrow). This "component" of the force of gravity does not affect the acceleration of the object. 
+      </p>
+
+      <img alt="force_gravity_diagram" class="img-centered img-size_med" src="newdiagram7_cropped.png"/>
+      <br/>
+
+      <p>
+        So, <i>only</i> the part of the force that is <b style="color:#00b050">parallel to the surface of the hill</b>
+        affects the motion of the object down the hill.
+      </p>
+      <p>
+        <b>Acceleration on steeper ramp.</b> Let's make the hill even steeper! Now, the part of the force of gravity
+        that is parallel to the hill (in the direction of the object's motion) is larger than when the hill was less
+        steep (in the last example). 
+      </p>
+
+      <br/>
+      <img alt="steel_slope_graphic" class="img-centered" width="350px" src="Steep.png"/>
+      <br/>
+
+      <form class="quiz_choice quiz">
+        <b>Q1: What happens to the amount of the force of gravity that pulls the object down the hill (in the direction of its motion) as the hill becomes steeper?</b>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">a) It increases.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) It decreases.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) It stays the same. The force of gravity on the object is constant.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) I don't know.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+            You're right! As the hill gets steeper, the amount of gravity that acts in the direction of the object's motion down the hill increases.
+        </div>
+        <div class="feedback-incorrect feedback">
+            Sorry, that's not the right answer. As the hill gets steeper, the amount of gravity that acts in the direction of the object's motion down the hill increases.
+        </div>
+      </form>
+
+      <br/>
+      <br/>
+
+      <p>
+        In the extreme, the hill is a cliff, and the object falls straight down. In this case, gravity acts entirely
+        in the direction of the motion of the object. 
+      </p>
+
+     <br/>
+      <img class="img-centered" width="300" src="ForceDirMotionDown2.png"/>
+     <br/>
+
+      <form class="quiz_choice quiz">
+        <b>Q2: What happens to the acceleration of the object down the hill (in the direction of its motion) as the hill becomes steeper?</b>
+        <input name="question" type="radio" value="correct"/>
+        <div class="label">a) It increases.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">b) It decreases.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">c) It stays the same. The force of gravity on the object is constant.</div><br/>
+        <input name="question" type="radio" value="incorrect"/>
+        <div class="label">d) I don't know.</div><br/>
+        <button class="submit-btn" type="submit">Submit</button>
+        <div class="feedback-correct feedback">
+            You're right! As the hill gets steeper, the force of gravity in the direction of the object's motion increases.
+            As a result, the acceleration of the object in the direction of its motion increases.
+        </div>
+        <div class="feedback-incorrect feedback">
+            Sorry, that's not the right answer. As the hill gets steeper, the force of gravity in the direction of the object's motion increases.
+            As a result, the acceleration of the object in the direction of its motion increases.
+        </div>
+      </form>
+      <br/>
+
+
+      <p>
+        <b>Summary.</b> The bigger the force that is acting on an object in the direction of its motion, the more the
+        object will speed up in the direction of the force <i>while that force is acting on the object</i>. As the hill
+        gets steeper, the part of the force of gravity that acts down the hill increases. So, the object's speed
+        increases more quickly (or the acceleration increases) as the hill gets steeper.
+      </p>
+     <br/>
+    </div>
+
+
+
+            
+    <!-- Nav Buttons -->
+    <div class="nav-btn-container">
+  <img id="back-btn-inactive" class="nav-btn" src="../_assets/WhiteGrayBlue_smaller.jpg"> 
+    <img id="next-btn-inactive" class="nav-btn" src="../_assets/WhiteGrayBlue_smaller.jpg"> 
+    <img id="back-btn-active" class="nav-btn" src="../_assets/ButtonBlackWhite.png">
+    <img id="next-btn-active" class="nav-btn" src="../_assets/ButtonBlackWhite.png">
+</div>
+
+    <br>
+
+
+            
+        </div>
+
+        
+
+        <!-- Footer -->
+                <div id="footer">
+            <img src="../_assets/klahrLabFooter.png">
+            <br>
+            <p>
+                ***Note for Teachers: You can access more information about this website and find other resources for science inquiry on the
+                <a href="https://www.isptutor.org/background-research"> ISP Tutor website.</a>
+            </p>
+            <p>©2021 Klahr Lab, Carnegie Mellon University. All Rights Reserved</p>
+            <p>
+                Carnegie Mellon University | Dept. of Psychology | 5000 Forbes Ave. | Pittsburgh, PA 15213
+                The TED project was funded in part by the Institute of Education Science (IES), Grant R305H060034, and
+                in part by the National Science Foundation, Grant SBE035442. The ISP Tutor project is funded by IES,
+                Grant R305A170176.
+            </p>
+            <p>
+                The research reported here was supported by the Institute of Education Sciences, U.S. Department of
+                Education, through Grant R305A170176 to Carnegie Mellon University. The opinions expressed are those of
+                the authors and do not represent views of the Institute or the U.S. Department of Education.
+            </p>
+        </div>
+
+
+        <!-- Enable header and nav button functionality -->
+        <script src="../brm.js"></script>
+    </body>
+</html>
