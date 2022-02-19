@@ -2,7 +2,7 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy("templates/brm/main.css")
     eleventyConfig.addPassthroughCopy("templates/brm/brm.js")
-    // eleventyConfig.addPassthroughCopy("_assets/*.*")
+    // eleventyConfig.addPassthroughCopy("assets/*.*")
     return {
         dir: {
             input: "templates",

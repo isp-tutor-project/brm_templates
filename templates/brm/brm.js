@@ -221,7 +221,7 @@ let box = document.createElement("div");
 box.id = "brm-reminder-box";
 let image = document.createElement("img");
 image.id = "brm-reminder-img"
-image.src = "../_assets/brmReminder1.png";
+image.src = "../assets/brmReminder1.png";
 let button = document.createElement("button");
 button.innerHTML = "Okay";
 button.id = "brm-reminder-btn";
@@ -233,7 +233,7 @@ button.addEventListener("click", e => {
         box.style.display = "none";
         imgIndex = 1;
     }
-    image.src = "../_assets/brmReminder" + imgIndex + ".png";
+    image.src = "../assets/brmReminder" + imgIndex + ".png";
 })
 box.appendChild(image);
 box.appendChild(button);
